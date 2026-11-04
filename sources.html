@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sources — CENTCOM NC</title>
+<meta name="description" content="Health checks on the sources behind the CENTCOM NC stream: reliability, currency, reach, latest output.">
+<style>
+  :root{
+    --bg:#0a0d12; --bg2:#0c1017; --panel:#10151f; --panel2:#0d1219;
+    --line:#212b3c; --line2:#171e2b;
+    --text:#e9edf4; --dim:#9aa8bc; --faint:#7d8ea6;
+    --scanner:#e0655f; --event:#d9a441; --campus:#6f9fd8; --business:#a58fd6; --news:#5fae9d;
+    --accent:#d9a441;
+    --h-healthy:#5fae9d; --h-attention:#d9a441; --h-stale:#e08a4c; --h-down:#e0655f; --h-manual:#8b9bb2; --h-unchecked:#5b6a80;
+    --hdr:65px;
+    --ease:cubic-bezier(.22,.61,.26,1);
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+  body{margin:0;color:var(--text);
+    background:linear-gradient(180deg,var(--bg2),var(--bg) 260px) fixed,var(--bg);
+    font:15.5px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  ::selection{background:rgba(111,159,216,.35)}
+  a{color:var(--campus);text-decoration:none}
+  a:hover{text-decoration:underline}
+  button{font:inherit}
+  :focus-visible{outline:2px solid var(--campus);outline-offset:2px;border-radius:3px}
+  .skip{position:absolute;left:-9999px;top:0;background:var(--panel);color:var(--text);padding:8px 14px;z-index:60;border:1px solid var(--line)}
+  .skip:focus{left:10px;top:10px}
+
+  /* ---------- Masthead (shared with the stream page) ---------- */
+  header.site{position:sticky;top:0;z-index:40;border-bottom:1px solid var(--line);
+    background:rgba(10,13,18,.9);backdrop-filter:blur(10px) saturate(1.2);-webkit-backdrop-filter:blur(10px) saturate(1.2)}
+  .mast{display:flex;align-items:center;gap:16px;padding:13px 30px 12px}
+  .mark{flex:none;width:11px;height:11px;background:var(--accent);border-radius:2px;transform:rotate(45deg)}
+  .brand{font-size:19px;font-weight:700;letter-spacing:.16em;line-height:1.15;white-space:nowrap}
+  .brand small{display:block;font-size:10.5px;font-weight:500;letter-spacing:.14em;color:var(--dim);margin-top:2px}
+  .mast .right{margin-left:auto;text-align:right;color:var(--dim);font-size:12.5px;line-height:1.5;white-space:nowrap}
+  .mast .right b{color:var(--text);font-weight:600;font-size:13.5px}
+  .mast .right a{font-weight:600}
+  @media (max-width:640px){
+    .mast{flex-wrap:wrap;row-gap:3px;padding:12px 16px 11px}
+    .mast .right{order:3;width:100%;margin-left:0;text-align:left}
+    .brand small{letter-spacing:.09em}
+  }
+
+  /* ---------- Health strip + controls ---------- */
+  .opsbar{border-bottom:1px solid var(--line2);background:rgba(13,18,25,.55)}
+  .opsbar-in{max-width:1180px;margin:0 auto;padding:14px 30px 13px}
+  @media (min-width:1500px){.opsbar-in{max-width:1300px}}
+  @media (max-width:560px){.opsbar-in{padding:12px 16px 11px}}
+  .hstrip{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  .hchip{appearance:none;background:transparent;border:1px solid var(--line);color:var(--dim);
+    border-radius:999px;padding:5px 12px;font-size:12.5px;cursor:pointer;display:inline-flex;gap:7px;align-items:center;
+    transition:color .15s ease,border-color .15s ease,background .15s ease;white-space:nowrap}
+  .hchip .dot{width:7px;height:7px;border-radius:50%;background:var(--faint);flex:none}
+  .hchip[data-h="healthy"] .dot{background:var(--h-healthy)} .hchip[data-h="attention"] .dot{background:var(--h-attention)}
+  .hchip[data-h="stale"] .dot{background:var(--h-stale)} .hchip[data-h="down"] .dot{background:var(--h-down)}
+  .hchip[data-h="manual"] .dot{background:var(--h-manual)} .hchip[data-h="unchecked"] .dot{background:var(--h-unchecked)}
+  .hchip .n{color:var(--faint);font-size:11.5px;font-variant-numeric:tabular-nums}
+  .hchip:hover{color:var(--text);border-color:var(--faint)}
+  .hchip[aria-pressed="true"]{color:var(--text);border-color:var(--faint);background:var(--panel)}
+  .controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:11px}
+  .controls input[type="search"]{background:var(--panel2);border:1px solid var(--line);color:var(--text);
+    border-radius:8px;padding:7px 12px;font:inherit;font-size:13.5px;min-width:210px;flex:0 1 300px}
+  .controls input[type="search"]::placeholder{color:var(--faint)}
+  .controls select{background:var(--panel2);border:1px solid var(--line);color:var(--dim);
+    border-radius:8px;padding:7px 9px;font:inherit;font-size:13px}
+  .seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+  .seg button{appearance:none;background:transparent;border:0;color:var(--dim);padding:7px 12px;font-size:13px;cursor:pointer}
+  .seg button[aria-pressed="true"]{background:var(--panel);color:var(--text)}
+  .countline{color:var(--faint);font-size:12.5px;margin-left:auto;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .secchips{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+  .schip{appearance:none;background:transparent;border:1px solid var(--line2);color:var(--faint);
+    border-radius:6px;padding:3px 9px;font-size:12px;cursor:pointer;font-variant-numeric:tabular-nums;
+    transition:color .15s ease,border-color .15s ease}
+  .schip:hover{color:var(--dim);border-color:var(--line)}
+  .schip[aria-pressed="true"]{color:var(--text);border-color:var(--faint);background:var(--panel)}
+
+  /* ---------- Source rows ---------- */
+  main.ops{max-width:1180px;margin:0 auto;padding:6px 30px 90px;min-width:0}
+  @media (min-width:1500px){main.ops{max-width:1300px}}
+  @media (max-width:560px){main.ops{padding:4px 16px 60px}}
+  .group{margin-top:30px}
+  .group:first-child{margin-top:20px}
+  .group h2{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);font-weight:600;
+    display:flex;align-items:center;gap:14px;margin:0 0 4px}
+  .group h2::after{content:"";flex:1;height:1px;background:var(--line2)}
+  .group h2 .gn{color:var(--faint);letter-spacing:.02em;text-transform:none;font-size:12px}
+
+  .src{border-bottom:1px solid var(--line2);padding:13px 10px 12px;border-radius:8px;transition:background .15s ease}
+  .src:hover{background:rgba(255,255,255,.016)}
+  @keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+  .src.enter{animation:rise .34s var(--ease) both;animation-delay:calc(var(--i,0)*28ms)}
+  .src-head{display:grid;grid-template-columns:94px minmax(0,1fr) auto 48px 24px;gap:14px;align-items:start;cursor:pointer}
+  .hstate{flex:none;display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:999px;
+    padding:2px 9px;font-size:11px;font-weight:600;letter-spacing:.04em;color:var(--dim);white-space:nowrap;margin-top:2px;justify-self:start}
+  .hstate .dot{width:7px;height:7px;border-radius:50%;flex:none}
+  .hstate[data-h="healthy"]{color:var(--h-healthy);border-color:rgba(95,174,157,.4)} .hstate[data-h="healthy"] .dot{background:var(--h-healthy)}
+  .hstate[data-h="attention"]{color:var(--h-attention);border-color:rgba(217,164,65,.4)} .hstate[data-h="attention"] .dot{background:var(--h-attention)}
+  .hstate[data-h="stale"]{color:var(--h-stale);border-color:rgba(224,138,76,.4)} .hstate[data-h="stale"] .dot{background:var(--h-stale)}
+  .hstate[data-h="down"]{color:var(--h-down);border-color:rgba(224,101,95,.45)} .hstate[data-h="down"] .dot{background:var(--h-down)}
+  .hstate[data-h="manual"]{color:var(--h-manual);border-color:rgba(139,155,178,.4)} .hstate[data-h="manual"] .dot{background:var(--h-manual)}
+  .hstate[data-h="unchecked"]{color:var(--h-unchecked);border-color:var(--line)} .hstate[data-h="unchecked"] .dot{background:var(--h-unchecked)}
+  .src-main{min-width:0}
+  .src-name{font-size:15px;font-weight:650;line-height:1.35;margin:0}
+  .src-name .sid{color:var(--faint);font-weight:500;font-size:12px;margin-right:7px;font-variant-numeric:tabular-nums}
+  .src-sub{color:var(--faint);font-size:12px;margin-top:1px}
+  .src-latest{font-size:13.5px;color:var(--dim);margin-top:4px;line-height:1.5;overflow-wrap:anywhere}
+  .src-latest .when{color:var(--faint);white-space:nowrap}
+  .meters{display:flex;gap:16px;align-items:start;padding-top:2px}
+  .meter{width:84px;flex:none}
+  .meter .mlab{font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);font-weight:600;display:flex;justify-content:space-between;gap:6px}
+  .meter .mval{font-variant-numeric:tabular-nums;color:var(--dim);letter-spacing:0;font-size:10.5px}
+  .track{height:4px;border-radius:2px;background:var(--line2);margin-top:5px;overflow:hidden}
+  .fill{height:100%;border-radius:2px;background:var(--h-healthy)}
+  .fill.mid{background:var(--h-attention)} .fill.low{background:var(--h-down)}
+  .meter .reachval{font-size:12.5px;color:var(--text);font-weight:600;margin-top:3px;line-height:1.3}
+  .meter .reachlab{font-size:10px;color:var(--faint);line-height:1.3}
+  .overall{text-align:right;padding-top:1px}
+  .overall .ov{font-size:19px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1}
+  .overall .olab{font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);font-weight:600}
+  .chevbtn{appearance:none;background:none;border:0;color:var(--faint);cursor:pointer;padding:2px 0 0;font-size:12px;line-height:1}
+  .chevbtn .chev{display:inline-block;transition:transform .25s var(--ease)}
+  .src.open .chevbtn .chev{transform:rotate(180deg)}
+  @media (max-width:820px){
+    .src-head{grid-template-columns:94px minmax(0,1fr) 48px 24px}
+    .meters{grid-column:2 / -1;grid-row:2;padding-top:6px}
+  }
+  @media (max-width:480px){
+    .meters{gap:11px}.meter{width:74px}
+    .src-head{gap:10px}
+  }
+
+  /* Expanded detail */
+  .detail{display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .3s var(--ease),opacity .25s ease}
+  .detail.open{grid-template-rows:1fr;opacity:1}
+  .detail > div{overflow:hidden;min-height:0}
+  .detail-in{padding:11px 0 3px 108px;max-width:860px}
+  @media (max-width:820px){.detail-in{padding-left:0}}
+  .note{color:var(--dim);font-size:13.5px;margin:0 0 9px;line-height:1.6}
+  .basis{display:grid;grid-template-columns:104px minmax(0,1fr);gap:4px 12px;font-size:12.5px;margin:0}
+  .basis dt{color:var(--faint);font-weight:600;letter-spacing:.05em;text-transform:uppercase;font-size:10.5px;padding-top:2px}
+  .basis dd{margin:0;color:var(--dim);line-height:1.55;overflow-wrap:anywhere;min-width:0}
+  @media (max-width:480px){.basis{grid-template-columns:88px minmax(0,1fr)}}
+
+  .quiet{padding:60px 10px;text-align:center;color:var(--faint)}
+
+  footer.site{border-top:1px solid var(--line2);padding:20px 30px 26px;color:var(--faint);font-size:12.5px;
+    display:flex;gap:10px;flex-wrap:wrap;align-items:baseline}
+  footer.site b{color:var(--dim);font-weight:600;letter-spacing:.1em}
+  footer.site .sp{margin-left:auto}
+
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *,*::before,*::after{animation:none !important;transition:none !important}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#ops">Skip to sources</a>
+<header class="site">
+  <div class="mast">
+    <span class="mark" aria-hidden="true"></span>
+    <div class="brand">CENTCOM NC
+      <small>SOURCE HEALTH &middot; ST. LAWRENCE COUNTY</small>
+    </div>
+    <div class="right"><b id="today">—</b><br><span id="checked">Checked —</span> &middot; <a href="index.html">Stream</a></div>
+  </div>
+</header>
+
+<div class="opsbar">
+  <div class="opsbar-in">
+    <div class="hstrip" id="hstrip" role="group" aria-label="Filter by health"></div>
+    <div class="controls">
+      <input type="search" id="q" placeholder="Search sources…" aria-label="Search sources">
+      <select id="cat" aria-label="Filter by category">
+        <option value="all">All categories</option>
+        <option value="scanner">Scanner</option>
+        <option value="event">Events</option>
+        <option value="campus">Campus</option>
+        <option value="business">Business</option>
+        <option value="news">News</option>
+      </select>
+      <span class="seg" role="group" aria-label="Sort order">
+        <button type="button" id="sort-cat" aria-pressed="true">Catalog order</button>
+        <button type="button" id="sort-prob" aria-pressed="false">Problems first</button>
+      </span>
+      <span class="countline" id="count"></span>
+    </div>
+    <div class="secchips" id="secchips" role="group" aria-label="Filter by section"></div>
+  </div>
+</div>
+
+<main class="ops" id="ops">
+  <div class="quiet" id="loading">Loading source checks…</div>
+</main>
+
+<footer class="site">
+  <span><b>CENTCOM NC</b> &nbsp;·&nbsp; St. Lawrence County, New York</span>
+  <span class="sp"><a href="index.html">Stream</a> &nbsp;·&nbsp; Sources</span>
+</footer>
+
+<script>
+"use strict";
+const HEALTH_LABEL = {healthy:"Healthy", attention:"Attention", stale:"Stale", down:"Down", manual:"Manual", unchecked:"Unchecked"};
+const HEALTH_ORDER = ["down","stale","attention","manual","unchecked","healthy"];
+const CATLABEL = {scanner:"Scanner", event:"Event", campus:"Campus", business:"Business", news:"News"};
+const SECS = ["A","B","C","D","E","F","G","H","I","J"];
+let SOURCES = [], GENERATED = null;
+let hFilter = "all", secFilter = "all", catFilter = "all", query = "", sortMode = "catalog", openId = null;
+const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function fmtDT(iso){
+  if(!iso) return "—";
+  const d = new Date(iso);
+  if(isNaN(d)) return esc(iso);
+  return d.toLocaleDateString("en-US",{weekday:"short", month:"short", day:"numeric", year:"numeric"}) +
+    ", " + d.toLocaleTimeString("en-US",{hour:"numeric", minute:"2-digit"});
+}
+function fmtD(iso){
+  if(!iso) return "—";
+  const d = new Date(iso);
+  if(isNaN(d)) return esc(iso);
+  return d.toLocaleDateString("en-US",{weekday:"short", month:"short", day:"numeric", year:"numeric"});
+}
+
+/* ---------- Filters ---------- */
+function paintStrip(){
+  const counts = {all: SOURCES.length};
+  for(const s of SOURCES) counts[s.health] = (counts[s.health]||0) + 1;
+  const keys = ["all", ...HEALTH_ORDER.filter(h => counts[h])];
+  document.getElementById("hstrip").innerHTML = keys.map(h => {
+    const label = h === "all" ? "All sources" : HEALTH_LABEL[h];
+    return `<button class="hchip" data-h="${h}" aria-pressed="${hFilter===h}"><span class="dot"></span>${label}<span class="n">${counts[h]||0}</span></button>`;
+  }).join("");
+}
+function paintSecs(){
+  const counts = {};
+  for(const s of SOURCES) counts[s.sec] = (counts[s.sec]||0) + 1;
+  const keys = ["all", ...SECS.filter(k => counts[k])];
+  document.getElementById("secchips").innerHTML = keys.map(k => {
+    const label = k === "all" ? "All sections" : `${k} · ${counts[k]}`;
+    return `<button class="schip" data-sec="${k}" aria-pressed="${secFilter===k}">${label}</button>`;
+  }).join("");
+}
+document.getElementById("hstrip").addEventListener("click", e => {
+  const b = e.target.closest("[data-h]"); if(!b) return;
+  hFilter = b.getAttribute("data-h"); paintStrip(); render();
+});
+document.getElementById("secchips").addEventListener("click", e => {
+  const b = e.target.closest("[data-sec]"); if(!b) return;
+  secFilter = b.getAttribute("data-sec"); paintSecs(); render();
+});
+document.getElementById("cat").addEventListener("change", e => { catFilter = e.target.value; render(); });
+document.getElementById("q").addEventListener("input", e => { query = e.target.value.trim().toLowerCase(); render(); });
+function setSort(mode){
+  sortMode = mode;
+  document.getElementById("sort-cat").setAttribute("aria-pressed", mode === "catalog" ? "true" : "false");
+  document.getElementById("sort-prob").setAttribute("aria-pressed", mode === "problems" ? "true" : "false");
+  render();
+}
+document.getElementById("sort-cat").addEventListener("click", () => setSort("catalog"));
+document.getElementById("sort-prob").addEventListener("click", () => setSort("problems"));
+
+/* ---------- Rows ---------- */
+function meterHTML(label, m){
+  if(!m || m.score == null)
+    return `<div class="meter"><div class="mlab"><span>${label}</span><span class="mval">—</span></div><div class="track"></div></div>`;
+  const cls = m.score >= 8 ? "" : (m.score >= 5 ? " mid" : " low");
+  return `<div class="meter"><div class="mlab"><span>${label}</span><span class="mval">${m.score}/10</span></div>
+    <div class="track"><div class="fill${cls}" style="width:${m.score*10}%"></div></div></div>`;
+}
+function reachHTML(r){
+  if(!r) return `<div class="meter"><div class="mlab"><span>Reach</span><span class="mval">—</span></div><div class="track"></div></div>`;
+  return `<div class="meter"><div class="mlab"><span>Reach</span></div>
+    <div class="reachval">${esc(r.value)}</div><div class="reachlab">${esc(r.label)}</div></div>`;
+}
+function latestHTML(s){
+  const L = s.latest || {};
+  if(s.check.type === "manual"){
+    return `<div class="src-latest">${esc(L.title || "Catalog evidence on file")}${L.at ? ` <span class="when">· ${esc(L.display || L.at)}</span>` : ""}</div>`;
+  }
+  if(L.title && L.display){
+    const t = L.url ? `<a href="${esc(L.url)}" target="_blank" rel="noopener">${esc(L.title)}</a>` : esc(L.title);
+    return `<div class="src-latest">${t} <span class="when">· ${esc(L.display)}</span></div>`;
+  }
+  if(!L.title && L.display){
+    const what = s.cat === "event" ? "Listings current — next" : "Latest dated output";
+    return `<div class="src-latest">${what} <span class="when">· ${esc(L.display)}</span></div>`;
+  }
+  if(L.title){
+    const t = L.url ? `<a href="${esc(L.url)}" target="_blank" rel="noopener">${esc(L.title)}</a>` : esc(L.title);
+    return `<div class="src-latest">${t}</div>`;
+  }
+  return `<div class="src-latest">No dated output read in this check</div>`;
+}
+function checkLine(s){
+  const c = s.check || {};
+  if(c.type === "live") return `Live fetch · HTTP ${c.http ?? "—"} · ${fmtDT(c.at)}`;
+  if(c.type === "internal") return `Internal pipeline evidence · ${fmtDT(c.at)}`;
+  return `Not machine-checked · catalog evidence as of ${fmtD(c.at)}`;
+}
+function rowHTML(s, i){
+  const isOpen = openId === s.id;
+  const dist = s.dist != null ? ` · ${s.dist} mi` : "";
+  const ring = s.ring ? ` · ${esc(s.ring)}${s.boost ? " · boosted" : ""}` : "";
+  const m = s.metrics || {};
+  const rows = [];
+  if(m.reliability && m.reliability.basis) rows.push(`<dt>Reliability</dt><dd>${esc(m.reliability.basis)}</dd>`);
+  if(m.currency && m.currency.basis) rows.push(`<dt>Currency</dt><dd>${esc(m.currency.basis)}</dd>`);
+  if(m.reach && m.reach.basis) rows.push(`<dt>Reach</dt><dd>${esc(m.reach.basis)}</dd>`);
+  rows.push(`<dt>Health</dt><dd>${esc(s.health_basis || "")}</dd>`);
+  rows.push(`<dt>Check</dt><dd>${esc(checkLine(s))}</dd>`);
+  if(s.url) rows.push(`<dt>Source</dt><dd><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.url)}</a></dd>`);
+  return `<article class="src enter ${isOpen ? "open" : ""}" style="--i:${Math.min(i,14)}" data-id="${esc(s.id)}">
+    <div class="src-head" data-toggle="${esc(s.id)}">
+      <span class="hstate" data-h="${esc(s.health)}"><span class="dot"></span>${esc(HEALTH_LABEL[s.health] || s.health)}</span>
+      <div class="src-main">
+        <p class="src-name"><span class="sid">${esc(s.id)}</span>${esc(s.name)}</p>
+        <div class="src-sub">${esc(s.town || "")}${dist}${ring} · ${esc(CATLABEL[s.cat] || s.cat)} · ${esc(s.cadence || "")}</div>
+        ${latestHTML(s)}
+      </div>
+      <div class="meters">${meterHTML("Reliability", m.reliability)}${meterHTML("Currency", m.currency)}${reachHTML(m.reach)}</div>
+      <div class="overall"><div class="ov">${s.overall != null ? s.overall : "—"}</div><div class="olab">Overall</div></div>
+      <button class="chevbtn" type="button" data-chev="${esc(s.id)}" aria-expanded="${isOpen}" aria-label="Details for ${esc(s.name)}"><span class="chev" aria-hidden="true">▾</span></button>
+    </div>
+    <div class="detail ${isOpen ? "open" : ""}"><div><div class="detail-in">
+      ${s.note ? `<p class="note">${esc(s.note)}</p>` : ""}
+      <dl class="basis">${rows.join("")}</dl>
+    </div></div></div>
+  </article>`;
+}
+function visible(){
+  return SOURCES.filter(s =>
+    (hFilter === "all" || s.health === hFilter) &&
+    (secFilter === "all" || s.sec === secFilter) &&
+    (catFilter === "all" || s.cat === catFilter) &&
+    (!query || (s.name + " " + (s.town||"") + " " + (s.note||"")).toLowerCase().includes(query)));
+}
+function render(){
+  const main = document.getElementById("ops");
+  const list = visible();
+  document.getElementById("count").textContent = `Showing ${list.length} of ${SOURCES.length}`;
+  if(!list.length){
+    main.innerHTML = `<div class="quiet">No sources match this filter.</div>`;
+    return;
+  }
+  let i = 0, html = "";
+  if(sortMode === "problems"){
+    const sorted = list.slice().sort((a,b) =>
+      (HEALTH_ORDER.indexOf(a.health) - HEALTH_ORDER.indexOf(b.health)) ||
+      ((a.overall ?? 999) - (b.overall ?? 999)) || a.name.localeCompare(b.name));
+    html = `<section class="group"><h2>Problems first</h2>${sorted.map(s => rowHTML(s, i++)).join("")}</section>`;
+  } else {
+    html = SECS.map(sec => {
+      const gi = list.filter(s => s.sec === sec);
+      if(!gi.length) return "";
+      const label = gi[0].sec_label || "";
+      return `<section class="group"><h2>${sec} — ${esc(label)}<span class="gn">${gi.length} sources</span></h2>${gi.map(s => rowHTML(s, i++)).join("")}</section>`;
+    }).join("");
+  }
+  main.innerHTML = html;
+}
+document.getElementById("ops").addEventListener("click", e => {
+  if(e.target.closest("a")) return;
+  const head = e.target.closest("[data-toggle]");
+  if(!head) return;
+  const art = head.closest(".src");
+  const detail = art.querySelector(".detail");
+  const opening = !detail.classList.contains("open");
+  openId = opening ? head.getAttribute("data-toggle") : null;
+  detail.classList.toggle("open", opening);
+  art.classList.toggle("open", opening);
+  const btn = art.querySelector(".chevbtn");
+  if(btn) btn.setAttribute("aria-expanded", opening ? "true" : "false");
+});
+
+/* ---------- Boot ---------- */
+document.getElementById("today").textContent =
+  new Date().toLocaleDateString("en-US",{weekday:"long", month:"long", day:"numeric", year:"numeric"});
+fetch("data/sources.json", {cache:"no-store"})
+  .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
+  .then(data => {
+    SOURCES = (data && data.sources) || [];
+    GENERATED = data && data.generated;
+    document.getElementById("checked").textContent = "Checked " +
+      (GENERATED ? fmtDT(GENERATED) : "—");
+    paintStrip(); paintSecs(); render();
+  })
+  .catch(() => {
+    document.getElementById("ops").innerHTML =
+      `<div class="quiet">Source checks are unavailable right now.</div>`;
+  });
+</script>
+</body>
+</html>
