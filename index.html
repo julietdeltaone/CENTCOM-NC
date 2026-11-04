@@ -9,7 +9,7 @@
   :root{
     --bg:#0a0d12; --bg2:#0c1017; --panel:#10151f; --panel2:#0d1219;
     --line:#212b3c; --line2:#171e2b;
-    --text:#e9edf4; --dim:#9aa8bc; --faint:#66748c;
+    --text:#e9edf4; --dim:#9aa8bc; --faint:#7d8ea6;
     --scanner:#e0655f; --event:#d9a441; --campus:#6f9fd8; --business:#a58fd6; --news:#5fae9d;
     --accent:#d9a441;
     --railw:252px; --ctxw:316px; --hdr:65px;
@@ -25,6 +25,13 @@
   a{color:var(--campus);text-decoration:none}
   a:hover{text-decoration:underline}
   button{font:inherit}
+  :focus-visible{outline:2px solid var(--campus);outline-offset:2px;border-radius:3px}
+  .skip{position:absolute;left:-9999px;top:0;background:var(--panel);color:var(--text);padding:8px 14px;z-index:60;border:1px solid var(--line)}
+  .skip:focus{left:10px;top:10px}
+  .railnav{display:flex;flex-direction:column;gap:7px}
+  .railnav a{border:1px solid var(--line);border-radius:999px;padding:7px 13px;font-size:13px;color:var(--dim)}
+  .railnav a:hover{color:var(--text);text-decoration:none;border-color:var(--faint)}
+  .railnav a[aria-current="page"]{color:var(--text);background:var(--panel);border-color:var(--faint)}
 
   /* ---------- Masthead: full-bleed bar ---------- */
   header.site{position:sticky;top:0;z-index:40;border-bottom:1px solid var(--line);
@@ -180,6 +187,16 @@
   footer.site b{color:var(--dim);font-weight:600;letter-spacing:.1em}
   footer.site .sp{margin-left:auto}
 
+  @media print{
+    body{background:#fff;color:#111}
+    header.site,aside.rail,aside.ctx,.bar,footer.site,.skip{display:none !important}
+    main.stream{padding:0}
+    .stream-inner{max-width:none}
+    .item{break-inside:avoid;border-bottom:1px solid #ccc}
+    .detail{display:block;opacity:1}
+    .what,.story,.meta,.foot,.kicker,.rail-t .t{color:#333}
+    h3.head{color:#000}
+  }
   @media (prefers-reduced-motion:reduce){
     html{scroll-behavior:auto}
     *,*::before,*::after{animation:none !important;transition:none !important}
@@ -187,19 +204,27 @@
 </style>
 </head>
 <body>
+<a class="skip" href="#stream">Skip to the stream</a>
 <header class="site">
   <div class="mast">
     <span class="mark" aria-hidden="true"></span>
     <div class="brand">CENTCOM NC
       <small>NORTH COUNTRY CENTRAL &middot; ST. LAWRENCE COUNTY</small>
     </div>
-    <div class="right"><b id="today">—</b><br><span class="livedot" aria-hidden="true"></span><span id="updated">Stream —</span></div>
+    <div class="right"><b id="today">—</b><br><span class="livedot" aria-hidden="true"></span><span id="updated">Stream —</span> &middot; <a href="sources.html">Sources</a></div>
   </div>
   <nav class="bar" id="bar" aria-label="Filter the stream"></nav>
 </header>
 
 <div class="layout">
   <aside class="rail" aria-label="Stream guide">
+    <section>
+      <h4>Pages</h4>
+      <nav class="railnav">
+        <a href="index.html" aria-current="page">Stream</a>
+        <a href="sources.html">Sources</a>
+      </nav>
+    </section>
     <section>
       <h4>Filter</h4>
       <div class="vchips" id="vchips"></div>
@@ -208,7 +233,7 @@
   </aside>
 
   <main class="stream">
-    <div class="stream-inner" id="stream" aria-live="polite">
+    <div class="stream-inner" id="stream">
       <div class="quiet" id="loading">Loading the stream…</div>
     </div>
   </main>
@@ -235,11 +260,15 @@
 const FALLBACK = {"generated":"2026-11-04T17:24:00-05:00","items":[{"category":"scanner","confidence":"reported","dist":28,"enrichment":"Single dispatch post so far; neither the hospital nor the department has posted a follow-up.","first_seen":"2:31 PM","group":"today","headline":"Natural gas odor reported at Massena Hospital ER entrance","id":"scanner-20261104-massena-gas","rail":"2:22 PM","ring":"county","source":{"name":"SLC Scanner News (Facebook)","url":"https://facebook.com/groups/501798774041567/permalink/2098544701033625/"},"status":"developing","updated":"3:05 PM","updates":[{"at":"3:05 PM","text":"Fire crews remained on scene at the ER entrance; hospital operations continued while the exterior was checked."}],"what":"Massena Fire was called for the smell of natural gas outside the emergency room entrance at Massena Hospital.","when":{"display":"Today, 2:22 PM","sort":"2026-11-04T14:22:00-05:00"},"where":{"place":"Massena Hospital, ER entrance","town":"Massena"},"who":"Massena Fire Department","why":"Not yet known. Crews were checking the exterior of the building; no source was confirmed in the initial dispatch."},{"category":"scanner","confidence":"reported","dist":10,"enrichment":"No injuries and no road closure were reported.","first_seen":"11:15 AM","group":"today","headline":"Car vs. deer on CR 38, Norfolk","id":"scanner-20261104-norfolk-deer","rail":"11:08 AM","ring":"near","source":{"name":"SLC Scanner News (Facebook)","url":"https://facebook.com/groups/501798774041567/permalink/2098570221031073/"},"status":"closed","updated":"11:15 AM","what":"A vehicle struck a deer at 581 CR 38 in Norfolk. No injuries were reported in the post.","when":{"display":"Today, 11:08 AM","sort":"2026-11-04T11:08:00-05:00"},"where":{"place":"581 CR 38","town":"Norfolk"},"who":"Driver on scene; county dispatch","why":"Deer movement peaks after dark in November; CR 38 is a known crossing stretch."},{"category":"scanner","confidence":"single-source","dist":11,"enrichment":"Reported by one scanner group so far; no blotter item or second report has confirmed the call yet.","first_seen":"12:57 PM","group":"today","headline":"Threat reported on Tucker Rd, Pierrepont","id":"scanner-20261104-pierrepont-threat","rail":"12:49 PM","ring":"near","source":{"name":"SLC Scanner News (Facebook)","url":"https://facebook.com/groups/501798774041567/permalink/2098559537698808/"},"status":"new","updated":"12:57 PM","what":"A caller reported an individual threatening to burn a house down at 206 Tucker Rd; people were gathered out front when the call came in.","when":{"display":"Today, 12:49 PM","sort":"2026-11-04T12:49:00-05:00"},"where":{"place":"206 Tucker Rd","town":"Pierrepont"},"who":"Caller; responding deputies","why":"Not yet known. The dispatch post gives no background on the dispute."},{"category":"news","confidence":"confirmed","enrichment":"Reported by the county's news source of record; full margin detail arrives with the board of elections canvass.","first_seen":"Tue, 9:40 PM","group":"earlier","headline":"NY-21 congressional race called for Constantino","id":"news-20261104-ny21","rail":"TUE 11/3","ring":"county","source":{"name":"North Country Now","url":""},"status":"closed","updated":"Tue, 9:40 PM","what":"North Country Now reported the NY-21 House race called, keeping the seat Republican as statewide results came in on election night.","when":{"display":"Tue, Nov 3, evening","sort":"2026-11-03T21:40:00-05:00"},"where":{"place":"NY-21 district","town":"St. Lawrence County"},"who":"Voters across the 21st district","why":"Election Day. The call closes the county's most-watched race of the cycle."},{"category":"news","confidence":"reported","dist":0,"enrichment":"Reported by local news the same day.","first_seen":"3:20 PM","group":"today","headline":"Benefit concert raises $8,000 for North Country Children's Museum","id":"news-20261104-childrens-museum","rail":"Today","ring":"potsdam","source":{"name":"North Country Now","url":""},"status":"closed","updated":"3:20 PM","what":"A benefit concert raised $8,000 for the North Country Children's Museum in Potsdam.","when":{"display":"Wed, Nov 4","sort":"2026-11-04T15:00:00-05:00"},"where":{"place":"North Country Children's Museum","town":"Potsdam"},"who":"North Country Children's Museum","why":"Fundraising for the museum's programs; the total was reported by local news the same day."},{"category":"event","confidence":"reported","dist":0,"enrichment":"Library events are free unless the listing says otherwise.","first_seen":"This morning","group":"coming","headline":"Crane Jazz Ensembles at Potsdam Library","id":"event-20261104-crane-jazz","rail":"Tonight","ring":"potsdam","source":{"name":"North Country Now community calendar","url":""},"status":"new","updated":"This morning","what":"Crane School of Music jazz ensembles perform at the Potsdam Public Library this evening.","when":{"display":"Wed, Nov 4, evening","sort":"2026-11-04T19:00:00-05:00"},"where":{"place":"Potsdam Public Library","town":"Potsdam"},"who":"Crane School of Music, SUNY Potsdam","why":"A standing community performance series pairing Crane ensembles with the public library."},{"category":"event","confidence":"confirmed","dist":0,"enrichment":"Puck drop 7:00 PM. Expect heavier traffic on NY-11 and around the Clarkson campus from about 6 PM.","first_seen":"This week","group":"coming","headline":"Clarkson men's hockey vs. Union at Cheel","id":"event-20261106-clarkson-hockey","rail":"FRI 11/6","ring":"potsdam","source":{"name":"Clarkson athletics schedule","url":""},"status":"new","updated":"This week","what":"Clarkson hosts Union in an ECAC matchup at Cheel Arena on Friday night.","when":{"display":"Fri, Nov 6, 7:00 PM","sort":"2026-11-06T19:00:00-05:00"},"where":{"place":"Cheel Arena, Clarkson University","town":"Potsdam"},"who":"Clarkson Golden Knights vs. Union","why":"Conference home game; Friday-night home games are the biggest regular draw on the local calendar."},{"category":"event","confidence":"reported","dist":22,"first_seen":"This week","group":"coming","headline":"GriefShare session in Lisbon","id":"event-20261105-griefshare","rail":"THU 11/5","ring":"county","source":{"name":"North Country Now community calendar","url":""},"status":"new","updated":"This week","what":"A GriefShare support session meets in Lisbon on Thursday.","when":{"display":"Thu, Nov 5","sort":"2026-11-05T18:00:00-05:00"},"where":{"place":"Lisbon","town":"Lisbon"},"who":"GriefShare (community group)","why":"A recurring grief-support series that rotates through local churches."},{"category":"campus","confidence":"confirmed","dist":0,"enrichment":"A vice-president-level vacancy. The follow-up to watch is a named successor or an interim appointment.","first_seen":"Mon, Nov 2","group":"earlier","headline":"Clarkson's VP for Information Technology & Libraries seat is vacant","id":"campus-20261102-clarkson-vp","rail":"MON 11/2","ring":"potsdam","source":{"name":"Clarkson University","url":""},"status":"developing","updated":"Mon, Nov 2","what":"Clarkson's Vice President for Information Technology & Libraries seat is vacant following Joshua Fiske's removal. No successor or interim has been named.","when":{"display":"Surfaced Mon, Nov 2","sort":"2026-11-02T10:00:00-05:00"},"where":{"place":"Clarkson University","town":"Potsdam"},"who":"Clarkson University leadership","why":"A vice-presidential departure touches every system on campus — IT, library, and the services staff use daily. The open seat is the story until an interim is named."},{"category":"campus","confidence":"reported","dist":0,"enrichment":"Construction milestone at the campus's athletics and recreation hub.","first_seen":"Mon, Nov 2","group":"earlier","headline":"Maxcy Hall renovations nearing completion at SUNY Potsdam","id":"campus-20261102-maxcy","rail":"MON 11/2","ring":"potsdam","source":{"name":"SUNY Potsdam","url":""},"status":"closed","updated":"Mon, Nov 2","what":"Renovations at Maxcy Hall, SUNY Potsdam's athletics and recreation hub, are nearing completion.","when":{"display":"Reported Mon, Nov 2","sort":"2026-11-02T09:00:00-05:00"},"where":{"place":"Maxcy Hall, SUNY Potsdam","town":"Potsdam"},"who":"SUNY Potsdam","why":"Maxcy is the campus's main gym and pool complex; its reopening restores a facility the public uses as well as students."},{"category":"campus","confidence":"reported","dist":0,"enrichment":"Reported by the university; the garden is open to the public.","first_seen":"Oct 29","group":"earlier","headline":"WISER Botanical Garden opens at SUNY Potsdam","id":"campus-20261029-wiser","rail":"OCT 29","ring":"potsdam","source":{"name":"SUNY Potsdam","url":""},"status":"closed","updated":"Oct 29","what":"The WISER Botanical Garden has opened at SUNY Potsdam, a new teaching and public garden space on campus.","when":{"display":"Opened Oct 29","sort":"2026-10-29T10:00:00-04:00"},"where":{"place":"SUNY Potsdam","town":"Potsdam"},"who":"SUNY Potsdam","why":"A new public-facing campus space — part teaching garden, part community amenity."},{"category":"news","confidence":"reported","dist":0,"enrichment":"Hearing notices and any site work are the next developments to watch.","first_seen":"Oct 27","group":"earlier","headline":"Solar array proposed for 599 Bagdad Road, Potsdam","id":"news-20261027-solar-bagdad","rail":"OCT 27","ring":"potsdam","source":{"name":"North Country Now","url":"https://northcountrynow.com/stories/solar-array-eyed-for-property-on-bagdad-road-in-potsdam,397562"},"status":"developing","updated":"Oct 27","what":"A solar array project is proposed for 599 Bagdad Road in Potsdam. The Village of Potsdam Board of Trustees has discussed proposed PILOT agreements with the developers of the $42–51 million project.","when":{"display":"Reported Oct 27","sort":"2026-10-27T16:01:00-04:00"},"where":{"place":"599 Bagdad Road","town":"Potsdam"},"who":"Village of Potsdam Board of Trustees; project developers","why":"A project of this size means construction traffic, a tax-agreement decision by the village, and a visible land-use change on a residential road."},{"boost":true,"category":"business","confidence":"reported","dist":48,"enrichment":"The closest skiing to Potsdam. Opening date and open-terrain count are still to come in the hill's early-season reports.","first_seen":"Mon, Nov 3","group":"earlier","headline":"Titus Mountain begins posting trail reports ahead of opening","id":"business-20261103-titus-trails","rail":"MON 11/3","ring":"beyond","source":{"name":"Titus Mountain trail report","url":""},"status":"developing","updated":"Mon, Nov 3","what":"Titus Mountain has started publishing daily trail and lift reports ahead of its season opening — the first of the area's ski hills to do so this year.","when":{"display":"Reports began Mon, Nov 3","sort":"2026-11-03T09:00:00-05:00"},"where":{"place":"Titus Mountain","town":"Malone"},"who":"Titus Mountain Family Ski Center","why":"Trail reports are the season's first hard signal for winter tourism in the northern county; lodging, rentals, and weekend traffic follow within weeks."}]};
 const CATLABEL = {scanner:"Scanner", event:"Event", campus:"Campus", business:"Business", news:"News"};
 const CATS = ["all","scanner","event","campus","business","news"];
-const GROUPS = [
-  ["today",  "Today — Wednesday, November 4"],
-  ["coming", "Coming up"],
-  ["earlier","Earlier this week"]
-];
+const GROUPS = [["today"], ["coming"], ["earlier"]];
+function groupLabel(key, gi){
+  if(key === "coming") return "Coming up";
+  if(key === "earlier") return "Earlier";
+  const mx = gi.map(it => it.when && it.when.sort).filter(Boolean).sort().pop();
+  if(!mx) return "Today";
+  const d = new Date(mx);
+  return isNaN(d) ? "Today" : "Today — " + d.toLocaleDateString("en-US",{weekday:"long", month:"long", day:"numeric"});
+}
 const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 let ITEMS = [], activeCat = "all", openId = null, foldOpen = false;
 
@@ -341,12 +370,12 @@ function render(){
   let i = 0;
   const far = shown.filter(it => it.group !== "coming" && isFar(it));
   const nearItems = shown.filter(it => !far.includes(it));
-  let html = GROUPS.map(([key,label]) => {
+  let html = GROUPS.map(([key]) => {
     let gi = nearItems.filter(it => it.group === key);
     if(key === "coming") gi = gi.slice().sort((a,b) => String(a.when.sort).localeCompare(String(b.when.sort)));
     else gi = gi.slice().sort((a,b) => gravitySort(a, b, key === "today"));
     if(!gi.length) return "";
-    return `<section class="group"><h2>${esc(label)}</h2>${gi.map(it => itemHTML(it, i++)).join("")}</section>`;
+    return `<section class="group"><h2>${esc(groupLabel(key, gi))}</h2>${gi.map(it => itemHTML(it, i++)).join("")}</section>`;
   }).join("");
   if(far.length){
     const fl = far.slice().sort((a,b) => gravitySort(a, b, false));
@@ -411,15 +440,19 @@ function renderCtx(){
 }
 
 /* ---------- Boot ---------- */
-function fmtGenerated(iso){
+function fmtGenerated(iso, sample){
   if(!iso) return "Stream — sample edition";
   const d = new Date(iso);
   if(isNaN(d)) return "Stream — sample edition";
-  return "Stream updated " + d.toLocaleTimeString("en-US",{hour:"numeric",minute:"2-digit"});
+  const t = d.toLocaleTimeString("en-US",{hour:"numeric",minute:"2-digit"});
+  const base = d.toDateString() === new Date().toDateString()
+    ? "Stream updated " + t
+    : "Stream updated " + d.toLocaleDateString("en-US",{month:"short", day:"numeric"}) + ", " + t;
+  return sample ? base + " · sample edition" : base;
 }
-function boot(data){
+function boot(data, sample){
   ITEMS = (data && data.items) || [];
-  document.getElementById("updated").textContent = fmtGenerated(data && data.generated);
+  document.getElementById("updated").textContent = fmtGenerated(data && data.generated, sample);
   paintChips();
   render();
   renderCtx();
@@ -429,9 +462,9 @@ document.getElementById("today").textContent =
 
 fetch("data/items.json", {cache:"no-store"})
   .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
-  .then(boot)
+  .then(d => boot(d, false))
   .catch(() => {
-    if(FALLBACK && FALLBACK.items && FALLBACK.items.length){ boot(FALLBACK); }
+    if(FALLBACK && FALLBACK.items && FALLBACK.items.length){ boot(FALLBACK, true); }
     else {
       ITEMS = []; paintChips(); renderCtx();
       document.getElementById("stream").innerHTML =
