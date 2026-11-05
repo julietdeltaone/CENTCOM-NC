@@ -40,6 +40,20 @@
   .mast .right{margin-left:auto;text-align:right;color:var(--dim);font-size:12.5px;line-height:1.5;white-space:nowrap}
   .mast .right b{color:var(--text);font-weight:600;font-size:13.5px}
   .mast .right a{font-weight:600}
+  .pnav{display:flex;gap:8px;align-items:center;flex:none;margin-left:auto}
+  .pnav-btn{appearance:none;background:transparent;border:1px solid var(--line);border-radius:999px;
+    padding:7px 14px;font-size:13px;color:var(--dim);cursor:pointer;text-decoration:none;line-height:1.2;
+    transition:color .15s ease,border-color .15s ease,background .15s ease}
+  .pnav-btn:hover{color:var(--text);border-color:var(--faint);text-decoration:none}
+  .pnav-btn:focus-visible{outline:2px solid var(--campus);outline-offset:2px}
+  .mast .right{margin-left:0}
+  .howit{max-width:1180px;margin:0 auto;padding:26px 30px 4px}
+  .howit h2{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);font-weight:600;margin:0 0 14px}
+  .howit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:12px 26px}
+  .howit h3{font-size:13.5px;margin:0 0 4px;color:var(--text)}
+  .howit p{margin:0;font-size:13px;line-height:1.55;color:var(--dim)}
+  .watchtag{display:inline-block;margin-left:9px;padding:1px 8px;border:1px solid var(--accent);border-radius:999px;
+    font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);vertical-align:2px}
   @media (max-width:640px){
     .mast{flex-wrap:wrap;row-gap:3px;padding:12px 16px 11px}
     .mast .right{order:3;width:100%;margin-left:0;text-align:left}
@@ -167,6 +181,10 @@
     <div class="brand">CENTCOM NC
       <small>SOURCE HEALTH &middot; ST. LAWRENCE COUNTY</small>
     </div>
+    <nav class="pnav" aria-label="Page navigation">
+      <button type="button" class="pnav-btn" id="navBack">&larr; Back</button>
+      <a class="pnav-btn" href="index.html">Home</a>
+    </nav>
     <div class="right"><b id="today">—</b><br><span id="checked">Checked —</span> &middot; <a href="index.html">Stream</a></div>
   </div>
 </header>
@@ -193,6 +211,28 @@
     <div class="secchips" id="secchips" role="group" aria-label="Filter by section"></div>
   </div>
 </div>
+
+<section class="howit" aria-label="How sources work here">
+  <h2>How sources work here</h2>
+  <div class="howit-grid">
+    <div><h3>Channels — where items come from</h3>
+      <p><b>Web</b> — read on the open web: news sites, calendars, official pages. <b>Instagram</b> — JD's events account, following campus and venue accounts for announcements. <b>Facebook</b> — local groups and pages through the connected account; the scanner wire lives here. <b>Live feed</b> — machine feeds: dispatch audio, road conditions, weather alerts, outage data. <b>Wire</b> — JD's own pipelines: the scanner digest, the chatter sweep, Campus Intel, Business Pulse. <b>Manual check</b> — no feed exists; verified by hand on the audit cycle. Every source row shows its channel.</p></div>
+    <div><h3>Categories — the ten sections</h3>
+      <p>A: sources already running in JD's ecosystem. B: local news and media. C: public safety, roads, weather, utilities. D: the four colleges. E: K-12 schools and school sports. F: events, arts, culture, libraries. G: government and civic records. H: business, chambers, health. I: recreation and the outdoors. J: aggregators and meta-sources that index other publishers. A source joins a section or it does not join at all.</p></div>
+    <div><h3>Reliability</h3>
+      <p>A property of the publisher, scored from its class: official records and staffed newsrooms at the top, established organizations next, community and volunteer publishers lower, aggregators lowest — they originate nothing. A source that stops responding loses ground. New sources start on probation (see below) no matter how good they look.</p></div>
+    <div><h3>Currency</h3>
+      <p>Every source has an expected rhythm — daily, hourly, weekly, seasonal. Currency measures the source's latest real output against that rhythm. Silent past its window, a source drops to Attention, then Stale, and this page leads with those problems. A page that merely loads is not current; dated output is.</p></div>
+    <div><h3>Overlap — one story, one card</h3>
+      <p>When several sources report the same story, the stream carries it once. A second source raises the item's confidence — single-source, then reported, then confirmed — instead of spawning a duplicate card. Text that overlaps across sources is treated as the same story until a detail separates them.</p></div>
+    <div><h3>Sorting</h3>
+      <p>This page: Problems first, or catalog order by section. The stream: Potsdam gravity first — in-town, near, county, beyond — newest first inside each band. Developing items pin above their band only while they are still being verified; past their verify-by time they fall back into place.</p></div>
+    <div><h3>The watch list</h3>
+      <p>Ten unconventional or live sources are tagged <b>On watch</b>: the county dispatch audio feed, 511NY road conditions, NWS weather alerts, National Grid outage data, Potsdam Fire's own incident reports, the Section X scoreboard, the county's CivicClerk agenda portal, both Seaway transit trackers, and the Board of Elections. When one of them produces something new, its item goes to the front of the stream while it is fresh.</p></div>
+    <div><h3>New sources — the standing audit</h3>
+      <p>A weekly audit re-checks every source on this page and hunts for new ones. A candidate earns a place only when it clears three bars: it publishes on the rhythm it claims, at least one of its items cross-checks against a source already trusted, and it survives two weeks on probation — its items marked single-source, never pinned — before it counts as established.</p></div>
+  </div>
+</section>
 
 <main class="ops" id="ops">
   <div class="quiet" id="loading">Loading source checks…</div>
@@ -320,8 +360,8 @@ function rowHTML(s, i){
     <div class="src-head" data-toggle="${esc(s.id)}">
       <span class="hstate" data-h="${esc(s.health)}"><span class="dot"></span>${esc(HEALTH_LABEL[s.health] || s.health)}</span>
       <div class="src-main">
-        <p class="src-name"><span class="sid">${esc(s.id)}</span>${esc(s.name)}</p>
-        <div class="src-sub">${esc(s.town || "")}${dist}${ring} · ${esc(CATLABEL[s.cat] || s.cat)} · ${esc(s.cadence || "")}</div>
+        <p class="src-name"><span class="sid">${esc(s.id)}</span>${esc(s.name)}${s.watch ? '<span class="watchtag">On watch</span>' : ""}</p>
+        <div class="src-sub">${esc(s.town || "")}${dist}${ring} · ${esc(CATLABEL[s.cat] || s.cat)} · ${esc(s.cadence || "")} · ${esc(s.channel || "Web")}</div>
         ${latestHTML(s)}
       </div>
       <div class="meters">${meterHTML("Reliability", m.reliability)}${meterHTML("Currency", m.currency)}${reachHTML(m.reach)}</div>
@@ -395,6 +435,10 @@ fetch("data/sources.json", {cache:"no-store"})
     document.getElementById("ops").innerHTML =
       `<div class="quiet">Source checks are unavailable right now.</div>`;
   });
+<script>
+document.getElementById("navBack").addEventListener("click", () => {
+  if(history.length > 1) history.back(); else location.href = "index.html";
+});
 </script>
 </body>
 </html>
