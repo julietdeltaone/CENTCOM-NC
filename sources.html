@@ -171,6 +171,7 @@
     html{scroll-behavior:auto}
     *,*::before,*::after{animation:none !important;transition:none !important}
   }
+.quiet#loading{animation:ldpulse 1.6s ease-in-out infinite}@keyframes ldpulse{0%,100%{opacity:.45}50%{opacity:1}}
 </style>
 </head>
 <body>
@@ -185,7 +186,7 @@
       <button type="button" class="pnav-btn" id="navBack">&larr; Back</button>
       <a class="pnav-btn" href="index.html">Home</a>
     </nav>
-    <div class="right"><b id="today">—</b><br><span id="checked">Checked —</span> &middot; <a href="index.html">Stream</a></div>
+    <div class="right"><b id="today">—</b><br><span id="checked">Checked —</span> &middot; <a href="index.html">Stream</a> &middot; <a href="lab.html">New design</a></div>
   </div>
 </header>
 
@@ -435,6 +436,7 @@ fetch("data/sources.json", {cache:"no-store"})
     document.getElementById("ops").innerHTML =
       `<div class="quiet">Source checks are unavailable right now.</div>`;
   });
+</script>
 <script>
 document.getElementById("navBack").addEventListener("click", () => {
   if(history.length > 1) history.back(); else location.href = "index.html";
