@@ -1,0 +1,162 @@
+{
+ "generated": "2026-11-05T08:15:06-05:00",
+ "changes": [
+  {
+   "town": "Massena",
+   "dist": 28,
+   "ring": "county",
+   "boost": false,
+   "geo": {
+    "lat": 44.9246,
+    "lon": -74.9042
+   },
+   "source": {
+    "name": "SLC Scanner News (Facebook)",
+    "url": "https://facebook.com/groups/501798774041567/permalink/2098544701033625/"
+   },
+   "item_id": "scanner-20261104-massena-gas",
+   "id": "chg-scanner-20261104-massena-gas-closed-d930da",
+   "detected_at": "2026-11-04T23:31:41-05:00",
+   "kind": "closed",
+   "headline": "Natural gas odor reported at Massena Hospital ER entrance",
+   "detail": "Weekly audit re-check found no follow-up from the hospital, the department, or local news. Closed."
+  },
+  {
+   "town": "Pierrepont",
+   "dist": 11,
+   "ring": "near",
+   "boost": false,
+   "geo": {
+    "lat": 44.55,
+    "lon": -75.02
+   },
+   "source": {
+    "name": "SLC Scanner News (Facebook)",
+    "url": "https://facebook.com/groups/501798774041567/permalink/2098559537698808/"
+   },
+   "item_id": "scanner-20261104-pierrepont-threat",
+   "id": "chg-scanner-20261104-pierrepont-threat-closed-29dab8",
+   "detected_at": "2026-11-04T23:31:41-05:00",
+   "kind": "closed",
+   "headline": "Threat reported on Tucker Rd, Pierrepont",
+   "detail": "Weekly audit re-check found no blotter item or second report. Closed as a single unconfirmed dispatch post."
+  },
+  {
+   "town": "Potsdam",
+   "dist": 0,
+   "ring": "potsdam",
+   "boost": false,
+   "geo": {
+    "lat": 44.6706,
+    "lon": -74.9804
+   },
+   "source": {
+    "name": "North Country Now",
+    "url": ""
+   },
+   "item_id": "news-20261104-childrens-museum",
+   "id": "chg-news-20261104-childrens-museum-new",
+   "detected_at": "2026-11-04T15:20:00-05:00",
+   "kind": "new story",
+   "headline": "Benefit concert raises $8,000 for North Country Children's Museum",
+   "detail": "A benefit concert raised $8,000 for the North Country Children's Museum in Potsdam."
+  },
+  {
+   "town": "Massena",
+   "dist": 28,
+   "ring": "county",
+   "boost": false,
+   "geo": {
+    "lat": 44.9246,
+    "lon": -74.9042
+   },
+   "source": {
+    "name": "SLC Scanner News (Facebook)",
+    "url": "https://facebook.com/groups/501798774041567/permalink/2098544701033625/"
+   },
+   "item_id": "scanner-20261104-massena-gas",
+   "id": "chg-scanner-20261104-massena-gas-new",
+   "detected_at": "2026-11-04T14:31:00-05:00",
+   "kind": "new story",
+   "headline": "Natural gas odor reported at Massena Hospital ER entrance",
+   "detail": "Massena Fire was called for the smell of natural gas outside the emergency room entrance at Massena Hospital."
+  },
+  {
+   "town": "Pierrepont",
+   "dist": 11,
+   "ring": "near",
+   "boost": false,
+   "geo": {
+    "lat": 44.55,
+    "lon": -75.02
+   },
+   "source": {
+    "name": "SLC Scanner News (Facebook)",
+    "url": "https://facebook.com/groups/501798774041567/permalink/2098559537698808/"
+   },
+   "item_id": "scanner-20261104-pierrepont-threat",
+   "id": "chg-scanner-20261104-pierrepont-threat-new",
+   "detected_at": "2026-11-04T12:57:00-05:00",
+   "kind": "new story",
+   "headline": "Threat reported on Tucker Rd, Pierrepont",
+   "detail": "A caller reported an individual threatening to burn a house down at 206 Tucker Rd; people were gathered out front when the call came in."
+  },
+  {
+   "town": "Norfolk",
+   "dist": 10,
+   "ring": "near",
+   "boost": false,
+   "geo": {
+    "lat": 44.88,
+    "lon": -74.99
+   },
+   "source": {
+    "name": "SLC Scanner News (Facebook)",
+    "url": "https://facebook.com/groups/501798774041567/permalink/2098570221031073/"
+   },
+   "item_id": "scanner-20261104-norfolk-deer",
+   "id": "chg-scanner-20261104-norfolk-deer-new",
+   "detected_at": "2026-11-04T11:15:00-05:00",
+   "kind": "new story",
+   "headline": "Car vs. deer on CR 38, Norfolk",
+   "detail": "A vehicle struck a deer at 581 CR 38 in Norfolk. No injuries were reported in the post."
+  },
+  {
+   "town": "St. Lawrence County",
+   "dist": null,
+   "ring": "county",
+   "boost": false,
+   "geo": null,
+   "source": {
+    "name": "North Country Now",
+    "url": ""
+   },
+   "item_id": "news-20261104-ny21",
+   "id": "chg-news-20261104-ny21-new",
+   "detected_at": "2026-11-03T21:40:00-05:00",
+   "kind": "new story",
+   "headline": "NY-21 congressional race called for Constantino",
+   "detail": "North Country Now reported the NY-21 House race called, keeping the seat Republican as statewide results came in on election night."
+  },
+  {
+   "town": "Malone",
+   "dist": 48,
+   "ring": "beyond",
+   "boost": true,
+   "geo": {
+    "lat": 44.8631,
+    "lon": -74.2356
+   },
+   "source": {
+    "name": "Titus Mountain trail report",
+    "url": ""
+   },
+   "item_id": "business-20261103-titus-trails",
+   "id": "chg-business-20261103-titus-trails-new",
+   "detected_at": "2026-11-03T09:00:00-05:00",
+   "kind": "new story",
+   "headline": "Titus Mountain begins posting trail reports ahead of opening",
+   "detail": "Titus Mountain has started publishing daily trail and lift reports ahead of its season opening — the first of the area's ski hills to do so this year."
+  }
+ ]
+}
