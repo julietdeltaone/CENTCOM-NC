@@ -223,6 +223,31 @@
 .mappop .mp-x{margin-left:auto;width:28px;height:28px;border:1px solid var(--line);border-radius:50%;background:var(--paper);color:var(--ink);cursor:pointer;font-size:14px;line-height:1}
 .mappop iframe{display:block;width:100%;height:300px;border:0;background:var(--bg)}
 </style>
+
+<style id="lab-skin">
+:root{--bg:#0a0d12;--paper:#12161e;--ink:#e9edf3;--mut:#a7b0be;--faint:#6e7889;--line:rgba(255,255,255,.13);--acc:#e8b34b}
+html{scrollbar-color:#2b3342 #0a0d12}
+body{background:#0a0d12}
+body::before,body::after{content:"";position:fixed;border-radius:50%;filter:blur(90px);pointer-events:none;z-index:0}
+body::before{width:56vw;height:56vw;left:-14vw;top:-18vw;background:radial-gradient(circle at 35% 35%,rgba(64,96,178,.34),transparent 65%);animation:lab-drift1 26s ease-in-out infinite alternate}
+body::after{width:48vw;height:48vw;right:-12vw;bottom:-16vw;background:radial-gradient(circle at 60% 60%,rgba(232,179,75,.16),transparent 65%);animation:lab-drift2 34s ease-in-out infinite alternate}
+@keyframes lab-drift1{from{transform:translate(0,0) scale(1)}to{transform:translate(6vw,4vh) scale(1.12)}}
+@keyframes lab-drift2{from{transform:translate(0,0) scale(1.05)}to{transform:translate(-5vw,-4vh) scale(.95)}}
+.mast{background:rgba(11,14,19,.72);backdrop-filter:blur(18px) saturate(1.3);-webkit-backdrop-filter:blur(18px) saturate(1.3);border-bottom:1px solid rgba(255,255,255,.09)}
+.mast,.layout,.foot{position:relative;z-index:1}
+.rail .box,.rail nav.box{background:rgba(18,22,30,.66);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.09);border-radius:14px}
+.item{background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.015));border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:18px 18px 16px;margin-bottom:14px;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 14px 34px rgba(0,0,0,.38);transition:border-color .3s,box-shadow .3s;will-change:transform}
+.item:hover{border-color:rgba(232,179,75,.45);box-shadow:0 20px 44px rgba(0,0,0,.5)}
+.item .head button{transition:transform .25s,color .25s}
+.item .head button:hover{transform:translateX(3px)}
+.vchip.on{box-shadow:0 0 0 1px var(--acc),0 6px 18px rgba(232,179,75,.28)}
+.loc-chip{background:rgba(255,255,255,.06)}
+.src-ic{background:rgba(255,255,255,.05)}
+.mappop .mp-card{background:#12161e}
+.mappop iframe{background:#0a0d12}
+.quiet{color:var(--mut)}
+@media (prefers-reduced-motion:reduce){body::before,body::after{animation:none}.item{transition:none}}
+</style>
 </head>
 <body>
 <a class="skip" href="#stream">Skip to the stream</a>
@@ -236,7 +261,7 @@
       <button type="button" class="pnav-btn" id="navBack">&larr; Back</button>
       <a class="pnav-btn" href="index.html" id="navHome">Home</a>
     </nav>
-    <div class="right"><b id="today">—</b><br><span class="livedot" aria-hidden="true"></span><span id="updated">Stream —</span> &middot; <a href="sources.html">Sources</a> &middot; <a href="lab.html">New design</a></div>
+    <div class="right"><b id="today">—</b><br><span class="livedot" aria-hidden="true"></span><span id="updated">Stream —</span> &middot; <a href="sources.html">Sources</a></div>
   </div>
   <nav class="bar" id="bar" aria-label="Filter the stream"></nav>
 </header>
@@ -248,7 +273,6 @@
       <nav class="railnav">
         <a href="index.html" aria-current="page">Stream</a>
         <a href="sources.html">Sources</a>
-        <a href="lab.html">New design</a>
       </nav>
     </section>
     <section>
@@ -604,6 +628,28 @@ fetch("data/items.json", {cache:"no-store"})
     if(e.target.closest("[data-mpclose]")) closeMap();
   });
   document.addEventListener("keydown", e => { if(e.key === "Escape") closeMap(); });
+})();
+</script>
+
+<script>
+(function(){
+  if(!window.matchMedia || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if(matchMedia("(hover: none)").matches) return;
+  const stream = document.getElementById("stream");
+  let raf = 0, evt = null;
+  function apply(){
+    raf = 0;
+    if(!evt) return;
+    const card = evt.target && evt.target.closest ? evt.target.closest(".item") : null;
+    stream.querySelectorAll(".item").forEach(el => { if(el !== card) el.style.transform = ""; });
+    if(!card) return;
+    const r = card.getBoundingClientRect();
+    const px = (evt.clientX - r.left) / r.width - .5;
+    const py = (evt.clientY - r.top) / r.height - .5;
+    card.style.transform = "perspective(950px) rotateX(" + (-py * 2.2).toFixed(2) + "deg) rotateY(" + (px * 2.2).toFixed(2) + "deg)";
+  }
+  stream.addEventListener("pointermove", e => { evt = e; if(!raf) raf = requestAnimationFrame(apply); });
+  stream.addEventListener("pointerleave", () => { evt = null; stream.querySelectorAll(".item").forEach(el => el.style.transform = ""); });
 })();
 </script>
 </body>
