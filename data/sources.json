@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-04T23:22:15.772890-05:00",
+ "generated": "2026-11-04T23:32:26.557491-05:00",
  "sources": [
   {
    "id": "A1",
@@ -18,7 +18,7 @@
     "type": "internal",
     "status": "observed",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Potsdam watch state file updated",
@@ -60,7 +60,7 @@
     "type": "internal",
     "status": "observed",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Sweep run note filed",
@@ -102,7 +102,7 @@
     "type": "internal",
     "status": "observed",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Sweep data updated (Nov 2 run)",
@@ -144,7 +144,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Business Pulse",
@@ -179,14 +179,14 @@
    "ring": "potsdam",
    "dist": 0,
    "boost": false,
-   "cadence": "Daily posts expected — not yet measured",
+   "cadence": "Daily posts expected \u2014 not yet measured",
    "url": null,
    "note": "Event announcements from followed university accounts. Login was being set up Nov 4, 2026; handles not yet catalogued.",
    "check": {
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Account login in setup; no output observed yet",
@@ -223,12 +223,12 @@
    "boost": false,
    "cadence": "Daily, many stories per day",
    "url": "https://www.northcountrynow.com/",
-   "note": "The county's dominant local news site — breaking news, blotter, board coverage, sports, events.",
+   "note": "The county's dominant local news site \u2014 breaking news, blotter, board coverage, sports, events.",
    "check": {
     "type": "live",
     "status": "blocked",
     "http": 403,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "403 403",
@@ -252,7 +252,7 @@
     }
    },
    "health": "attention",
-   "health_basis": "Fetch was bot-blocked — output could not be verified this pass",
+   "health_basis": "Fetch was bot-blocked \u2014 output could not be verified this pass",
    "overall": 80,
    "watch": false,
    "channel": "Web"
@@ -274,7 +274,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "nny360.com",
@@ -301,7 +301,7 @@
   },
   {
    "id": "B3",
-   "name": "NCPR — North Country Public Radio (news)",
+   "name": "NCPR \u2014 North Country Public Radio (news)",
    "sec": "B",
    "sec_label": "Local news & media",
    "cat": "news",
@@ -316,7 +316,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Gendebien says he won't concede NY-21 race before every vote is counted",
@@ -343,7 +343,7 @@
   },
   {
    "id": "B4",
-   "name": "NCPR — Northern Light (daily newsmagazine)",
+   "name": "NCPR \u2014 Northern Light (daily newsmagazine)",
    "sec": "B",
    "sec_label": "Local news & media",
    "cat": "news",
@@ -358,7 +358,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Gendebien says he won't concede NY-21 race before every vote is counted",
@@ -400,7 +400,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "WWNY | News, Weather, and Sports | Watertown, N.Y.",
@@ -442,7 +442,7 @@
     "type": "live",
     "status": "blocked",
     "http": 403,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Access to this page has been denied",
@@ -462,14 +462,14 @@
     "reach": null
    },
    "health": "attention",
-   "health_basis": "Fetch was bot-blocked — output could not be verified this pass",
+   "health_basis": "Fetch was bot-blocked \u2014 output could not be verified this pass",
    "overall": 80,
    "watch": false,
    "channel": "Web"
   },
   {
    "id": "B7",
-   "name": "Watertown Post — Northern NY Daily Brief",
+   "name": "Watertown Post \u2014 Northern NY Daily Brief",
    "sec": "B",
    "sec_label": "Local news & media",
    "cat": "news",
@@ -484,10 +484,10 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
-    "title": "America, You Impatient Motherfuckers: Rome Wasn’t Built in a Day, and Neither Is the Golden Age",
+    "title": "America, You Impatient Motherfuckers: Rome Wasn\u2019t Built in a Day, and Neither Is the Golden Age",
     "url": "https://watertownpost.com/america-you-impatient-motherfuckers-rome-wasnt-built-in-a-day-and-neither-is-the-golden-age/",
     "at": "2026-11-04T21:39:12+00:00",
     "display": "Wed, Nov 4, 2026"
@@ -495,7 +495,7 @@
    "metrics": {
     "reliability": {
      "score": 5,
-     "basis": "Aggregator — republishes or indexes others' reporting"
+     "basis": "Aggregator \u2014 republishes or indexes others' reporting"
     },
     "currency": {
      "score": 10,
@@ -526,7 +526,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Watertown & North Country News | ClickNNY",
@@ -568,7 +568,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Mohawk student-aid ruling becomes final after Education Department drops appeal",
@@ -605,12 +605,12 @@
    "boost": false,
    "cadence": "Weekly print + web",
    "url": "https://gouverneurtribunepress.squarespace.com/",
-   "note": "Weekly for the county's southwest — obituaries, notices, school and village news.",
+   "note": "Weekly for the county's southwest \u2014 obituaries, notices, school and village news.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 404,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Squarespace - Website Expired",
@@ -625,7 +625,7 @@
     },
     "currency": {
      "score": 1,
-     "basis": "No live output — the site itself is expired"
+     "basis": "No live output \u2014 the site itself is expired"
     },
     "reach": null
    },
@@ -652,7 +652,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Malone",
@@ -679,7 +679,7 @@
   },
   {
    "id": "B12",
-   "name": "YES FM — Community Calendar",
+   "name": "YES FM \u2014 Community Calendar",
    "sec": "B",
    "sec_label": "Local news & media",
    "cat": "event",
@@ -689,15 +689,15 @@
    "boost": false,
    "cadence": "Continuously updated",
    "url": "https://yesfm.com/events/month/",
-   "note": "True community calendar — school, church, library, fire-department and club events, submittable by anyone.",
+   "note": "True community calendar \u2014 school, church, library, fire-department and club events, submittable by anyone.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
-    "title": "Events for November 2026 – YES FM",
+    "title": "Events for November 2026 \u2013 YES FM",
     "url": "https://yesfm.com/events/month/",
     "at": "2026-11-05T00:00:00-05:00",
     "display": "Thu, Nov 5, 2026"
@@ -709,7 +709,7 @@
     },
     "currency": {
      "score": 9,
-     "basis": "Listings current — next dated listing Thu, Nov 5, 2026"
+     "basis": "Listings current \u2014 next dated listing Thu, Nov 5, 2026"
     },
     "reach": null
    },
@@ -721,7 +721,7 @@
   },
   {
    "id": "B13",
-   "name": "101.5 The Fox — events feed",
+   "name": "101.5 The Fox \u2014 events feed",
    "sec": "B",
    "sec_label": "Local news & media",
    "cat": "event",
@@ -736,10 +736,10 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
-    "title": "WATCH: There’s Nothing Sweeter Than Small-Town Tea",
+    "title": "WATCH: There\u2019s Nothing Sweeter Than Small-Town Tea",
     "url": "https://1015thefox.com/the-latest/watch-theres-nothing-sweeter-than-small-town-tea/",
     "at": "2026-11-04T20:43:17+00:00",
     "display": "Wed, Nov 4, 2026"
@@ -751,7 +751,7 @@
     },
     "currency": {
      "score": 9,
-     "basis": "Listings current — next dated listing Sat, Nov 7, 2026"
+     "basis": "Listings current \u2014 next dated listing Sat, Nov 7, 2026"
     },
     "reach": null
    },
@@ -763,7 +763,7 @@
   },
   {
    "id": "B14",
-   "name": "WAMC Northeast Public Radio — North Country stories",
+   "name": "WAMC Northeast Public Radio \u2014 North Country stories",
    "sec": "B",
    "sec_label": "Local news & media",
    "cat": "news",
@@ -773,12 +773,12 @@
    "boost": false,
    "cadence": "Weekly-ish for the region",
    "url": "https://www.wamc.org/news",
-   "note": "Occasional North Country features — health and labor stories that usually also matter to NCPR's turf.",
+   "note": "Occasional North Country features \u2014 health and labor stories that usually also matter to NCPR's turf.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Schenectady City officials begin lobbying efforts for extra state aid",
@@ -820,7 +820,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Station identity confirmed via listings; no checkable web feed found",
@@ -862,7 +862,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Station identity confirmed via trade sources",
@@ -899,12 +899,12 @@
    "boost": false,
    "cadence": "Real-time, 24/7",
    "url": "https://www.newyorkstatefire.com/live.htm",
-   "note": "Live dispatch audio — SLC Fire & EMS, Sheriff, Ogdensburg PD/Fire, NYSP Troop B Zone 2, DEC. Check target is the feed directory listing; the stream itself is audio.",
+   "note": "Live dispatch audio \u2014 SLC Fire & EMS, Sheriff, Ogdensburg PD/Fire, NYSP Troop B Zone 2, DEC. Check target is the feed directory listing; the stream itself is audio.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Live to listen to live dispatch for New York Fire and EMS",
@@ -915,7 +915,7 @@
    "metrics": {
     "reliability": {
      "score": 9,
-     "basis": "Primary source — the agency/institution publishing its own records"
+     "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
      "score": null,
@@ -931,7 +931,7 @@
   },
   {
    "id": "C2",
-   "name": "SLC Dept. of Emergency Services — Facebook page",
+   "name": "SLC Dept. of Emergency Services \u2014 Facebook page",
    "sec": "C",
    "sec_label": "Safety, roads, weather, utilities",
    "cat": "scanner",
@@ -941,12 +941,12 @@
    "boost": false,
    "cadence": "Episodic; spikes around weather/events",
    "url": null,
-   "note": "Official emergency-management posts — storms, exercises, major incident notices. Facebook page; not machine-readable in this pass.",
+   "note": "Official emergency-management posts \u2014 storms, exercises, major incident notices. Facebook page; not machine-readable in this pass.",
    "check": {
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Catalog: episodic official posts observed (storms, exercises, incident notices)",
@@ -957,7 +957,7 @@
    "metrics": {
     "reliability": {
      "score": 9,
-     "basis": "Primary source — the agency/institution publishing its own records"
+     "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
      "score": null,
@@ -973,7 +973,7 @@
   },
   {
    "id": "C3",
-   "name": "SLC Sheriff's Office — Facebook page",
+   "name": "SLC Sheriff's Office \u2014 Facebook page",
    "sec": "C",
    "sec_label": "Safety, roads, weather, utilities",
    "cat": "scanner",
@@ -988,7 +988,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Catalog: several posts per month, more during campaigns",
@@ -999,7 +999,7 @@
    "metrics": {
     "reliability": {
      "score": 9,
-     "basis": "Primary source — the agency/institution publishing its own records"
+     "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
      "score": null,
@@ -1015,7 +1015,7 @@
   },
   {
    "id": "C4",
-   "name": "NY State Police — news releases (Troop B)",
+   "name": "NY State Police \u2014 news releases (Troop B)",
    "sec": "C",
    "sec_label": "Safety, roads, weather, utilities",
    "cat": "scanner",
@@ -1025,12 +1025,12 @@
    "boost": false,
    "cadence": "Daily statewide; several county items/week",
    "url": "https://troopers.ny.gov/news",
-   "note": "Same-day press releases — the authoritative blotter, already written as clean items.",
+   "note": "Same-day press releases \u2014 the authoritative blotter, already written as clean items.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "NYSP Newsroom",
@@ -1041,7 +1041,7 @@
    "metrics": {
     "reliability": {
      "score": 9,
-     "basis": "Primary source — the agency/institution publishing its own records"
+     "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
      "score": 10,
@@ -1067,12 +1067,12 @@
    "boost": false,
    "cadence": "Several incident stories per month",
    "url": "https://www.potsdamfire.org/",
-   "note": "Written incident reports with times, units, mutual aid — a department that publishes like a news wire.",
+   "note": "Written incident reports with times, units, mutual aid \u2014 a department that publishes like a news wire.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Potsdam Fire Department",
@@ -1083,7 +1083,7 @@
    "metrics": {
     "reliability": {
      "score": 9,
-     "basis": "Primary source — the agency/institution publishing its own records"
+     "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
      "score": 10,
@@ -1099,7 +1099,7 @@
   },
   {
    "id": "C6",
-   "name": "SLC Public Health — press releases",
+   "name": "SLC Public Health \u2014 press releases",
    "sec": "C",
    "sec_label": "Safety, roads, weather, utilities",
    "cat": "news",
@@ -1109,12 +1109,12 @@
    "boost": false,
    "cadence": "Monthly-ish; seasonal spikes",
    "url": "https://www.stlawco.gov/Departments/PublicHealth/PressReleases",
-   "note": "Rabies confirmations, mosquito surveillance, clinic schedules — health alerts residents act on.",
+   "note": "Rabies confirmations, mosquito surveillance, clinic schedules \u2014 health alerts residents act on.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Press Releases | St. Lawrence County",
@@ -1125,7 +1125,7 @@
    "metrics": {
     "reliability": {
      "score": 9,
-     "basis": "Primary source — the agency/institution publishing its own records"
+     "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
      "score": 2,
@@ -1141,7 +1141,7 @@
   },
   {
    "id": "C7",
-   "name": "NYSDOT Region 7 — traveler advisories",
+   "name": "NYSDOT Region 7 \u2014 traveler advisories",
    "sec": "C",
    "sec_label": "Safety, roads, weather, utilities",
    "cat": "news",
@@ -1156,7 +1156,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Untitled Document",
@@ -1167,7 +1167,7 @@
    "metrics": {
     "reliability": {
      "score": 9,
-     "basis": "Primary source — the agency/institution publishing its own records"
+     "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
      "score": null,
@@ -1193,12 +1193,12 @@
    "boost": false,
    "cadence": "Real-time",
    "url": "https://511ny.org/",
-   "note": "Real-time road incidents, construction, closures. Web app — this check confirms the system responds; readings live in the app.",
+   "note": "Real-time road incidents, construction, closures. Web app \u2014 this check confirms the system responds; readings live in the app.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "511NY Traffic and Travel Information | NYSDOT Map",
@@ -1209,7 +1209,7 @@
    "metrics": {
     "reliability": {
      "score": 9,
-     "basis": "Primary source — the agency/institution publishing its own records"
+     "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
      "score": 9,
@@ -1225,7 +1225,7 @@
   },
   {
    "id": "C9",
-   "name": "NWS Burlington — alerts for St. Lawrence County",
+   "name": "NWS Burlington \u2014 alerts for St. Lawrence County",
    "sec": "C",
    "sec_label": "Safety, roads, weather, utilities",
    "cat": "scanner",
@@ -1240,7 +1240,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "No active alerts for the Potsdam area at check time",
@@ -1251,7 +1251,7 @@
    "metrics": {
     "reliability": {
      "score": 9,
-     "basis": "Primary source — the agency/institution publishing its own records"
+     "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
      "score": 9,
@@ -1267,7 +1267,7 @@
   },
   {
    "id": "C10",
-   "name": "National Grid — outage data (usoutage mirror)",
+   "name": "National Grid \u2014 outage data (usoutage mirror)",
    "sec": "C",
    "sec_label": "Safety, roads, weather, utilities",
    "cat": "scanner",
@@ -1282,7 +1282,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "New York Power Outages - Live Outage Map & Current Status",
@@ -1324,7 +1324,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Massena, NY - Official Website | Official Website",
@@ -1335,7 +1335,7 @@
    "metrics": {
     "reliability": {
      "score": 9,
-     "basis": "Primary source — the agency/institution publishing its own records"
+     "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
      "score": 10,
@@ -1361,12 +1361,12 @@
    "boost": false,
    "cadence": "Varies by department",
    "url": null,
-   "note": "~42 county departments, mostly Facebook pages. Individual page addresses not yet confirmed — catalog: partially UNVERIFIED; do not guess URLs.",
+   "note": "~42 county departments, mostly Facebook pages. Individual page addresses not yet confirmed \u2014 catalog: partially UNVERIFIED; do not guess URLs.",
    "check": {
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Catalog: volume confirmed (~30,000 incidents / 5 yrs countywide); page addresses unconfirmed",
@@ -1393,7 +1393,7 @@
   },
   {
    "id": "D1",
-   "name": "Clarkson University — news",
+   "name": "Clarkson University \u2014 news",
    "sec": "D",
    "sec_label": "Colleges & universities",
    "cat": "campus",
@@ -1408,7 +1408,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "News & Events | Clarkson University",
@@ -1419,7 +1419,7 @@
    "metrics": {
     "reliability": {
      "score": 9,
-     "basis": "Primary source — the agency/institution publishing its own records"
+     "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
      "score": 9,
@@ -1445,12 +1445,12 @@
    "boost": false,
    "cadence": "Near-daily in season",
    "url": "https://clarksonathletics.com/",
-   "note": "Golden Knights schedules, scores, recaps — Cheel game nights move the whole town.",
+   "note": "Golden Knights schedules, scores, recaps \u2014 Cheel game nights move the whole town.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Clarkson University Athletics - Official Athletics Website",
@@ -1461,7 +1461,7 @@
    "metrics": {
     "reliability": {
      "score": 9,
-     "basis": "Primary source — the agency/institution publishing its own records"
+     "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
      "score": 10,
@@ -1477,7 +1477,7 @@
   },
   {
    "id": "D3",
-   "name": "SUNY Potsdam — news",
+   "name": "SUNY Potsdam \u2014 news",
    "sec": "D",
    "sec_label": "Colleges & universities",
    "cat": "campus",
@@ -1492,7 +1492,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "News | SUNY Potsdam",
@@ -1503,7 +1503,7 @@
    "metrics": {
     "reliability": {
      "score": 9,
-     "basis": "Primary source — the agency/institution publishing its own records"
+     "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
      "score": 10,
@@ -1534,7 +1534,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "SUNY Potsdam Athletics - Official Athletics Website",
@@ -1545,7 +1545,7 @@
    "metrics": {
     "reliability": {
      "score": 9,
-     "basis": "Primary source — the agency/institution publishing its own records"
+     "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
      "score": 10,
@@ -1561,7 +1561,7 @@
   },
   {
    "id": "D5",
-   "name": "Crane School of Music — concert calendar",
+   "name": "Crane School of Music \u2014 concert calendar",
    "sec": "D",
    "sec_label": "Colleges & universities",
    "cat": "event",
@@ -1571,12 +1571,12 @@
    "boost": false,
    "cadence": "Daily in term",
    "url": null,
-   "note": "Near-daily concerts and recitals. Exact standalone feed not confirmed — events surface via potsdam.edu and library/chamber calendars. Catalog: UNVERIFIED feed.",
+   "note": "Near-daily concerts and recitals. Exact standalone feed not confirmed \u2014 events surface via potsdam.edu and library/chamber calendars. Catalog: UNVERIFIED feed.",
    "check": {
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Catalog: November schedule of near-daily performances noted via WWTI",
@@ -1603,7 +1603,7 @@
   },
   {
    "id": "D6",
-   "name": "SUNY Canton — news",
+   "name": "SUNY Canton \u2014 news",
    "sec": "D",
    "sec_label": "Colleges & universities",
    "cat": "campus",
@@ -1613,12 +1613,12 @@
    "boost": false,
    "cadence": "Weekly-ish",
    "url": "https://www.canton.edu/news",
-   "note": "New programs, enrollment, campus projects — program adds/cuts affect the local workforce.",
+   "note": "New programs, enrollment, campus projects \u2014 program adds/cuts affect the local workforce.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "SUNY Canton",
@@ -1629,7 +1629,7 @@
    "metrics": {
     "reliability": {
      "score": 9,
-     "basis": "Primary source — the agency/institution publishing its own records"
+     "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
      "score": 8,
@@ -1660,7 +1660,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "SUNY Canton Athletics - Official Athletics Website",
@@ -1671,7 +1671,7 @@
    "metrics": {
     "reliability": {
      "score": 9,
-     "basis": "Primary source — the agency/institution publishing its own records"
+     "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
      "score": 10,
@@ -1687,7 +1687,7 @@
   },
   {
    "id": "D8",
-   "name": "St. Lawrence University — news",
+   "name": "St. Lawrence University \u2014 news",
    "sec": "D",
    "sec_label": "Colleges & universities",
    "cat": "campus",
@@ -1697,12 +1697,12 @@
    "boost": false,
    "cadence": "Weekly+ expected",
    "url": "https://www.stlawu.edu/news",
-   "note": "University news — campaigns, appointments, programs. Catalog flagged the exact feed path unconfirmed; this check probes the university news index.",
+   "note": "University news \u2014 campaigns, appointments, programs. Catalog flagged the exact feed path unconfirmed; this check probes the university news index.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "News",
@@ -1713,7 +1713,7 @@
    "metrics": {
     "reliability": {
      "score": 9,
-     "basis": "Primary source — the agency/institution publishing its own records; catalog flagged the feed path unverified — this check reached the source's own site"
+     "basis": "Primary source \u2014 the agency/institution publishing its own records; catalog flagged the feed path unverified \u2014 this check reached the source's own site"
     },
     "currency": {
      "score": 10,
@@ -1744,7 +1744,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "St. Lawrence University Athletics - Official Athletics Website",
@@ -1755,7 +1755,7 @@
    "metrics": {
     "reliability": {
      "score": 9,
-     "basis": "Primary source — the agency/institution publishing its own records"
+     "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
      "score": 10,
@@ -1781,15 +1781,15 @@
    "boost": false,
    "cadence": "Monthly-ish",
    "url": "https://associatedcolleges.org/conferences/",
-   "note": "Cross-campus conferences and mixers — the one place the four schools announce joint moves.",
+   "note": "Cross-campus conferences and mixers \u2014 the one place the four schools announce joint moves.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
-    "title": "Conferences and Events – Associated Colleges of St.Lawrence Valley",
+    "title": "Conferences and Events \u2013 Associated Colleges of St.Lawrence Valley",
     "url": "https://associatedcolleges.org/conferences/",
     "at": "2026-11-05T00:00:00-05:00",
     "display": "Thu, Nov 5, 2026"
@@ -1828,7 +1828,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Catalog: Oct 25, 2026 open house promoted by the county chamber",
@@ -1839,7 +1839,7 @@
    "metrics": {
     "reliability": {
      "score": 9,
-     "basis": "Primary source — the agency/institution publishing its own records"
+     "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
      "score": null,
@@ -1865,12 +1865,12 @@
    "boost": false,
    "cadence": "Daily in term, expected",
    "url": null,
-   "note": "Same-day event pushes from college and athletics accounts. Handles NOT verified — to be catalogued from the A5 follow list. Catalog: UNVERIFIED.",
+   "note": "Same-day event pushes from college and athletics accounts. Handles NOT verified \u2014 to be catalogued from the A5 follow list. Catalog: UNVERIFIED.",
    "check": {
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Catalog: handles not verified in this pass",
@@ -1897,7 +1897,7 @@
   },
   {
    "id": "E1",
-   "name": "Potsdam Central School District — news",
+   "name": "Potsdam Central School District \u2014 news",
    "sec": "E",
    "sec_label": "K-12 & school sports",
    "cat": "news",
@@ -1907,12 +1907,12 @@
    "boost": false,
    "cadence": "Monthly+ on web; closings event-driven",
    "url": "https://www.potsdamcsd.org/news/",
-   "note": "Announcements, performances, closings — school closings are high-demand local items.",
+   "note": "Announcements, performances, closings \u2014 school closings are high-demand local items.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Potsdam Teacher Named United States Holocaust Memorial Museum Teacher Fellow",
@@ -1923,7 +1923,7 @@
    "metrics": {
     "reliability": {
      "score": 9,
-     "basis": "Primary source — the agency/institution publishing its own records"
+     "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
      "score": 2,
@@ -1939,7 +1939,7 @@
   },
   {
    "id": "E2",
-   "name": "Norwood-Norfolk CSD — Flyer Update newsletter",
+   "name": "Norwood-Norfolk CSD \u2014 Flyer Update newsletter",
    "sec": "E",
    "sec_label": "K-12 & school sports",
    "cat": "news",
@@ -1949,12 +1949,12 @@
    "boost": false,
    "cadence": "Weekly-ish in school year",
    "url": "https://app.smore.com/n/pua17-nncs-flyer-update",
-   "note": "Dated, family-facing newsletter — drills, events, recognition — richer than most district sites.",
+   "note": "Dated, family-facing newsletter \u2014 drills, events, recognition \u2014 richer than most district sites.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "NNCS Flyer Update",
@@ -1965,7 +1965,7 @@
    "metrics": {
     "reliability": {
      "score": 9,
-     "basis": "Primary source — the agency/institution publishing its own records"
+     "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
      "score": 1,
@@ -1996,7 +1996,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Catalog: district site confirmed (99 State St, Canton); feed path unconfirmed",
@@ -2038,7 +2038,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Catalog: district confirmed (84 Nightengale Ave); feed path unconfirmed",
@@ -2080,7 +2080,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Catalog: one verification pass can clear the whole bundle",
@@ -2122,7 +2122,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Section X Scoreboard",
@@ -2159,12 +2159,12 @@
    "boost": false,
    "cadence": "Daily in season",
    "url": "https://www.northcountrysports.net/",
-   "note": "Section X standings, scoreboards, playoff coverage with photos — deeper than scores alone.",
+   "note": "Section X standings, scoreboards, playoff coverage with photos \u2014 deeper than scores alone.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "North Country SportsNet",
@@ -2206,7 +2206,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "NYSPHSAA Section X High School Girls Soccer Scores",
@@ -2217,7 +2217,7 @@
    "metrics": {
     "reliability": {
      "score": 5,
-     "basis": "Aggregator — republishes or indexes others' reporting"
+     "basis": "Aggregator \u2014 republishes or indexes others' reporting"
     },
     "currency": {
      "score": 10,
@@ -2243,12 +2243,12 @@
    "boost": false,
    "cadence": "Daily updates",
    "url": "https://www.northcountrypublicradio.org/upnorth/comcal/",
-   "note": "The region's master community calendar — one feed replaces fifty venue calendars for the long tail.",
+   "note": "The region's master community calendar \u2014 one feed replaces fifty venue calendars for the long tail.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": null,
@@ -2263,7 +2263,7 @@
     },
     "currency": {
      "score": 9,
-     "basis": "Listings current — next dated listing Thu, Nov 5, 2026"
+     "basis": "Listings current \u2014 next dated listing Thu, Nov 5, 2026"
     },
     "reach": null
    },
@@ -2275,7 +2275,7 @@
   },
   {
    "id": "F2",
-   "name": "St. Lawrence County Chamber — community calendar (VisitSTLC)",
+   "name": "St. Lawrence County Chamber \u2014 community calendar (VisitSTLC)",
    "sec": "F",
    "sec_label": "Events, arts, culture, libraries",
    "cat": "event",
@@ -2285,12 +2285,12 @@
    "boost": false,
    "cadence": "Continuously updated",
    "url": "https://business.visitstlc.com/events/calendar",
-   "note": "The closest thing to an official county events wire — festivals, concerts, markets, member events.",
+   "note": "The closest thing to an official county events wire \u2014 festivals, concerts, markets, member events.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Event Calendar | St. Lawrence County Chamber of Commerce - Event Calendar - St. Lawrence County Chamber of Commerce",
@@ -2305,7 +2305,7 @@
     },
     "currency": {
      "score": 9,
-     "basis": "Listings current — next dated listing Thu, Nov 5, 2026"
+     "basis": "Listings current \u2014 next dated listing Thu, Nov 5, 2026"
     },
     "reach": null
    },
@@ -2317,7 +2317,7 @@
   },
   {
    "id": "F3",
-   "name": "NNY Info — events roundups",
+   "name": "NNY Info \u2014 events roundups",
    "sec": "F",
    "sec_label": "Events, arts, culture, libraries",
    "cat": "event",
@@ -2327,12 +2327,12 @@
    "boost": false,
    "cadence": "Weekly-ish roundups",
    "url": "https://nnyinfo.com/",
-   "note": "Verified, dated event roundups researched town by town — does the clerk-by-clerk checking raw calendars skip.",
+   "note": "Verified, dated event roundups researched town by town \u2014 does the clerk-by-clerk checking raw calendars skip.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Northern New York Events, Guides & Local News | NNY Info",
@@ -2374,7 +2374,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Events | Macaroni KID Northern Adirondacks- Saranac Lake-Lake Placid",
@@ -2389,7 +2389,7 @@
     },
     "currency": {
      "score": 9,
-     "basis": "Listings current — next dated listing Thu, Nov 5, 2026"
+     "basis": "Listings current \u2014 next dated listing Thu, Nov 5, 2026"
     },
     "reach": null
    },
@@ -2401,7 +2401,7 @@
   },
   {
    "id": "F5",
-   "name": "Eventbrite — Potsdam area listings",
+   "name": "Eventbrite \u2014 Potsdam area listings",
    "sec": "F",
    "sec_label": "Events, arts, culture, libraries",
    "cat": "event",
@@ -2411,12 +2411,12 @@
    "boost": false,
    "cadence": "Continuous",
    "url": "https://www.eventbrite.com/d/ny--potsdam/",
-   "note": "Ticketed/registered local events — the meetup and workshop layer that never reaches news calendars.",
+   "note": "Ticketed/registered local events \u2014 the meetup and workshop layer that never reaches news calendars.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": null,
@@ -2427,11 +2427,11 @@
    "metrics": {
     "reliability": {
      "score": 5,
-     "basis": "Aggregator — republishes or indexes others' reporting"
+     "basis": "Aggregator \u2014 republishes or indexes others' reporting"
     },
     "currency": {
      "score": 9,
-     "basis": "Listings current — next dated listing Wed, Nov 11, 2026"
+     "basis": "Listings current \u2014 next dated listing Wed, Nov 11, 2026"
     },
     "reach": null
    },
@@ -2443,7 +2443,7 @@
   },
   {
    "id": "F6",
-   "name": "Potsdam Public Library — events",
+   "name": "Potsdam Public Library \u2014 events",
    "sec": "F",
    "sec_label": "Events, arts, culture, libraries",
    "cat": "event",
@@ -2453,12 +2453,12 @@
    "boost": false,
    "cadence": "Near-daily programs",
    "url": "https://potsdamlibrary.org/events/",
-   "note": "The single busiest public-programming venue in Potsdam — concerts, clubs, storytimes, clinics.",
+   "note": "The single busiest public-programming venue in Potsdam \u2014 concerts, clubs, storytimes, clinics.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "PPL Story Time",
@@ -2473,7 +2473,7 @@
     },
     "currency": {
      "score": 9,
-     "basis": "Listings current — next dated listing Thu, Nov 5, 2026"
+     "basis": "Listings current \u2014 next dated listing Thu, Nov 5, 2026"
     },
     "reach": null
    },
@@ -2500,7 +2500,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "(no title)",
@@ -2537,15 +2537,15 @@
    "boost": false,
    "cadence": "Weekly programs",
    "url": "https://www.cantonfreelibrary.org/",
-   "note": "Storytimes, talks, workshops. Catalog: partially UNVERIFIED — this check probes the library's own site.",
+   "note": "Storytimes, talks, workshops. Catalog: partially UNVERIFIED \u2014 this check probes the library's own site.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
-    "title": "Canton Free Library – Canton Free Library",
+    "title": "Canton Free Library \u2013 Canton Free Library",
     "url": "https://cantonfreelibrary.org/",
     "at": "2026-10-30T13:00:00-05:00",
     "display": "Fri, Oct 30, 2026"
@@ -2553,7 +2553,7 @@
    "metrics": {
     "reliability": {
      "score": 7,
-     "basis": "Established local organization publishing its own programming; catalog flagged the feed path unverified — this check reached the source's own site"
+     "basis": "Established local organization publishing its own programming; catalog flagged the feed path unverified \u2014 this check reached the source's own site"
     },
     "currency": {
      "score": 4,
@@ -2579,12 +2579,12 @@
    "boost": false,
    "cadence": "Weekly programs",
    "url": "https://www.massenapubliclibrary.org/",
-   "note": "Storytimes and children's programming at the county's north end. Catalog: partially UNVERIFIED — this check probes the library's own site.",
+   "note": "Storytimes and children's programming at the county's north end. Catalog: partially UNVERIFIED \u2014 this check probes the library's own site.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Massena Public Library",
@@ -2595,7 +2595,7 @@
    "metrics": {
     "reliability": {
      "score": 7,
-     "basis": "Established local organization publishing its own programming; catalog flagged the feed path unverified — this check reached the source's own site"
+     "basis": "Established local organization publishing its own programming; catalog flagged the feed path unverified \u2014 this check reached the source's own site"
     },
     "currency": {
      "score": 4,
@@ -2626,7 +2626,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Catalog: covered indirectly via NCPR + Chamber calendars",
@@ -2653,7 +2653,7 @@
   },
   {
    "id": "F11",
-   "name": "North Country Children's Museum — events",
+   "name": "North Country Children's Museum \u2014 events",
    "sec": "F",
    "sec_label": "Events, arts, culture, libraries",
    "cat": "event",
@@ -2663,12 +2663,12 @@
    "boost": false,
    "cadence": "Daily programs",
    "url": "https://northcountrychildrensmuseum.org/events/list/",
-   "note": "35 events in Nov 2026 alone — arguably the highest event-count single venue in Potsdam.",
+   "note": "35 events in Nov 2026 alone \u2014 arguably the highest event-count single venue in Potsdam.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Make A Mess Art for Preschoolers",
@@ -2683,7 +2683,7 @@
     },
     "currency": {
      "score": 9,
-     "basis": "Listings current — next dated listing Thu, Nov 5, 2026"
+     "basis": "Listings current \u2014 next dated listing Thu, Nov 5, 2026"
     },
     "reach": null
    },
@@ -2705,12 +2705,12 @@
    "boost": false,
    "cadence": "Monthly programs + exhibitions",
    "url": "https://fredericremington.org/",
-   "note": "The county's flagship art museum — nearest of its kind. Catalog: exact events URL UNVERIFIED; check probes the museum site.",
+   "note": "The county's flagship art museum \u2014 nearest of its kind. Catalog: exact events URL UNVERIFIED; check probes the museum site.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Homepage - Remington Museum of Art",
@@ -2721,7 +2721,7 @@
    "metrics": {
     "reliability": {
      "score": 7,
-     "basis": "Established local organization publishing its own programming; catalog flagged the feed path unverified — this check reached the source's own site"
+     "basis": "Established local organization publishing its own programming; catalog flagged the feed path unverified \u2014 this check reached the source's own site"
     },
     "currency": {
      "score": 9,
@@ -2752,7 +2752,7 @@
     "type": "live",
     "status": "ok",
     "http": 404,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "SITE NOT FOUND",
@@ -2763,11 +2763,11 @@
    "metrics": {
     "reliability": {
      "score": 3,
-     "basis": "Site reports itself expired at its catalog address during this check; catalog flagged the feed path unverified — this check reached the source's own site"
+     "basis": "Site reports itself expired at its catalog address during this check; catalog flagged the feed path unverified \u2014 this check reached the source's own site"
     },
     "currency": {
      "score": 1,
-     "basis": "No live output — the site itself is expired"
+     "basis": "No live output \u2014 the site itself is expired"
     },
     "reach": null
    },
@@ -2794,10 +2794,10 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
-    "title": "In the News – St. Lawrence County Center for History and Culture",
+    "title": "In the News \u2013 St. Lawrence County Center for History and Culture",
     "url": "https://slcha.org/about/in-the-news/",
     "at": "2026-10-25T00:00:00-05:00",
     "display": "Sun, Oct 25, 2026"
@@ -2836,7 +2836,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "News | ONNY",
@@ -2873,12 +2873,12 @@
    "boost": false,
    "cadence": "Season announcements + per-show pushes",
    "url": null,
-   "note": "Touring national acts at Crane/Hosmer — the biggest single-night draws in Potsdam's arts calendar. Catalog: UNVERIFIED exact feed.",
+   "note": "Touring national acts at Crane/Hosmer \u2014 the biggest single-night draws in Potsdam's arts calendar. Catalog: UNVERIFIED exact feed.",
    "check": {
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Catalog: season runs September-April; exact feed to confirm",
@@ -2915,12 +2915,12 @@
    "boost": false,
    "cadence": "Weekly-ish programs",
    "url": "https://tauny.org/",
-   "note": "Canton's cultural anchor — exhibits, workshops, folk-arts programs. Catalog: exact feed UNVERIFIED; check probes tauny.org.",
+   "note": "Canton's cultural anchor \u2014 exhibits, workshops, folk-arts programs. Catalog: exact feed UNVERIFIED; check probes tauny.org.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "HOME | TAUNY",
@@ -2931,7 +2931,7 @@
    "metrics": {
     "reliability": {
      "score": 7,
-     "basis": "Established local organization publishing its own programming; catalog flagged the feed path unverified — this check reached the source's own site"
+     "basis": "Established local organization publishing its own programming; catalog flagged the feed path unverified \u2014 this check reached the source's own site"
     },
     "currency": {
      "score": 10,
@@ -2962,7 +2962,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Catalog: programs visible in local calendars; own feed unconfirmed",
@@ -2989,7 +2989,7 @@
   },
   {
    "id": "F19",
-   "name": "Fort de la Présentation / Ogdensburg history sites",
+   "name": "Fort de la Pr\u00e9sentation / Ogdensburg history sites",
    "sec": "F",
    "sec_label": "Events, arts, culture, libraries",
    "cat": "event",
@@ -2999,12 +2999,12 @@
    "boost": false,
    "cadence": "Seasonal, announced months ahead",
    "url": "https://fort1749.org/",
-   "note": "Living-history events; stages an annual event in Ives Park, Potsdam — in-town when it counts.",
+   "note": "Living-history events; stages an annual event in Ives Park, Potsdam \u2014 in-town when it counts.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Maple Sugaring March 29",
@@ -3019,7 +3019,7 @@
     },
     "currency": {
      "score": null,
-     "basis": "Episodic/seasonal cadence — no fixed window. Latest activity observed Tue, Mar 11, 2025"
+     "basis": "Episodic/seasonal cadence \u2014 no fixed window. Latest activity observed Tue, Mar 11, 2025"
     },
     "reach": null
    },
@@ -3041,12 +3041,12 @@
    "boost": false,
    "cadence": "Several programs per week",
    "url": "https://www.massenanaturecenter.com/events",
-   "note": "A model venue feed: every program dated, timed, public — plus park closure notices posted as events.",
+   "note": "A model venue feed: every program dated, timed, public \u2014 plus park closure notices posted as events.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Events Archive - Nicandri Nature Center",
@@ -3061,7 +3061,7 @@
     },
     "currency": {
      "score": 9,
-     "basis": "Listings current — next dated listing Thu, Nov 5, 2026"
+     "basis": "Listings current \u2014 next dated listing Thu, Nov 5, 2026"
     },
     "reach": null
    },
@@ -3083,12 +3083,12 @@
    "boost": false,
    "cadence": "Weekly in season",
    "url": "https://www.natureupnorth.org/events-up-north",
-   "note": "The outdoors-events aggregator for the Potsdam-Canton corridor — paddles, hikes, nature series.",
+   "note": "The outdoors-events aggregator for the Potsdam-Canton corridor \u2014 paddles, hikes, nature series.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": null,
@@ -3103,7 +3103,7 @@
     },
     "currency": {
      "score": 9,
-     "basis": "Listings current — next dated listing Sat, Nov 7, 2026"
+     "basis": "Listings current \u2014 next dated listing Sat, Nov 7, 2026"
     },
     "reach": null
    },
@@ -3125,12 +3125,12 @@
    "boost": false,
    "cadence": "Monthly-ish, seasonal",
    "url": "https://www.natureupnorth.org/sponsoring-organization/indian-creek-nature-center",
-   "note": "Guided walks, birding, stargazing — the closest nature center to Potsdam/Canton. Checked via its Nature Up North listing.",
+   "note": "Guided walks, birding, stargazing \u2014 the closest nature center to Potsdam/Canton. Checked via its Nature Up North listing.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Family-Friendly Snowshoeing at Indian Creek Nature Center",
@@ -3167,12 +3167,12 @@
    "boost": false,
    "cadence": "Weekly-ish, year-round",
    "url": "https://stlawrence.cce.cornell.edu/",
-   "note": "The county's adult-education utility — workshops, farm/energy/food programs, 4-H, maple weekends.",
+   "note": "The county's adult-education utility \u2014 workshops, farm/energy/food programs, 4-H, maple weekends.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Home",
@@ -3209,15 +3209,15 @@
    "boost": false,
    "cadence": "Seasonal with regular updates",
    "url": "https://gardenshare.org/",
-   "note": "Coordinates the county's farmers markets — market-day changes and Bonus Bucks windows surface here.",
+   "note": "Coordinates the county's farmers markets \u2014 market-day changes and Bonus Bucks windows surface here.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
-    "title": "GardenShare – Healthy Food. Healthy Farms. Everybody Eats.",
+    "title": "GardenShare \u2013 Healthy Food. Healthy Farms. Everybody Eats.",
     "url": "https://gardenshare.org/",
     "at": "2026-11-03T00:00:00-05:00",
     "display": "Tue, Nov 3, 2026"
@@ -3256,7 +3256,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Catalog: covered indirectly via NCPR/Chamber/YES FM calendars",
@@ -3283,7 +3283,7 @@
   },
   {
    "id": "G1",
-   "name": "St. Lawrence County — Legislators News",
+   "name": "St. Lawrence County \u2014 Legislators News",
    "sec": "G",
    "sec_label": "Government & civic",
    "cat": "news",
@@ -3293,12 +3293,12 @@
    "boost": false,
    "cadence": "Weekly-ish, event-driven",
    "url": "https://www.stlawco.gov/Departments/Legislators/News",
-   "note": "The county government's own wire — hearings and votes before they're news. County decisions land on Potsdam directly.",
+   "note": "The county government's own wire \u2014 hearings and votes before they're news. County decisions land on Potsdam directly.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Legislators News | St. Lawrence County",
@@ -3309,7 +3309,7 @@
    "metrics": {
     "reliability": {
      "score": 9,
-     "basis": "Primary source — the agency/institution publishing its own records"
+     "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
      "score": 8,
@@ -3325,7 +3325,7 @@
   },
   {
    "id": "G2",
-   "name": "St. Lawrence County — CivicClerk agenda portal",
+   "name": "St. Lawrence County \u2014 CivicClerk agenda portal",
    "sec": "G",
    "sec_label": "Government & civic",
    "cat": "news",
@@ -3335,12 +3335,12 @@
    "boost": false,
    "cadence": "Every meeting cycle",
    "url": "https://stlawrencecony.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=3695,plainText=false)",
-   "note": "Full board/committee agendas and packets ahead of meetings — the earliest structured signal in county government.",
+   "note": "Full board/committee agendas and packets ahead of meetings \u2014 the earliest structured signal in county government.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": null,
@@ -3351,7 +3351,7 @@
    "metrics": {
     "reliability": {
      "score": 9,
-     "basis": "Primary source — the agency/institution publishing its own records"
+     "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
      "score": null,
@@ -3367,7 +3367,7 @@
   },
   {
    "id": "G3",
-   "name": "St. Lawrence County — Planning Dept. news",
+   "name": "St. Lawrence County \u2014 Planning Dept. news",
    "sec": "G",
    "sec_label": "Government & civic",
    "cat": "news",
@@ -3377,12 +3377,12 @@
    "boost": false,
    "cadence": "Monthly-ish",
    "url": "https://www.stlawco.gov/Departments/Planning/News",
-   "note": "Planning and hearing notices — solar projects and land-use fights start here.",
+   "note": "Planning and hearing notices \u2014 solar projects and land-use fights start here.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Planning News | St. Lawrence County",
@@ -3393,7 +3393,7 @@
    "metrics": {
     "reliability": {
      "score": 9,
-     "basis": "Primary source — the agency/institution publishing its own records"
+     "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
      "score": 10,
@@ -3409,7 +3409,7 @@
   },
   {
    "id": "G4",
-   "name": "City of Ogdensburg — News Flash",
+   "name": "City of Ogdensburg \u2014 News Flash",
    "sec": "G",
    "sec_label": "Government & civic",
    "cat": "news",
@@ -3424,10 +3424,10 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
-    "title": "News Flash • Ogdensburg, NY",
+    "title": "News Flash \u2022 Ogdensburg, NY",
     "url": "https://www.ogdensburgny.gov/m/newsflash",
     "at": "2026-11-03T00:00:00-05:00",
     "display": "Tue, Nov 3, 2026"
@@ -3435,7 +3435,7 @@
    "metrics": {
     "reliability": {
      "score": 9,
-     "basis": "Primary source — the agency/institution publishing its own records"
+     "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
      "score": 10,
@@ -3451,7 +3451,7 @@
   },
   {
    "id": "G5",
-   "name": "Town & Village of Massena — massena.us",
+   "name": "Town & Village of Massena \u2014 massena.us",
    "sec": "G",
    "sec_label": "Government & civic",
    "cat": "news",
@@ -3461,12 +3461,12 @@
    "boost": false,
    "cadence": "Monthly boards + continuous notices",
    "url": "https://massena.us/",
-   "note": "The best-structured municipal site in the county — agendas before meetings, Notify Me alerts.",
+   "note": "The best-structured municipal site in the county \u2014 agendas before meetings, Notify Me alerts.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Massena, NY - Official Website | Official Website",
@@ -3477,7 +3477,7 @@
    "metrics": {
     "reliability": {
      "score": 9,
-     "basis": "Primary source — the agency/institution publishing its own records"
+     "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
      "score": 10,
@@ -3493,7 +3493,7 @@
   },
   {
    "id": "G6",
-   "name": "Village of Canton — cantonny.us",
+   "name": "Village of Canton \u2014 cantonny.us",
    "sec": "G",
    "sec_label": "Government & civic",
    "cat": "news",
@@ -3508,7 +3508,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Canton, NY",
@@ -3519,7 +3519,7 @@
    "metrics": {
     "reliability": {
      "score": 9,
-     "basis": "Primary source — the agency/institution publishing its own records"
+     "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
      "score": 10,
@@ -3535,7 +3535,7 @@
   },
   {
    "id": "G7",
-   "name": "Village of Potsdam — official site",
+   "name": "Village of Potsdam \u2014 official site",
    "sec": "G",
    "sec_label": "Government & civic",
    "cat": "news",
@@ -3543,41 +3543,41 @@
    "ring": "potsdam",
    "dist": 0,
    "boost": false,
-   "cadence": "Monthly board + event-driven notices (expected)",
-   "url": null,
-   "note": "Highest possible gravity — Potsdam's own government wire. Catalog: UNVERIFIED feed path; do not guess.",
+   "cadence": "Board meets 1st & 3rd Mondays + event-driven notices",
+   "url": "https://vi.potsdam.ny.us/archived-agenda-and-minutes/",
+   "note": "Highest possible gravity \u2014 Potsdam's own government wire. Weekly audit Nov 4, 2026: site live, identity confirmed (2 Park St, 315-265-7480); events calendar current (board meetings Nov 16 & Dec 7, 2026 listed, matching the 1st & 3rd Monday pattern), but the agendas/minutes archive ends in 2022 \u2014 stays a manual check until documents resume.",
    "check": {
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:32:26.557491-05:00"
    },
    "latest": {
-    "title": "Catalog: board agendas/notices expected; exact news path not captured",
+    "title": "Audit Nov 4, 2026: events calendar current through Dec 2026; agendas/minutes archive ends 2022",
     "url": null,
     "at": "2026-11-04",
     "display": "2026-11-04"
    },
    "metrics": {
     "reliability": {
-     "score": null,
-     "basis": null
+     "score": 9,
+     "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
      "score": null,
-     "basis": null
+     "basis": "Not machine-checked. Catalog evidence: Audit Nov 4, 2026: events calendar current through Dec 2026; agendas/minutes archive ends 2022 (2026-11-04)"
     },
     "reach": null
    },
-   "health": "unchecked",
-   "health_basis": "Not machine-checkable and catalog lists the feed as unverified",
-   "overall": null,
+   "health": "manual",
+   "health_basis": "Not machine-checkable; standing rests on catalog evidence",
+   "overall": 90,
    "watch": false,
    "channel": "Manual check"
   },
   {
    "id": "G8",
-   "name": "Town of Potsdam — official site",
+   "name": "Town of Potsdam \u2014 official site",
    "sec": "G",
    "sec_label": "Government & civic",
    "cat": "news",
@@ -3587,12 +3587,12 @@
    "boost": false,
    "cadence": "Monthly + application-driven",
    "url": null,
-   "note": "Planning/zoning pipeline — where Potsdam's biggest land-use stories begin. Catalog: UNVERIFIED feed path.",
+   "note": "Planning/zoning pipeline \u2014 where Potsdam's biggest land-use stories begin. Catalog: UNVERIFIED feed path.",
    "check": {
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Catalog: feed path to confirm",
@@ -3619,7 +3619,7 @@
   },
   {
    "id": "G9",
-   "name": "Citizen Portal — meeting digests",
+   "name": "Citizen Portal \u2014 meeting digests",
    "sec": "G",
    "sec_label": "Government & civic",
    "cat": "news",
@@ -3629,12 +3629,12 @@
    "boost": false,
    "cadence": "Per meeting",
    "url": "https://citizenportal.ai/feed/57451/new-york/st.-lawrence-county",
-   "note": "AI-summarized digests of county legislature and Ogdensburg council meetings within days. Third-party AI — verify against minutes.",
+   "note": "AI-summarized digests of county legislature and Ogdensburg council meetings within days. Third-party AI \u2014 verify against minutes.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "St. Lawrence County | Citizen Portal",
@@ -3645,7 +3645,7 @@
    "metrics": {
     "reliability": {
      "score": 5,
-     "basis": "Aggregator — republishes or indexes others' reporting"
+     "basis": "Aggregator \u2014 republishes or indexes others' reporting"
     },
     "currency": {
      "score": 10,
@@ -3671,12 +3671,12 @@
    "boost": false,
    "cadence": "Weekly-ish",
    "url": null,
-   "note": "Senator/assembly releases and agency items. Catalog: UNVERIFIED feeds — member page feeds to confirm.",
+   "note": "Senator/assembly releases and agency items. Catalog: UNVERIFIED feeds \u2014 member page feeds to confirm.",
    "check": {
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Catalog: district announcements land on Potsdam institutions; exact feeds unconfirmed",
@@ -3713,12 +3713,12 @@
    "boost": false,
    "cadence": "Weekly+; seasonal surges",
    "url": "https://www.potsdamchamber.com/",
-   "note": "Downtown Potsdam's coordinator — openings, closings and street events start here.",
+   "note": "Downtown Potsdam's coordinator \u2014 openings, closings and street events start here.",
    "check": {
     "type": "live",
     "status": "blocked",
     "http": 403,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Forbidden",
@@ -3738,14 +3738,14 @@
     "reach": null
    },
    "health": "attention",
-   "health_basis": "Fetch was bot-blocked — output could not be verified this pass",
+   "health_basis": "Fetch was bot-blocked \u2014 output could not be verified this pass",
    "overall": 70,
    "watch": false,
    "channel": "Web"
   },
   {
    "id": "H2",
-   "name": "St. Lawrence County Chamber — Facebook page",
+   "name": "St. Lawrence County Chamber \u2014 Facebook page",
    "sec": "H",
    "sec_label": "Business, chambers, health",
    "cat": "business",
@@ -3760,7 +3760,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "St Lawrence Chamber of Commerce, 101 Main Street, Canton, NY (2026)",
@@ -3795,14 +3795,14 @@
    "ring": "near",
    "dist": 11,
    "boost": false,
-   "cadence": "Not verified — possible dormancy",
+   "cadence": "Not verified \u2014 possible dormancy",
    "url": null,
-   "note": "Much Canton activity may now run through the county chamber (H2). Catalog: UNVERIFIED status — confirm whether a separate feed still exists.",
+   "note": "Much Canton activity may now run through the county chamber (H2). Catalog: UNVERIFIED status \u2014 confirm whether a separate feed still exists.",
    "check": {
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Catalog: possible merger into county chamber; unconfirmed",
@@ -3844,7 +3844,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Catalog: chamber site/Facebook to confirm",
@@ -3886,7 +3886,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Catalog: feed to confirm",
@@ -3913,7 +3913,7 @@
   },
   {
    "id": "H6",
-   "name": "Canton Farmers Market — Facebook page",
+   "name": "Canton Farmers Market \u2014 Facebook page",
    "sec": "H",
    "sec_label": "Business, chambers, health",
    "cat": "business",
@@ -3928,7 +3928,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Catalog: Tue & Fri market posts in season (through October)",
@@ -3955,7 +3955,7 @@
   },
   {
    "id": "H7",
-   "name": "Potsdam Farmers Market — social presence",
+   "name": "Potsdam Farmers Market \u2014 social presence",
    "sec": "H",
    "sec_label": "Business, chambers, health",
    "cat": "business",
@@ -3970,7 +3970,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Catalog: IG location page confirmed; handle unconfirmed",
@@ -4007,12 +4007,12 @@
    "boost": false,
    "cadence": "Weekly in season",
    "url": null,
-   "note": "Derivative coverage through GardenShare (F24) — no separate direct feed catalogued.",
+   "note": "Derivative coverage through GardenShare (F24) \u2014 no separate direct feed catalogued.",
    "check": {
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Catalog: schedules published via GardenShare",
@@ -4039,7 +4039,7 @@
   },
   {
    "id": "H9",
-   "name": "Nature's Storehouse (Canton) — news & events",
+   "name": "Nature's Storehouse (Canton) \u2014 news & events",
    "sec": "H",
    "sec_label": "Business, chambers, health",
    "cat": "business",
@@ -4049,15 +4049,15 @@
    "boost": false,
    "cadence": "Monthly+ with event surges",
    "url": "https://natures-storehouse.com/pages/news-upcoming-events",
-   "note": "A model frequent-poster business page — expansion/ribbon-cutting coverage and event roundups.",
+   "note": "A model frequent-poster business page \u2014 expansion/ribbon-cutting coverage and event roundups.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
-    "title": "Press &amp; Events | Nature’s Storehouse",
+    "title": "Press &amp; Events | Nature\u2019s Storehouse",
     "url": "https://natures-storehouse.com/pages/news-upcoming-events",
     "at": "2026-11-04T00:00:00-05:00",
     "display": "Wed, Nov 4, 2026"
@@ -4081,7 +4081,7 @@
   },
   {
    "id": "H10",
-   "name": "Rochester Regional Health — St. Lawrence Region",
+   "name": "Rochester Regional Health \u2014 St. Lawrence Region",
    "sec": "H",
    "sec_label": "Business, chambers, health",
    "cat": "news",
@@ -4091,12 +4091,12 @@
    "boost": false,
    "cadence": "Monthly-ish + service changes",
    "url": "https://www.rochesterregional.org/hub",
-   "note": "System news for Canton-Potsdam, Gouverneur and Massena hospitals — service changes are among the highest-impact local items.",
+   "note": "System news for Canton-Potsdam, Gouverneur and Massena hospitals \u2014 service changes are among the highest-impact local items.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Health & News Hub | Rochester Regional Health",
@@ -4107,7 +4107,7 @@
    "metrics": {
     "reliability": {
      "score": 9,
-     "basis": "Primary source — the agency/institution publishing its own records"
+     "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
      "score": 9,
@@ -4133,12 +4133,12 @@
    "boost": false,
    "cadence": "Event-driven; currently hot",
    "url": null,
-   "note": "The maternity-services closure fight (state decision expected Dec 17, 2026) — one of two birthing options for the county. Catalog: UNVERIFIED direct feed; tracked meanwhile via B3/B5/B7.",
+   "note": "The maternity-services closure fight (state decision expected Dec 17, 2026) \u2014 one of two birthing options for the county. Catalog: UNVERIFIED direct feed; tracked meanwhile via B3/B5/B7.",
    "check": {
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Catalog: story tracked by NCPR/WWNY/Watertown Post; direct feed to confirm",
@@ -4165,7 +4165,7 @@
   },
   {
    "id": "I1",
-   "name": "Titus Mountain — conditions reports",
+   "name": "Titus Mountain \u2014 conditions reports",
    "sec": "I",
    "sec_label": "Recreation & outdoors",
    "cat": "event",
@@ -4175,12 +4175,12 @@
    "boost": true,
    "cadence": "Daily in ski season; off-season event posts",
    "url": "https://www.titusmountain.com/_files/ugd/7205d4_a50fad656d50411d96a575b35321faae.pdf",
-   "note": "Daily in-season trail/lift conditions. Gravity note: among the closest skiing to Potsdam — ranks as in-county during ski season. Check reads the conditions PDF's server timestamp.",
+   "note": "Daily in-season trail/lift conditions. Gravity note: among the closest skiing to Potsdam \u2014 ranks as in-county during ski season. Check reads the conditions PDF's server timestamp.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Titus Mountain conditions report (PDF)",
@@ -4191,7 +4191,7 @@
    "metrics": {
     "reliability": {
      "score": 9,
-     "basis": "Primary source — the agency/institution publishing its own records"
+     "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
      "score": 9,
@@ -4207,7 +4207,7 @@
   },
   {
    "id": "I2",
-   "name": "Snoflo — Titus Mountain ski report",
+   "name": "Snoflo \u2014 Titus Mountain ski report",
    "sec": "I",
    "sec_label": "Recreation & outdoors",
    "cat": "event",
@@ -4217,17 +4217,17 @@
    "boost": true,
    "cadence": "Continuous in season",
    "url": "https://snoflo.org/ski-report/titus-mountain",
-   "note": "Machine-updated snow report for Titus (SNOTEL + NWS data) — the automatable mirror of I1.",
+   "note": "Machine-updated snow report for Titus (SNOTEL + NWS data) \u2014 the automatable mirror of I1.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Titus Mountain Snow Report & Forecast | Live Ski Conditions & Snowfall Totals",
     "url": "https://snoflo.org/ski-report/titus-mountain",
-    "at": "2026-11-04T21:22:00-05:00",
+    "at": "2026-11-04T21:27:00-05:00",
     "display": "Wed, Nov 4, 2026"
    },
    "metrics": {
@@ -4249,7 +4249,7 @@
   },
   {
    "id": "I3",
-   "name": "NYS DEC — Region 6 news & outdoor notices",
+   "name": "NYS DEC \u2014 Region 6 news & outdoor notices",
    "sec": "I",
    "sec_label": "Recreation & outdoors",
    "cat": "news",
@@ -4264,7 +4264,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Catalog: Region 6 pages exist; exact feed to confirm",
@@ -4291,7 +4291,7 @@
   },
   {
    "id": "I4",
-   "name": "NY State Parks — Thousand Islands Region",
+   "name": "NY State Parks \u2014 Thousand Islands Region",
    "sec": "I",
    "sec_label": "Recreation & outdoors",
    "cat": "event",
@@ -4301,12 +4301,12 @@
    "boost": false,
    "cadence": "Seasonal, event-driven",
    "url": null,
-   "note": "Park alerts, swim status, camping/program notices (Robert Moses, Coles Creek, Higley Flow). Catalog: partially UNVERIFIED — exact alert feed to confirm. Higley Flow is effectively Potsdam's state park.",
+   "note": "Park alerts, swim status, camping/program notices (Robert Moses, Coles Creek, Higley Flow). Catalog: partially UNVERIFIED \u2014 exact alert feed to confirm. Higley Flow is effectively Potsdam's state park.",
    "check": {
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Catalog: park pages exist; alert feed unconfirmed",
@@ -4333,7 +4333,7 @@
   },
   {
    "id": "I5",
-   "name": "Great Lakes Seaway — vessel transit info",
+   "name": "Great Lakes Seaway \u2014 vessel transit info",
    "sec": "I",
    "sec_label": "Recreation & outdoors",
    "cat": "event",
@@ -4348,7 +4348,7 @@
     "type": "live",
     "status": "blocked",
     "http": 403,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": null,
@@ -4359,7 +4359,7 @@
    "metrics": {
     "reliability": {
      "score": 9,
-     "basis": "Primary source — the agency/institution publishing its own records; the check fetch was bot-blocked, so the score rests on publisher class alone"
+     "basis": "Primary source \u2014 the agency/institution publishing its own records; the check fetch was bot-blocked, so the score rests on publisher class alone"
     },
     "currency": {
      "score": null,
@@ -4368,14 +4368,14 @@
     "reach": null
    },
    "health": "attention",
-   "health_basis": "Fetch was bot-blocked — output could not be verified this pass",
+   "health_basis": "Fetch was bot-blocked \u2014 output could not be verified this pass",
    "overall": 90,
    "watch": true,
    "channel": "Web"
   },
   {
    "id": "I6",
-   "name": "FreighterLog — Seaway transits",
+   "name": "FreighterLog \u2014 Seaway transits",
    "sec": "I",
    "sec_label": "Recreation & outdoors",
    "cat": "event",
@@ -4390,10 +4390,10 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
-    "title": "Great Lakes Freighter Log & Vessel Directory — FreighterLog",
+    "title": "Great Lakes Freighter Log & Vessel Directory \u2014 FreighterLog",
     "url": "https://freighterlog.com/",
     "at": "2026-11-05T00:00:00-05:00",
     "display": "Thu, Nov 5, 2026"
@@ -4427,12 +4427,12 @@
    "boost": false,
    "cadence": "Seasonal + condition-driven",
    "url": null,
-   "note": "153 connected trail miles; 2026 season May 15-Sep 15. Catalog: partially UNVERIFIED — dedicated trail page to confirm; surfaces via VisitSTLC.",
+   "note": "153 connected trail miles; 2026 season May 15-Sep 15. Catalog: partially UNVERIFIED \u2014 dedicated trail page to confirm; surfaces via VisitSTLC.",
    "check": {
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Catalog: season dates known; dedicated page unconfirmed",
@@ -4469,12 +4469,12 @@
    "boost": false,
    "cadence": "Weekly schedules in season",
    "url": null,
-   "note": "Arena schedules, public skating, summer rec. Catalog: partially UNVERIFIED — direct pages to confirm. Norfolk's Zappia Center is 10 minutes from Potsdam.",
+   "note": "Arena schedules, public skating, summer rec. Catalog: partially UNVERIFIED \u2014 direct pages to confirm. Norfolk's Zappia Center is 10 minutes from Potsdam.",
    "check": {
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Catalog: commission identity confirmed; direct pages unconfirmed",
@@ -4501,7 +4501,7 @@
   },
   {
    "id": "J1",
-   "name": "Muck Rack — local reporter feeds",
+   "name": "Muck Rack \u2014 local reporter feeds",
    "sec": "J",
    "sec_label": "Aggregators & meta",
    "cat": "news",
@@ -4511,12 +4511,12 @@
    "boost": false,
    "cadence": "Daily",
    "url": "https://muckrack.com/jimmy-lawton/articles",
-   "note": "Per-reporter article streams for NCN, NNY360/Journal and WWNY journalists — a discovery layer over B1/B2/B5.",
+   "note": "Per-reporter article streams for NCN, NNY360/Journal and WWNY journalists \u2014 a discovery layer over B1/B2/B5.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Muck Rack | For journalists and public relations",
@@ -4527,7 +4527,7 @@
    "metrics": {
     "reliability": {
      "score": 5,
-     "basis": "Aggregator — republishes or indexes others' reporting"
+     "basis": "Aggregator \u2014 republishes or indexes others' reporting"
     },
     "currency": {
      "score": 1,
@@ -4553,15 +4553,15 @@
    "boost": false,
    "cadence": "Weekly-ish while the issue is live",
    "url": "https://massenadatacenterwatch.org/whats-going-on",
-   "note": "Volunteer watchdog on the ~635 MW Massena data-center project — currently the most complete record on the county's biggest development fight.",
+   "note": "Volunteer watchdog on the ~635 MW Massena data-center project \u2014 currently the most complete record on the county's biggest development fight.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
-    "title": "What's Going On — Massena Data Center Watch",
+    "title": "What's Going On \u2014 Massena Data Center Watch",
     "url": "https://massenadatacenterwatch.org/whats-going-on",
     "at": "2026-11-04T16:30:00-05:00",
     "display": "Wed, Nov 4, 2026"
@@ -4595,12 +4595,12 @@
    "boost": false,
    "cadence": "Monthly",
    "url": "https://rensselaerfallscantonneighborhood.org/",
-   "note": "Hyperlocal monthly roundup — village happenings, ONNY concerts, SLC Arts meetups.",
+   "note": "Hyperlocal monthly roundup \u2014 village happenings, ONNY concerts, SLC Arts meetups.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Rensselaer Falls, Canton Neighborhood",
@@ -4627,7 +4627,7 @@
   },
   {
    "id": "J4",
-   "name": "newz9.com — university news aggregator",
+   "name": "newz9.com \u2014 university news aggregator",
    "sec": "J",
    "sec_label": "Aggregators & meta",
    "cat": "campus",
@@ -4637,12 +4637,12 @@
    "boost": false,
    "cadence": "Daily republication",
    "url": "https://newz9.com/tag/clarkson-university/",
-   "note": "Republished campus stories under a generic aggregator skin; originates nothing. Catalog: LOW CONFIDENCE — discovery mirror only.",
+   "note": "Republished campus stories under a generic aggregator skin; originates nothing. Catalog: LOW CONFIDENCE \u2014 discovery mirror only.",
    "check": {
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Clarkson University - newz9.com",
@@ -4669,7 +4669,7 @@
   },
   {
    "id": "J5",
-   "name": "SLC Board of Elections — results & notices",
+   "name": "SLC Board of Elections \u2014 results & notices",
    "sec": "J",
    "sec_label": "Aggregators & meta",
    "cat": "news",
@@ -4679,12 +4679,12 @@
    "boost": false,
    "cadence": "Seasonal; intense around elections",
    "url": null,
-   "note": "Poll-site changes, early-voting sites/times, election-night results — the only authoritative source in election weeks. Catalog: UNVERIFIED feed.",
+   "note": "Poll-site changes, early-voting sites/times, election-night results \u2014 the only authoritative source in election weeks. Catalog: UNVERIFIED feed.",
    "check": {
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:22:15.772890-05:00"
+    "at": "2026-11-04T23:26:36.890996-05:00"
    },
    "latest": {
     "title": "Catalog: county BOE pages on stlawco.gov; exact feed to confirm",
@@ -4713,14 +4713,14 @@
  "summary": {
   "checked": 78,
   "internal": 3,
-  "manual": 6,
-  "unchecked": 25,
+  "manual": 7,
+  "unchecked": 24,
   "health": {
    "attention": 9,
    "healthy": 66,
-   "unchecked": 25,
+   "unchecked": 24,
    "down": 2,
-   "manual": 6,
+   "manual": 7,
    "stale": 4
   },
   "total": 112
