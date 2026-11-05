@@ -42,7 +42,11 @@
    "why": "Not yet known. Crews were checking the exterior of the building; no source was confirmed in the initial dispatch.",
    "seen_sort": "2026-11-04T14:31:00-05:00",
    "upd_sort": "2026-11-04T23:31:41-05:00",
-   "checked": "2026-11-04T23:31:41-05:00"
+   "checked": "2026-11-04T23:31:41-05:00",
+   "geo": {
+    "lat": 44.9246,
+    "lon": -74.9042
+   }
   },
   {
    "category": "scanner",
@@ -75,7 +79,11 @@
    "why": "Deer movement peaks after dark in November; CR 38 is a known crossing stretch.",
    "seen_sort": "2026-11-04T11:15:00-05:00",
    "upd_sort": "2026-11-04T11:15:00-05:00",
-   "checked": "2026-11-04T23:31:41-05:00"
+   "checked": "2026-11-04T23:31:41-05:00",
+   "geo": {
+    "lat": 44.88,
+    "lon": -74.99
+   }
   },
   {
    "category": "scanner",
@@ -114,7 +122,11 @@
    "why": "Not yet known. The dispatch post gives no background on the dispute.",
    "seen_sort": "2026-11-04T12:57:00-05:00",
    "upd_sort": "2026-11-04T23:31:41-05:00",
-   "checked": "2026-11-04T23:31:41-05:00"
+   "checked": "2026-11-04T23:31:41-05:00",
+   "geo": {
+    "lat": 44.55,
+    "lon": -75.02
+   }
   },
   {
    "category": "news",
@@ -179,7 +191,11 @@
    "why": "Fundraising for the museum's programs; the total was reported by local news the same day.",
    "seen_sort": "2026-11-04T15:20:00-05:00",
    "upd_sort": "2026-11-04T15:20:00-05:00",
-   "checked": "2026-11-04T23:31:41-05:00"
+   "checked": "2026-11-04T23:31:41-05:00",
+   "geo": {
+    "lat": 44.6706,
+    "lon": -74.9804
+   }
   },
   {
    "category": "event",
@@ -212,7 +228,11 @@
    "why": "Conference home game; Friday-night home games are the biggest regular draw on the local calendar.",
    "seen_sort": "2026-11-02T09:00:00-05:00",
    "upd_sort": "2026-11-02T09:00:00-05:00",
-   "checked": "2026-11-04T23:31:41-05:00"
+   "checked": "2026-11-04T23:31:41-05:00",
+   "geo": {
+    "lat": 44.6635,
+    "lon": -74.9989
+   }
   },
   {
    "category": "event",
@@ -278,7 +298,11 @@
    "seen_sort": "2026-11-02T10:00:00-05:00",
    "upd_sort": "2026-11-02T10:00:00-05:00",
    "verify_by": "2026-11-09T10:00:00-05:00",
-   "checked": "2026-11-04T23:31:41-05:00"
+   "checked": "2026-11-04T23:31:41-05:00",
+   "geo": {
+    "lat": 44.6633,
+    "lon": -74.9997
+   }
   },
   {
    "category": "campus",
@@ -311,7 +335,11 @@
    "why": "Maxcy is the campus's main gym and pool complex; its reopening restores a facility the public uses as well as students.",
    "seen_sort": "2026-11-02T09:00:00-05:00",
    "upd_sort": "2026-11-02T09:00:00-05:00",
-   "checked": "2026-11-04T23:31:41-05:00"
+   "checked": "2026-11-04T23:31:41-05:00",
+   "geo": {
+    "lat": 44.6628,
+    "lon": -74.9722
+   }
   },
   {
    "category": "campus",
@@ -344,7 +372,11 @@
    "why": "A new public-facing campus space — part teaching garden, part community amenity.",
    "seen_sort": "2026-10-29T10:00:00-04:00",
    "upd_sort": "2026-10-29T10:00:00-04:00",
-   "checked": "2026-11-04T23:31:41-05:00"
+   "checked": "2026-11-04T23:31:41-05:00",
+   "geo": {
+    "lat": 44.6623,
+    "lon": -74.974
+   }
   },
   {
    "boost": true,
@@ -379,7 +411,11 @@
    "seen_sort": "2026-11-03T09:00:00-05:00",
    "upd_sort": "2026-11-04T23:31:41-05:00",
    "verify_by": "2026-11-06T09:00:00-05:00",
-   "checked": "2026-11-04T23:31:41-05:00"
+   "checked": "2026-11-04T23:31:41-05:00",
+   "geo": {
+    "lat": 44.8631,
+    "lon": -74.2356
+   }
   }
  ]
 }
