@@ -196,7 +196,7 @@
 
   @media print{
     body{background:#fff;color:#111}
-    header.site,aside.rail,aside.ctx,.bar,footer.site,.skip{display:none !important}
+    header.site,aside.rail,aside.ctx,.bar,footer.site,.skip,#askdeck{display:none !important}
     main.stream{padding:0}
     .stream-inner{max-width:none}
     .item{break-inside:avoid;border-bottom:1px solid #ccc}
@@ -222,6 +222,56 @@
 .mappop .mp-name{font:600 14px/1.3 var(--sans)}
 .mappop .mp-x{margin-left:auto;width:28px;height:28px;border:1px solid var(--line);border-radius:50%;background:var(--paper);color:var(--ink);cursor:pointer;font-size:14px;line-height:1}
 .mappop iframe{display:block;width:100%;height:300px;border:0;background:var(--bg)}
+
+/* ---------- Ask box ---------- */
+#askdeck{margin-top:22px}
+.askbox{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px 15px}
+.ask-lab{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);font-weight:600;margin-bottom:9px}
+.askrow{display:flex;gap:9px}
+.askrow input{flex:1;min-width:0;background:var(--panel2);border:1px solid var(--line);border-radius:999px;
+  color:var(--text);font:inherit;font-size:14.5px;padding:8px 16px}
+.askrow input::placeholder{color:var(--faint)}
+.askrow input:focus{outline:2px solid var(--campus);outline-offset:1px}
+.askbtn{appearance:none;background:var(--panel2);border:1px solid var(--line);border-radius:999px;
+  padding:8px 20px;font-size:14px;color:var(--text);cursor:pointer;flex:none;
+  transition:color .15s ease,border-color .15s ease}
+.askbtn:hover{border-color:var(--faint)}
+.askcard{margin-top:12px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px 13px}
+.ask-k{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--event);font-weight:700;margin-bottom:6px}
+.ask-k.plain{color:var(--faint)}
+.ask-a{margin:0;font-size:15px;color:var(--text);max-width:68ch}
+.ask-list{list-style:none;margin:9px 0 0;padding:0}
+.ask-list li{border-top:1px solid var(--line2);padding:8px 0}
+.ask-list li:first-child{border-top:0;padding-top:2px}
+.ask-jump{appearance:none;background:none;border:0;padding:0;cursor:pointer;text-align:left;color:inherit;font:inherit;display:block}
+.ask-jump .ah{display:block;font-size:14.5px;font-weight:600;color:var(--text);line-height:1.4}
+.ask-jump:hover .ah{text-decoration:underline}
+.ask-jump .am{display:block;font-size:12.5px;color:var(--faint);margin-top:1px}
+.ask-srcs{margin-top:10px;font-size:12.5px;color:var(--faint)}
+.ask-srcs a{color:var(--dim)}
+
+/* ---------- Changed digest + watched topics ---------- */
+#topdeck .group{margin-top:30px}
+.chg{display:grid;grid-template-columns:124px minmax(0,1fr);gap:18px;padding:13px 12px 12px;border-bottom:1px solid var(--line2)}
+.chg .rail-t .t{white-space:normal;line-height:1.45}
+.chg .rail-t .k{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
+.chg h3{font-size:15.5px;line-height:1.4;margin:0 0 2px;font-weight:620}
+.chg h3 button{all:unset;cursor:pointer;display:block;width:100%}
+.chg h3 button:hover{text-decoration:underline}
+.chg h3 button:focus-visible{outline:2px solid var(--campus);outline-offset:3px;border-radius:3px}
+.chg .det{color:var(--dim);font-size:14px;margin:0;max-width:68ch}
+.chg .meta{margin-top:6px}
+.k-new{color:var(--news)} .k-update{color:var(--event)} .k-closed{color:var(--faint)} .k-value{color:var(--business)}
+.wrow{display:flex;gap:12px;align-items:baseline;padding:9px 12px;border-bottom:1px solid var(--line2)}
+.wrow .wl{flex:none;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);white-space:nowrap}
+.wrow .wh{font-size:14.5px;color:var(--text)}
+.wrow button.wh{appearance:none;background:none;border:0;padding:0;cursor:pointer;text-align:left;font:inherit}
+.wrow button.wh:hover{text-decoration:underline}
+.wrow .wm{margin-left:auto;flex:none;font-size:12px;color:var(--faint);white-space:nowrap}
+.devstrip{display:block}
+@media (min-width:1500px){.devstrip{display:none}}
+@media (max-width:560px){.chg{grid-template-columns:76px minmax(0,1fr);gap:11px;padding:12px 4px 11px}
+  .wrow{flex-wrap:wrap}.wrow .wm{margin-left:0}}
 </style>
 
 <style id="lab-skin">
@@ -283,6 +333,18 @@ body::after{width:48vw;height:48vw;right:-12vw;bottom:-16vw;background:radial-gr
   </aside>
 
   <main class="stream">
+    <div class="stream-inner" id="askdeck">
+      <form class="askbox" id="askform" role="search">
+        <label class="ask-lab" for="askq">Ask about the county</label>
+        <div class="askrow">
+          <input id="askq" type="search" autocomplete="off"
+            placeholder="When does Titus open? What is on Route 11 today?">
+          <button type="submit" class="askbtn">Ask</button>
+        </div>
+      </form>
+      <div id="askout" aria-live="polite"></div>
+    </div>
+    <div class="stream-inner" id="topdeck" hidden></div>
     <div class="stream-inner" id="stream">
       <div class="quiet" id="loading">Loading the stream…</div>
     </div>
@@ -321,6 +383,7 @@ function groupLabel(key, gi){
 }
 const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 let ITEMS = [], activeCat = "all", openId = null, foldOpen = false;
+let CHANGES = [], WATCHHITS = [], STORIES = {}, SOURCES = null;
 
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 
@@ -538,12 +601,50 @@ function miniHTML(it, sub){
     <span class="mh">${esc(it.headline)}</span>
     <span class="mp">${esc(it.where.place)} · ${esc(it.where.town)}</span></button>`;
 }
+
+/* ---------- Stories: fragments assembled into one story ----------
+   Items carry story keys in data/stories.json (built by the change
+   engine). Developing items sharing a key are one story: the group
+   shows its freshest fragment's headline, its latest development
+   line, and when it last moved. */
+function storyKeyOf(it){ const s = STORIES[it.id]; return (s && s.key) || it.id; }
+function storyLabelOf(key, members){
+  for(const it of members){ const s = STORIES[it.id]; if(s && s.key === key && s.label) return s.label; }
+  return members[0] ? members[0].headline : "";
+}
+function latestLine(it){
+  const ups = it.updates || [];
+  if(ups.length) return ups[ups.length - 1].text;
+  const w = it.what || "";
+  const dot = w.indexOf(". ");
+  return dot > 40 ? w.slice(0, dot + 1) : w;
+}
+function devStories(){
+  const groups = new Map();
+  for(const it of ITEMS.filter(x => x.status === "developing")){
+    const k = storyKeyOf(it);
+    if(!groups.has(k)) groups.set(k, []);
+    groups.get(k).push(it);
+  }
+  return [...groups.entries()].map(([key, members]) => {
+    members.sort((a,b) => String(b.upd_sort||"").localeCompare(String(a.upd_sort||"")));
+    const lead = members[0];
+    return { key, members, lead, label: storyLabelOf(key, members),
+             latest: latestLine(lead), moved: lead.updated };
+  }).sort((a,b) => String(b.lead.upd_sort||"").localeCompare(String(a.lead.upd_sort||"")));
+}
+function storyMiniHTML(st){
+  return `<button class="mini" data-jump="${esc(st.lead.id)}">
+    <span class="mt"><span class="dot cat-${esc(st.lead.category)}"></span>${esc(CATLABEL[st.lead.category]||"")} · Updated ${esc(st.moved)}</span>
+    <span class="mh">${esc(st.label)}</span>
+    <span class="mp">Latest: ${esc(st.latest)}</span></button>`;
+}
 function renderCtx(){
-  const dev = ITEMS.filter(it => it.status === "developing").slice(0,4);
+  const dev = devStories().slice(0,4);
   const up = ITEMS.filter(it => it.group === "coming")
     .sort((a,b) => String(a.when.sort).localeCompare(String(b.when.sort))).slice(0,5);
   document.getElementById("ctx-dev").innerHTML = dev.length
-    ? dev.map(it => miniHTML(it, `${CATLABEL[it.category]} · Updated ${it.updated}`)).join("")
+    ? dev.map(storyMiniHTML).join("")
     : `<div class="empty">Nothing developing right now.</div>`;
   document.getElementById("ctx-up").innerHTML = up.length
     ? up.map(it => miniHTML(it, it.when.display)).join("")
@@ -551,6 +652,262 @@ function renderCtx(){
   document.querySelectorAll("[data-jump]").forEach(b =>
     b.addEventListener("click", () => jumpTo(b.getAttribute("data-jump"))));
 }
+
+/* ---------- Top deck: changed digest, watched topics, developing ----------
+   Home order (JD 2026-11-05): ask box, then what changed, then
+   developing stories, then the stream. Each layer renders only
+   when its data has something in the window; an empty layer is
+   absent, never a placeholder. */
+function fmtWhen(iso){
+  const d = new Date(iso); if(isNaN(d)) return "";
+  const t = d.toLocaleTimeString("en-US",{hour:"numeric",minute:"2-digit"});
+  const today = new Date();
+  if(d.toDateString() === today.toDateString()) return t;
+  const y = new Date(today); y.setDate(y.getDate() - 1);
+  if(d.toDateString() === y.toDateString()) return "Yesterday, " + t;
+  return d.toLocaleDateString("en-US",{weekday:"short", month:"short", day:"numeric"}) + ", " + t;
+}
+const KINDLABEL = {"new story":"New", "update":"Update", "closed":"Closed", "value change":"Value change"};
+const KINDCLASS = {"new story":"k-new", "update":"k-update", "closed":"k-closed", "value change":"k-value"};
+function chgHTML(c){
+  const src = c.source && c.source.url
+    ? `<a href="${esc(c.source.url)}" target="_blank" rel="noopener">${esc(c.source.name)}</a>`
+    : esc(c.source ? c.source.name : "");
+  const meta = [`<span>${esc(c.town || "")}${c.dist ? ` · ${c.dist} mi` : ""}</span>`];
+  if(src) meta.push(`<span>${src}</span>`);
+  const head = c.item_id
+    ? `<button type="button" data-jump="${esc(c.item_id)}">${esc(c.headline)}</button>`
+    : esc(c.headline);
+  return `<div class="chg">
+    <div class="rail-t"><div class="k ${KINDCLASS[c.kind]||"k-update"}">${esc(KINDLABEL[c.kind]||c.kind)}</div><div class="t" style="margin-top:5px">${esc(fmtWhen(c.detected_at))}</div></div>
+    <div class="body"><h3>${head}</h3>
+    ${c.detail ? `<p class="det">${esc(c.detail)}</p>` : ""}
+    <div class="meta">${meta.join('<span class="sep">·</span>')}</div></div></div>`;
+}
+function watchHTML(hits){
+  const rows = hits.map(h => {
+    const main = h.kind === "item"
+      ? `<button type="button" class="wh" data-jump="${esc(h.ref_id)}">${esc(h.headline)}</button>`
+      : (h.url ? `<a class="wh" href="${esc(h.url)}" target="_blank" rel="noopener">${esc(h.headline)}</a>`
+               : `<span class="wh">${esc(h.headline)}</span>`);
+    return `<div class="wrow"><span class="wl">${esc(h.label)}</span>${main}<span class="wm">${esc(fmtWhen(h.at))}</span></div>`;
+  }).join("");
+  return `<section class="group"><h2>Watched topics</h2>${rows}</section>`;
+}
+function devStripHTML(stories){
+  const rows = stories.map(st => `<button class="mini" data-jump="${esc(st.lead.id)}">
+    <span class="mt"><span class="dot cat-${esc(st.lead.category)}"></span>${esc(CATLABEL[st.lead.category]||"")} · Updated ${esc(st.moved)}</span>
+    <span class="mh">${esc(st.label)}</span>
+    <span class="mp">Latest: ${esc(st.latest)}</span></button>`).join("");
+  return `<section class="group devstrip"><h2>Developing</h2>${rows}</section>`;
+}
+function renderTop(){
+  const deck = document.getElementById("topdeck");
+  if(!deck) return;
+  const nowMs = Date.now();
+  const chgs = CHANGES.filter(c => {
+      const t = new Date(c.detected_at).getTime();
+      return !isNaN(t) && nowMs - t <= 48 * 36e5 && t <= nowMs + 36e5;
+    }).sort((a,b) => String(b.detected_at).localeCompare(String(a.detected_at))
+                     || (RINGW[effRing(a)] - RINGW[effRing(b)]));
+  const hits = WATCHHITS.filter(h => {
+      const t = new Date(h.at).getTime();
+      return isNaN(t) || nowMs - t <= 7 * 24 * 36e5;
+    }).slice(0, 8);
+  let html = "";
+  if(chgs.length) html += `<section class="group"><h2>Changed in the last 48 hours</h2>${chgs.map(chgHTML).join("")}</section>`;
+  if(hits.length) html += watchHTML(hits);
+  const dev = devStories();
+  if(dev.length) html += devStripHTML(dev);
+  deck.innerHTML = html;
+  deck.hidden = !html;
+}
+document.addEventListener("click", e => {
+  const j = e.target.closest("#topdeck [data-jump], #askout [data-jump]");
+  if(j) jumpTo(j.getAttribute("data-jump"));
+});
+
+/* ---------- Ask box: answers from the collected data, with sources ----------
+   A card marked Answer appears only when the data actually supports
+   one. Otherwise the card is labeled Closest matches, or says
+   plainly that nothing in the data answers the question. */
+const ASKSTOP = new Set("what when where does did the and are was were there today this that with from about anything happening going county please show tell whats who why how many much".split(" "));
+function askTokens(q){
+  return [...new Set(q.toLowerCase().replace(/[^a-z0-9\s-]/g, " ").split(/\s+/)
+    .filter(w => w.length > 2 && !ASKSTOP.has(w)))];
+}
+function textOf(it){
+  return [it.headline, it.what, it.who, it.why, it.enrichment,
+          it.where && it.where.place, it.where && it.where.town].filter(Boolean).join(" ");
+}
+function scoreText(text, toks){
+  const t = " " + String(text || "").toLowerCase() + " ";
+  return toks.reduce((s, w) => s + (t.includes(w) ? 1 : 0), 0);
+}
+function dedupeSrc(list){
+  const seen = new Set(), out = [];
+  for(const s of list){ if(!s || !s.name || seen.has(s.name)) continue; seen.add(s.name); out.push(s); }
+  return out;
+}
+function askItemLine(it){
+  return `<li><button type="button" class="ask-jump" data-jump="${esc(it.id)}"><span class="ah">${esc(it.headline)}</span><span class="am">${esc(it.when ? it.when.display : "")} · ${esc(it.where ? it.where.town : "")}</span></button></li>`;
+}
+function askChangeLine(c){
+  return `<li><span class="ask-jump" style="cursor:default"><span class="ah">${esc(c.headline)}</span><span class="am">Change noted ${esc(fmtWhen(c.detected_at))} · ${esc(c.town || "")}</span></span></li>`;
+}
+function askCard(kind, bodyHTML, sources){
+  const src = (sources && sources.length)
+    ? `<div class="ask-srcs">From: ${sources.map(s => s.url
+        ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`
+        : esc(s.name)).join(" · ")}</div>` : "";
+  return `<div class="askcard"><div class="ask-k${kind === "Answer" ? "" : " plain"}">${esc(kind)}</div>${bodyHTML}${src}</div>`;
+}
+function answerAsk(qRaw){
+  const q = (qRaw || "").trim();
+  if(!q) return "";
+  const ql = q.toLowerCase();
+  const toks = askTokens(q);
+  const nowD = new Date();
+  const sameDay = iso => { const d = new Date(iso); return !isNaN(d) && d.toDateString() === nowD.toDateString(); };
+
+  /* Events: tonight / this weekend / in the next week */
+  if(/\b(tonight|weekend|events?|happening|going on|to do)\b/.test(ql)){
+    let pool = ITEMS.filter(it => it.category === "event" && it.when);
+    let label = "Coming up in the next week";
+    if(/\btonight\b/.test(ql)){
+      pool = pool.filter(it => sameDay(it.when.sort));
+      label = "Tonight";
+    } else if(/\bweekend\b/.test(ql)){
+      const fri = new Date(nowD); fri.setDate(nowD.getDate() + ((5 - nowD.getDay() + 7) % 7)); fri.setHours(0,0,0,0);
+      const sun = new Date(fri); sun.setDate(fri.getDate() + 2); sun.setHours(23,59,59,999);
+      pool = pool.filter(it => { const t = new Date(it.when.sort).getTime(); return t >= fri.getTime() && t <= sun.getTime(); });
+      label = "This weekend";
+    } else {
+      const wk = nowD.getTime() + 7 * 24 * 36e5;
+      pool = pool.filter(it => { const t = new Date(it.when.sort).getTime(); return t >= nowD.getTime() - 3 * 36e5 && t <= wk; });
+    }
+    pool.sort((a,b) => String(a.when.sort).localeCompare(String(b.when.sort)));
+    if(pool.length)
+      return askCard("Answer",
+        `<p class="ask-a">${label}: ${pool.length} ${pool.length === 1 ? "event" : "events"} in the current data.</p><ul class="ask-list">${pool.slice(0,6).map(askItemLine).join("")}</ul>`,
+        dedupeSrc(pool.map(it => it.source)));
+    return askCard("Answer", `<p class="ask-a">Nothing is on the calendar for that window in the current data.</p>`, []);
+  }
+
+  /* Roads today */
+  if(/\b(road|roads|route|traffic|crash|closure|closed|accident|detour|highway)\b/.test(ql)){
+    const roadToks = toks.filter(w => !/^(road|roads|route|traffic|crash|closure|closed|accident|detour|highway)$/.test(w));
+    let pool = ITEMS.filter(it => it.category === "scanner" && it.when && sameDay(it.when.sort));
+    if(roadToks.length){
+      const f = pool.filter(it => scoreText(textOf(it), roadToks) > 0);
+      if(f.length) pool = f;
+    }
+    if(pool.length){
+      const lead = (/\bclosed\b/.test(ql) && !pool.some(it => /clos|shut/i.test(textOf(it))))
+        ? "Nothing in today's stream reports that road closed. Today's road items:"
+        : "Today's road items from the scanner stream:";
+      return askCard("Answer",
+        `<p class="ask-a">${lead}</p><ul class="ask-list">${pool.slice(0,5).map(askItemLine).join("")}</ul>`,
+        dedupeSrc(pool.map(it => it.source)));
+    }
+    return askCard("Answer", `<p class="ask-a">No road incidents are in today's stream.</p>`, []);
+  }
+
+  /* When does X open */
+  if(/\bwhen\b/.test(ql) && /\b(open|opens|opening|reopen|reopens|start|starts|begin|begins)\b/.test(ql)){
+    const ent = toks.filter(w => !/^(open|opens|opening|reopen|reopens|start|starts|begin|begins)$/.test(w));
+    if(ent.length){
+      const need = Math.min(2, ent.length);
+      /* A change answers an opening question only if it carries an
+         actual date — an item's arrival change mentions "opening"
+         without stating one, and must not pose as the answer. */
+      const chg = CHANGES.filter(c => /open/i.test((c.headline || "") + " " + (c.detail || ""))
+        && /\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\b/i.test((c.headline || "") + " " + (c.detail || ""))
+        && scoreText((c.headline || "") + " " + (c.detail || ""), ent) >= need);
+      if(chg.length){
+        const c = chg[0];
+        return askCard("Answer", `<p class="ask-a">${esc(c.headline)}. ${esc(c.detail || "")}</p>`, dedupeSrc([c.source]));
+      }
+      const cands = ITEMS.map(it => [scoreText(textOf(it), ent), it])
+        .filter(([s]) => s >= need).sort((a,b) => b[0] - a[0]);
+      for(const [, it] of cands){
+        const sents = [it.enrichment, it.what, it.why].filter(Boolean).join(" ").split(/(?<=\.)\s+/);
+        const hit = sents.find(s => /open/i.test(s)
+          && /\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\b/i.test(s));
+        if(hit) return askCard("Answer",
+          `<p class="ask-a">${esc(hit)}</p><ul class="ask-list">${askItemLine(it)}</ul>`,
+          dedupeSrc([it.source]));
+      }
+    }
+  }
+
+  /* What did <body> do / decide / vote */
+  if(/\b(did|decide|decided|vote|voted|pass|passed|approve|approved|adopt|adopted)\b/.test(ql)){
+    const bodies = [["legislature", ["legislature", "legislators", "full board", "county board"]],
+                    ["village board", ["village board", "board of trustees"]],
+                    ["town board", ["town board"]],
+                    ["school board", ["school board"]],
+                    ["council", ["council"]],
+                    ["board", ["board"]]];
+    let terms = null;
+    for(const [name, ts] of bodies){ if(ql.includes(name)){ terms = ts; break; } }
+    if(terms){
+      const inText = t => terms.some(x => String(t || "").toLowerCase().includes(x));
+      const pool = ITEMS.filter(it => inText(textOf(it)))
+        .sort((a,b) => String(b.upd_sort||"").localeCompare(String(a.upd_sort||"")));
+      const chgs = CHANGES.filter(c => inText((c.headline || "") + " " + (c.detail || "")));
+      if(pool.length || chgs.length){
+        const lines = pool.slice(0,4).map(askItemLine).join("")
+          + chgs.slice(0,2).map(askChangeLine).join("");
+        return askCard("Answer",
+          `<p class="ask-a">The latest in the current data touching that body:</p><ul class="ask-list">${lines}</ul>`,
+          dedupeSrc(pool.map(it => it.source).concat(chgs.map(c => c.source))));
+      }
+      return askCard("Answer", `<p class="ask-a">Nothing in the current data touches that body yet.</p>`, []);
+    }
+  }
+
+  /* Fallback: closest matches, labeled as matches */
+  const scored = [];
+  for(const it of ITEMS){
+    const s = scoreText(it.headline, toks) * 3 + scoreText(textOf(it), toks);
+    if(s > 0) scored.push([s, "item", it]);
+  }
+  for(const c of CHANGES){
+    const s = scoreText(c.headline, toks) * 3 + scoreText((c.headline || "") + " " + (c.detail || ""), toks);
+    if(s > 0) scored.push([s, "change", c]);
+  }
+  if(SOURCES) for(const s of SOURCES){
+    const sc = scoreText((s.name || "") + " " + (s.note || ""), toks);
+    if(sc > 0) scored.push([sc, "source", s]);
+  }
+  scored.sort((a,b) => b[0] - a[0]);
+  const top = scored.slice(0, 4);
+  if(top.length){
+    const lines = top.map(([, kind, o]) => {
+      if(kind === "item") return askItemLine(o);
+      if(kind === "change") return askChangeLine(o);
+      return `<li><a class="ask-jump" href="sources.html"><span class="ah">${esc(o.name)}</span><span class="am">Tracked source · ${esc(o.town || "")} · ${esc(o.cadence || "")}</span></a></li>`;
+    }).join("");
+    return askCard("Closest matches", `<ul class="ask-list">${lines}</ul>`, []);
+  }
+  const newest = ITEMS.slice()
+    .sort((a,b) => String(b.upd_sort||"").localeCompare(String(a.upd_sort||""))).slice(0,3);
+  return askCard("Answer",
+    `<p class="ask-a">Nothing in the current data answers that. The newest items in the stream:</p><ul class="ask-list">${newest.map(askItemLine).join("")}</ul>`, []);
+}
+document.getElementById("askform").addEventListener("submit", e => {
+  e.preventDefault();
+  const q = document.getElementById("askq").value;
+  const out = document.getElementById("askout");
+  const renderAns = () => { out.innerHTML = answerAsk(q); };
+  if(SOURCES === null){
+    fetch("data/sources.json", {cache:"no-store"})
+      .then(r => r.ok ? r.json() : null)
+      .then(d => { SOURCES = (d && d.sources) || []; renderAns(); })
+      .catch(() => { SOURCES = []; renderAns(); });
+  } else renderAns();
+});
 
 /* ---------- Boot ---------- */
 function fmtGenerated(iso, sample){
@@ -569,6 +926,7 @@ function boot(data, sample){
   paintChips();
   render();
   renderCtx();
+  renderTop();
 }
 document.getElementById("today").textContent =
   new Date().toLocaleDateString("en-US",{weekday:"long", month:"long", day:"numeric", year:"numeric"});
@@ -592,11 +950,23 @@ fetch("data/items.json", {cache:"no-store"})
   .catch(() => {
     if(FALLBACK && FALLBACK.items && FALLBACK.items.length){ boot(FALLBACK, true); }
     else {
-      ITEMS = []; paintChips(); renderCtx();
+      ITEMS = []; paintChips(); renderCtx(); renderTop();
       document.getElementById("stream").innerHTML =
         `<div class="quiet">The stream is quiet right now.</div>`;
     }
   });
+fetch("data/changes.json", {cache:"no-store"})
+  .then(r => r.ok ? r.json() : null)
+  .then(d => { CHANGES = (d && d.changes) || []; renderTop(); })
+  .catch(() => {});
+fetch("data/watch-hits.json", {cache:"no-store"})
+  .then(r => r.ok ? r.json() : null)
+  .then(d => { WATCHHITS = (d && d.hits) || []; renderTop(); })
+  .catch(() => {});
+fetch("data/stories.json", {cache:"no-store"})
+  .then(r => r.ok ? r.json() : null)
+  .then(d => { STORIES = (d && d.stories) || {}; renderCtx(); renderTop(); })
+  .catch(() => {});
 </script>
 
 <div class="mappop" id="mappop" role="dialog" aria-modal="true" aria-label="Map">
