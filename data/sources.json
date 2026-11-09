@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-04T23:32:26.557491-05:00",
+ "generated": "2026-11-09T08:02:22.427662-05:00",
  "sources": [
   {
    "id": "A1",
@@ -18,7 +18,7 @@
     "type": "internal",
     "status": "observed",
     "http": null,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Potsdam watch state file updated",
@@ -60,7 +60,7 @@
     "type": "internal",
     "status": "observed",
     "http": null,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Sweep run note filed",
@@ -102,7 +102,7 @@
     "type": "internal",
     "status": "observed",
     "http": null,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Sweep data updated (Nov 2 run)",
@@ -144,7 +144,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Business Pulse",
@@ -186,7 +186,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Account login in setup; no output observed yet",
@@ -228,7 +228,7 @@
     "type": "live",
     "status": "blocked",
     "http": 403,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "403 403",
@@ -274,13 +274,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "nny360.com",
     "url": "https://www.nny360.com/",
-    "at": "2026-11-04T23:01:21-05:00",
-    "display": "Wed, Nov 4, 2026"
+    "at": "2026-11-09T07:15:47-05:00",
+    "display": "Mon, Nov 9, 2026"
    },
    "metrics": {
     "reliability": {
@@ -289,7 +289,7 @@
     },
     "currency": {
      "score": 10,
-     "basis": "Latest output Wed, Nov 4, 2026; catalog cadence: daily"
+     "basis": "Latest output Mon, Nov 9, 2026; catalog cadence: daily"
     },
     "reach": null
    },
@@ -316,13 +316,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
-    "title": "Gendebien says he won't concede NY-21 race before every vote is counted",
-    "url": "https://www.northcountrypublicradio.org/news/story/54187/20261104/gendebien-says-he-won-039-t-concede-ny-21-race-before-every-vote-is-counted",
-    "at": "2026-11-04T19:00:00-05:00",
-    "display": "Wed, Nov 4, 2026"
+    "title": "News",
+    "url": "https://www.northcountrypublicradio.org/news.php",
+    "at": "2026-11-06T00:00:00-05:00",
+    "display": "Fri, Nov 6, 2026"
    },
    "metrics": {
     "reliability": {
@@ -330,14 +330,14 @@
      "basis": "Professional newsroom with named staff"
     },
     "currency": {
-     "score": 10,
-     "basis": "Latest output Wed, Nov 4, 2026; catalog cadence: daily"
+     "score": 4,
+     "basis": "Latest output Fri, Nov 6, 2026; catalog cadence: daily"
     },
     "reach": null
    },
-   "health": "healthy",
-   "health_basis": "Posting inside its expected cadence",
-   "overall": 90,
+   "health": "attention",
+   "health_basis": "Running behind its expected cadence",
+   "overall": 60,
    "watch": false,
    "channel": "Web"
   },
@@ -358,13 +358,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
-    "title": "Gendebien says he won't concede NY-21 race before every vote is counted",
-    "url": "https://www.northcountrypublicradio.org/news/story/54187/20261104/gendebien-says-he-won-039-t-concede-ny-21-race-before-every-vote-is-counted",
-    "at": "2026-11-04T19:00:00-05:00",
-    "display": "Wed, Nov 4, 2026"
+    "title": "Northern Light",
+    "url": "https://www.northcountrypublicradio.org/shows/northern-light",
+    "at": "2026-11-06T00:00:00-05:00",
+    "display": "Fri, Nov 6, 2026"
    },
    "metrics": {
     "reliability": {
@@ -372,14 +372,14 @@
      "basis": "Professional newsroom with named staff"
     },
     "currency": {
-     "score": 10,
-     "basis": "Latest output Wed, Nov 4, 2026; catalog cadence: weekdays"
+     "score": 8,
+     "basis": "Latest output Fri, Nov 6, 2026; catalog cadence: weekdays"
     },
     "reach": null
    },
    "health": "healthy",
    "health_basis": "Posting inside its expected cadence",
-   "overall": 90,
+   "overall": 80,
    "watch": false,
    "channel": "Web"
   },
@@ -400,13 +400,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "WWNY | News, Weather, and Sports | Watertown, N.Y.",
     "url": "https://www.wwnytv.com/",
-    "at": "2026-11-05T00:00:00-05:00",
-    "display": "Thu, Nov 5, 2026"
+    "at": "2026-11-09T00:00:00-05:00",
+    "display": "Mon, Nov 9, 2026"
    },
    "metrics": {
     "reliability": {
@@ -415,7 +415,7 @@
     },
     "currency": {
      "score": 10,
-     "basis": "Latest output Thu, Nov 5, 2026; catalog cadence: daily, multiple stories"
+     "basis": "Latest output Mon, Nov 9, 2026; catalog cadence: daily, multiple stories"
     },
     "reach": null
    },
@@ -442,7 +442,7 @@
     "type": "live",
     "status": "blocked",
     "http": 403,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Access to this page has been denied",
@@ -484,13 +484,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
-    "title": "America, You Impatient Motherfuckers: Rome Wasn\u2019t Built in a Day, and Neither Is the Golden Age",
-    "url": "https://watertownpost.com/america-you-impatient-motherfuckers-rome-wasnt-built-in-a-day-and-neither-is-the-golden-age/",
-    "at": "2026-11-04T21:39:12+00:00",
-    "display": "Wed, Nov 4, 2026"
+    "title": "Northern New York Daily Brief: November 9, 2026",
+    "url": "https://watertownpost.com/northern-new-york-daily-brief-november-9-2026/",
+    "at": "2026-11-09T13:00:10+00:00",
+    "display": "Mon, Nov 9, 2026"
    },
    "metrics": {
     "reliability": {
@@ -499,7 +499,7 @@
     },
     "currency": {
      "score": 10,
-     "basis": "Latest output Wed, Nov 4, 2026; catalog cadence: daily"
+     "basis": "Latest output Mon, Nov 9, 2026; catalog cadence: daily"
     },
     "reach": null
    },
@@ -526,13 +526,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Watertown & North Country News | ClickNNY",
     "url": "https://clicknny.com/",
-    "at": "2026-11-05T00:00:00-05:00",
-    "display": "Thu, Nov 5, 2026"
+    "at": "2026-11-09T00:00:00-05:00",
+    "display": "Mon, Nov 9, 2026"
    },
    "metrics": {
     "reliability": {
@@ -541,7 +541,7 @@
     },
     "currency": {
      "score": 10,
-     "basis": "Latest output Thu, Nov 5, 2026; catalog cadence: several stories per week"
+     "basis": "Latest output Mon, Nov 9, 2026; catalog cadence: several stories per week"
     },
     "reach": null
    },
@@ -568,13 +568,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
-    "title": "Mohawk student-aid ruling becomes final after Education Department drops appeal",
-    "url": "https://ogdensburgnews.com/mohawk-student-aid-ruling-becomes-final-after-education-department-drops-appeal/",
-    "at": "2026-11-04T21:04:36+00:00",
-    "display": "Wed, Nov 4, 2026"
+    "title": "Ogdensburg forecast: Showers linger Monday, with a drier Veterans Day ahead",
+    "url": "https://ogdensburgnews.com/ogdensburg-weather-november-9-2026/",
+    "at": "2026-11-09T07:17:18+00:00",
+    "display": "Mon, Nov 9, 2026"
    },
    "metrics": {
     "reliability": {
@@ -583,7 +583,7 @@
     },
     "currency": {
      "score": 10,
-     "basis": "Latest output Wed, Nov 4, 2026; catalog cadence: weekly-ish, around meetings"
+     "basis": "Latest output Mon, Nov 9, 2026; catalog cadence: weekly-ish, around meetings"
     },
     "reach": null
    },
@@ -610,7 +610,7 @@
     "type": "live",
     "status": "ok",
     "http": 404,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Squarespace - Website Expired",
@@ -652,13 +652,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Malone",
     "url": "https://www.nny360.com/news/malone/",
-    "at": "2026-11-04T22:32:16-05:00",
-    "display": "Wed, Nov 4, 2026"
+    "at": "2026-11-07T17:41:12-05:00",
+    "display": "Sat, Nov 7, 2026"
    },
    "metrics": {
     "reliability": {
@@ -666,14 +666,14 @@
      "basis": "Professional newsroom with named staff"
     },
     "currency": {
-     "score": 10,
-     "basis": "Latest output Wed, Nov 4, 2026; catalog cadence: daily"
+     "score": 8,
+     "basis": "Latest output Sat, Nov 7, 2026; catalog cadence: daily"
     },
     "reach": null
    },
    "health": "healthy",
    "health_basis": "Posting inside its expected cadence; site is paywalled (headlines readable, full text gated)",
-   "overall": 90,
+   "overall": 80,
    "watch": false,
    "channel": "Web"
   },
@@ -694,13 +694,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Events for November 2026 \u2013 YES FM",
     "url": "https://yesfm.com/events/month/",
-    "at": "2026-11-05T00:00:00-05:00",
-    "display": "Thu, Nov 5, 2026"
+    "at": "2026-11-09T00:00:00-05:00",
+    "display": "Mon, Nov 9, 2026"
    },
    "metrics": {
     "reliability": {
@@ -709,7 +709,7 @@
     },
     "currency": {
      "score": 9,
-     "basis": "Listings current \u2014 next dated listing Thu, Nov 5, 2026"
+     "basis": "Listings current \u2014 next dated listing Mon, Nov 9, 2026"
     },
     "reach": null
    },
@@ -736,13 +736,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
-    "title": "WATCH: There\u2019s Nothing Sweeter Than Small-Town Tea",
-    "url": "https://1015thefox.com/the-latest/watch-theres-nothing-sweeter-than-small-town-tea/",
-    "at": "2026-11-04T20:43:17+00:00",
-    "display": "Wed, Nov 4, 2026"
+    "title": "Concerts & Events \u2013 101.5 The Fox",
+    "url": "https://1015thefox.com/events/",
+    "at": "2026-11-07T00:00:00-05:00",
+    "display": "Sat, Nov 7, 2026"
    },
    "metrics": {
     "reliability": {
@@ -751,7 +751,7 @@
     },
     "currency": {
      "score": 9,
-     "basis": "Listings current \u2014 next dated listing Sat, Nov 7, 2026"
+     "basis": "Listings current \u2014 next dated listing Tue, Nov 10, 2026"
     },
     "reach": null
    },
@@ -778,13 +778,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
-    "title": "Schenectady City officials begin lobbying efforts for extra state aid",
-    "url": "https://www.wamc.org/news/2026-11-04/schenectady-city-extra-state-aid-efforts-begin",
-    "at": "2026-11-04T22:46:58+00:00",
-    "display": "Wed, Nov 4, 2026"
+    "title": "Albany Police identify victim in fatal auto-pedestrian crash",
+    "url": "https://www.wamc.org/news/2026-11-08/albany-police-identify-victim-in-fatal-auto-pedestrian-crash",
+    "at": "2026-11-08T14:35:51+00:00",
+    "display": "Sun, Nov 8, 2026"
    },
    "metrics": {
     "reliability": {
@@ -793,7 +793,7 @@
     },
     "currency": {
      "score": 10,
-     "basis": "Latest output Wed, Nov 4, 2026; catalog cadence: weekly-ish for the region"
+     "basis": "Latest output Sun, Nov 8, 2026; catalog cadence: weekly-ish for the region"
     },
     "reach": null
    },
@@ -820,7 +820,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Station identity confirmed via listings; no checkable web feed found",
@@ -862,7 +862,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Station identity confirmed via trade sources",
@@ -904,7 +904,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Live to listen to live dispatch for New York Fire and EMS",
@@ -946,7 +946,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Catalog: episodic official posts observed (storms, exercises, incident notices)",
@@ -988,7 +988,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Catalog: several posts per month, more during campaigns",
@@ -1030,13 +1030,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "NYSP Newsroom",
     "url": "https://troopers.ny.gov/nysp-newsroom",
-    "at": "2026-11-04T00:00:00-05:00",
-    "display": "Wed, Nov 4, 2026"
+    "at": "2026-11-09T00:00:00-05:00",
+    "display": "Mon, Nov 9, 2026"
    },
    "metrics": {
     "reliability": {
@@ -1045,7 +1045,7 @@
     },
     "currency": {
      "score": 10,
-     "basis": "Latest output Wed, Nov 4, 2026; catalog cadence: daily statewide; several county items/week"
+     "basis": "Latest output Mon, Nov 9, 2026; catalog cadence: daily statewide; several county items/week"
     },
     "reach": null
    },
@@ -1072,7 +1072,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Potsdam Fire Department",
@@ -1114,7 +1114,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Press Releases | St. Lawrence County",
@@ -1156,7 +1156,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Untitled Document",
@@ -1198,7 +1198,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "511NY Traffic and Travel Information | NYSDOT Map",
@@ -1240,7 +1240,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "No active alerts for the Potsdam area at check time",
@@ -1282,13 +1282,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "New York Power Outages - Live Outage Map & Current Status",
     "url": "https://usoutage.com/new-york/",
-    "at": "2026-11-05T00:00:00-05:00",
-    "display": "Thu, Nov 5, 2026"
+    "at": "2026-11-09T07:17:18-05:00",
+    "display": "Mon, Nov 9, 2026"
    },
    "metrics": {
     "reliability": {
@@ -1297,7 +1297,7 @@
     },
     "currency": {
      "score": 10,
-     "basis": "Latest output Thu, Nov 5, 2026; catalog cadence: real-time during events"
+     "basis": "Latest output Mon, Nov 9, 2026; catalog cadence: real-time during events"
     },
     "reach": null
    },
@@ -1324,13 +1324,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Massena, NY - Official Website | Official Website",
     "url": "https://massena.us/",
-    "at": "2026-11-04T00:00:00-05:00",
-    "display": "Wed, Nov 4, 2026"
+    "at": null,
+    "display": null
    },
    "metrics": {
     "reliability": {
@@ -1338,14 +1338,14 @@
      "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
-     "score": 10,
-     "basis": "Latest output Wed, Nov 4, 2026; catalog cadence: monthly board + event-driven notices"
+     "score": null,
+     "basis": "No dated output could be read from the page in this check"
     },
     "reach": null
    },
    "health": "healthy",
-   "health_basis": "Posting inside its expected cadence",
-   "overall": 95,
+   "health_basis": "Site responded; cadence is episodic or no dated output was readable",
+   "overall": 90,
    "watch": false,
    "channel": "Web"
   },
@@ -1366,7 +1366,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Catalog: volume confirmed (~30,000 incidents / 5 yrs countywide); page addresses unconfirmed",
@@ -1408,7 +1408,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "News & Events | Clarkson University",
@@ -1422,14 +1422,14 @@
      "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
-     "score": 9,
+     "score": 8,
      "basis": "Latest output Fri, Oct 30, 2026; catalog cadence: weekly+ during term"
     },
     "reach": null
    },
    "health": "healthy",
    "health_basis": "Posting inside its expected cadence",
-   "overall": 90,
+   "overall": 85,
    "watch": false,
    "channel": "Web"
   },
@@ -1450,13 +1450,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Clarkson University Athletics - Official Athletics Website",
     "url": "https://clarksonathletics.com/",
-    "at": "2026-11-05T00:00:00-05:00",
-    "display": "Thu, Nov 5, 2026"
+    "at": "2026-11-08T00:00:00-05:00",
+    "display": "Sun, Nov 8, 2026"
    },
    "metrics": {
     "reliability": {
@@ -1465,7 +1465,7 @@
     },
     "currency": {
      "score": 10,
-     "basis": "Latest output Thu, Nov 5, 2026; catalog cadence: near-daily in season"
+     "basis": "Latest output Sun, Nov 8, 2026; catalog cadence: near-daily in season"
     },
     "reach": null
    },
@@ -1492,13 +1492,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "News | SUNY Potsdam",
     "url": "https://www.potsdam.edu/news",
-    "at": "2026-11-04T00:00:00-05:00",
-    "display": "Wed, Nov 4, 2026"
+    "at": "2026-11-06T00:00:00-05:00",
+    "display": "Fri, Nov 6, 2026"
    },
    "metrics": {
     "reliability": {
@@ -1507,7 +1507,7 @@
     },
     "currency": {
      "score": 10,
-     "basis": "Latest output Wed, Nov 4, 2026; catalog cadence: weekly+"
+     "basis": "Latest output Fri, Nov 6, 2026; catalog cadence: weekly+"
     },
     "reach": null
    },
@@ -1534,13 +1534,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "SUNY Potsdam Athletics - Official Athletics Website",
     "url": "https://potsdambears.com/",
-    "at": "2026-11-05T00:00:00-05:00",
-    "display": "Thu, Nov 5, 2026"
+    "at": "2026-11-08T00:00:00-05:00",
+    "display": "Sun, Nov 8, 2026"
    },
    "metrics": {
     "reliability": {
@@ -1549,7 +1549,7 @@
     },
     "currency": {
      "score": 10,
-     "basis": "Latest output Thu, Nov 5, 2026; catalog cadence: near-daily in season"
+     "basis": "Latest output Sun, Nov 8, 2026; catalog cadence: near-daily in season"
     },
     "reach": null
    },
@@ -1576,7 +1576,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Catalog: November schedule of near-daily performances noted via WWTI",
@@ -1618,13 +1618,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "SUNY Canton",
     "url": "https://www.canton.edu/news/",
-    "at": "2026-10-19T00:00:00-05:00",
-    "display": "Mon, Oct 19, 2026"
+    "at": "2026-10-15T00:00:00-05:00",
+    "display": "Thu, Oct 15, 2026"
    },
    "metrics": {
     "reliability": {
@@ -1632,14 +1632,14 @@
      "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
-     "score": 8,
-     "basis": "Latest output Mon, Oct 19, 2026; catalog cadence: weekly-ish"
+     "score": 6,
+     "basis": "Latest output Thu, Oct 15, 2026; catalog cadence: weekly-ish"
     },
     "reach": null
    },
-   "health": "healthy",
-   "health_basis": "Posting inside its expected cadence",
-   "overall": 85,
+   "health": "attention",
+   "health_basis": "Running behind its expected cadence",
+   "overall": 75,
    "watch": false,
    "channel": "Web"
   },
@@ -1660,13 +1660,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "SUNY Canton Athletics - Official Athletics Website",
     "url": "https://rooathletics.com/",
-    "at": "2026-11-04T00:00:00-05:00",
-    "display": "Wed, Nov 4, 2026"
+    "at": "2026-11-08T00:00:00-05:00",
+    "display": "Sun, Nov 8, 2026"
    },
    "metrics": {
     "reliability": {
@@ -1675,7 +1675,7 @@
     },
     "currency": {
      "score": 10,
-     "basis": "Latest output Wed, Nov 4, 2026; catalog cadence: near-daily in season"
+     "basis": "Latest output Sun, Nov 8, 2026; catalog cadence: near-daily in season"
     },
     "reach": null
    },
@@ -1702,13 +1702,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "News",
     "url": "https://www.stlawu.edu/news",
-    "at": "2026-11-04T00:00:00-05:00",
-    "display": "Wed, Nov 4, 2026"
+    "at": "2026-11-05T00:00:00-05:00",
+    "display": "Thu, Nov 5, 2026"
    },
    "metrics": {
     "reliability": {
@@ -1717,7 +1717,7 @@
     },
     "currency": {
      "score": 10,
-     "basis": "Latest output Wed, Nov 4, 2026; catalog cadence: weekly+ expected"
+     "basis": "Latest output Thu, Nov 5, 2026; catalog cadence: weekly+ expected"
     },
     "reach": null
    },
@@ -1744,13 +1744,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "St. Lawrence University Athletics - Official Athletics Website",
     "url": "https://saintsathletics.com/",
-    "at": "2026-11-05T00:00:00-05:00",
-    "display": "Thu, Nov 5, 2026"
+    "at": "2026-11-09T00:00:00-05:00",
+    "display": "Mon, Nov 9, 2026"
    },
    "metrics": {
     "reliability": {
@@ -1759,7 +1759,7 @@
     },
     "currency": {
      "score": 10,
-     "basis": "Latest output Thu, Nov 5, 2026; catalog cadence: near-daily in season"
+     "basis": "Latest output Mon, Nov 9, 2026; catalog cadence: near-daily in season"
     },
     "reach": null
    },
@@ -1786,13 +1786,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Conferences and Events \u2013 Associated Colleges of St.Lawrence Valley",
     "url": "https://associatedcolleges.org/conferences/",
-    "at": "2026-11-05T00:00:00-05:00",
-    "display": "Thu, Nov 5, 2026"
+    "at": "2026-10-09T00:00:00-05:00",
+    "display": "Fri, Oct 9, 2026"
    },
    "metrics": {
     "reliability": {
@@ -1800,14 +1800,14 @@
      "basis": "Established local organization publishing its own programming"
     },
     "currency": {
-     "score": 10,
-     "basis": "Latest output Thu, Nov 5, 2026; catalog cadence: monthly-ish"
+     "score": 8,
+     "basis": "Latest output Fri, Oct 9, 2026; catalog cadence: monthly-ish"
     },
     "reach": null
    },
    "health": "healthy",
    "health_basis": "Posting inside its expected cadence",
-   "overall": 85,
+   "overall": 75,
    "watch": false,
    "channel": "Web"
   },
@@ -1828,7 +1828,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Catalog: Oct 25, 2026 open house promoted by the county chamber",
@@ -1870,7 +1870,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Catalog: handles not verified in this pass",
@@ -1912,7 +1912,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Potsdam Teacher Named United States Holocaust Memorial Museum Teacher Fellow",
@@ -1954,7 +1954,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "NNCS Flyer Update",
@@ -1991,18 +1991,18 @@
    "boost": false,
    "cadence": "Weekly in term, expected",
    "url": null,
-   "note": "District news, board items, athletics. Exact public feed not captured. Catalog: UNVERIFIED feed path.",
+   "note": "District news, board items, athletics. Audit Nov 9, 2026: official site confirmed live at ccsdk12.org (99 State St, Canton; phone matches the catalog); its alert channel is the ParentSquare app, which serves parents and staff, not a public feed. Public dated news rhythm on the site itself still not proven \u2014 stays a manual check.",
    "check": {
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
-    "title": "Catalog: district site confirmed (99 State St, Canton); feed path unconfirmed",
+    "title": "Audit Nov 9, 2026: site live, identity confirmed; alerts run through ParentSquare (not public); public dated feed unconfirmed",
     "url": null,
-    "at": "2026-11-04",
-    "display": "2026-11-04"
+    "at": "2026-11-09",
+    "display": "2026-11-09"
    },
    "metrics": {
     "reliability": {
@@ -2033,18 +2033,18 @@
    "boost": false,
    "cadence": "Weekly in term, expected",
    "url": null,
-   "note": "District news, athletics, board items. Catalog: UNVERIFIED feed path.",
+   "note": "District news, athletics, board items. Audit Nov 9, 2026: official site confirmed live at mcs.k12.ny.us (address/phone match the state education listing), carrying a current 2026-27 superintendent message and calendar; the district's own 2026-27 safety plan says closing alerts go out ParentSquare first, then the Spectrum, WPTZ and WWTI closing lists. No public dated feed could be read in this pass \u2014 stays a manual check.",
    "check": {
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
-    "title": "Catalog: district confirmed (84 Nightengale Ave); feed path unconfirmed",
+    "title": "Audit Nov 9, 2026: site live, identity confirmed via state listing; closing alerts ParentSquare-first per district safety plan; public dated feed unconfirmed",
     "url": null,
-    "at": "2026-11-04",
-    "display": "2026-11-04"
+    "at": "2026-11-09",
+    "display": "2026-11-09"
    },
    "metrics": {
     "reliability": {
@@ -2080,7 +2080,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Catalog: one verification pass can clear the whole bundle",
@@ -2122,13 +2122,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Section X Scoreboard",
     "url": "https://www.sectionxscoreboard.com/",
-    "at": "2026-11-05T00:00:00-05:00",
-    "display": "Thu, Nov 5, 2026"
+    "at": "2026-11-09T00:00:00-05:00",
+    "display": "Mon, Nov 9, 2026"
    },
    "metrics": {
     "reliability": {
@@ -2137,7 +2137,7 @@
     },
     "currency": {
      "score": 10,
-     "basis": "Latest output Thu, Nov 5, 2026; catalog cadence: daily in season + weekly recap"
+     "basis": "Latest output Mon, Nov 9, 2026; catalog cadence: daily in season + weekly recap"
     },
     "reach": null
    },
@@ -2164,13 +2164,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "North Country SportsNet",
     "url": "https://www.northcountrysports.net/",
-    "at": "2026-11-04T00:00:00-05:00",
-    "display": "Wed, Nov 4, 2026"
+    "at": "2026-11-07T00:00:00-05:00",
+    "display": "Sat, Nov 7, 2026"
    },
    "metrics": {
     "reliability": {
@@ -2178,14 +2178,14 @@
      "basis": "Community calendar / volunteer-run publisher"
     },
     "currency": {
-     "score": 10,
-     "basis": "Latest output Wed, Nov 4, 2026; catalog cadence: daily in season"
+     "score": 9,
+     "basis": "Latest output Sat, Nov 7, 2026; catalog cadence: daily in season"
     },
     "reach": null
    },
    "health": "healthy",
    "health_basis": "Posting inside its expected cadence",
-   "overall": 80,
+   "overall": 75,
    "watch": false,
    "channel": "Web"
   },
@@ -2206,13 +2206,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "NYSPHSAA Section X High School Girls Soccer Scores",
     "url": "https://www.maxpreps.com/ny/association/nysphsaa-section-x/soccer/girls/scores/",
-    "at": "2026-11-05T00:00:00-05:00",
-    "display": "Thu, Nov 5, 2026"
+    "at": "2026-11-09T00:00:00-05:00",
+    "display": "Mon, Nov 9, 2026"
    },
    "metrics": {
     "reliability": {
@@ -2221,13 +2221,55 @@
     },
     "currency": {
      "score": 10,
-     "basis": "Latest output Thu, Nov 5, 2026; catalog cadence: daily in season"
+     "basis": "Latest output Mon, Nov 9, 2026; catalog cadence: daily in season"
     },
     "reach": null
    },
    "health": "healthy",
    "health_basis": "Posting inside its expected cadence",
    "overall": 75,
+   "watch": false,
+   "channel": "Web"
+  },
+  {
+   "id": "E9",
+   "name": "St. Lawrence-Lewis BOCES \u2014 news & board records",
+   "sec": "E",
+   "sec_label": "K-12 & school sports",
+   "cat": "news",
+   "town": "Canton (all 18 county districts)",
+   "ring": "near",
+   "dist": 11,
+   "boost": false,
+   "cadence": "Monthly-ish news + monthly board agendas/minutes",
+   "url": "https://www.sllboces.org/news/",
+   "note": "The county's BOCES \u2014 runs the tech centers and shared services for all 18 county districts. Added Nov 9, 2026 on two-week probation: dated news Nov 6 / Oct 9 / Sep 10, 2026 and monthly board agendas and approved minutes on its own site. While on probation its stream items carry single-source confidence at most and never pin.",
+   "check": {
+    "type": "live",
+    "status": "ok",
+    "http": 200,
+    "at": "2026-11-09T08:02:22.427662-05:00"
+   },
+   "latest": {
+    "title": "Manufacturing Day Connects Students with North Country Career Opportunities",
+    "url": "https://www.sllboces.org/manufacturing-day-connects-students-with-north-country-career-opportunities/",
+    "at": "2026-11-06T21:40:07+00:00",
+    "display": "Fri, Nov 6, 2026"
+   },
+   "metrics": {
+    "reliability": {
+     "score": 9,
+     "basis": "Primary source \u2014 the agency/institution publishing its own records"
+    },
+    "currency": {
+     "score": 10,
+     "basis": "Latest output Fri, Nov 6, 2026; catalog cadence: monthly-ish news + monthly board agendas/minutes"
+    },
+    "reach": null
+   },
+   "health": "healthy",
+   "health_basis": "Posting inside its expected cadence",
+   "overall": 95,
    "watch": false,
    "channel": "Web"
   },
@@ -2248,13 +2290,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": null,
     "url": "https://www.northcountrypublicradio.org/upnorth/comcal/",
-    "at": "2026-11-05T00:00:00-05:00",
-    "display": "Thu, Nov 5, 2026"
+    "at": "2026-11-09T00:00:00-05:00",
+    "display": "Mon, Nov 9, 2026"
    },
    "metrics": {
     "reliability": {
@@ -2263,7 +2305,7 @@
     },
     "currency": {
      "score": 9,
-     "basis": "Listings current \u2014 next dated listing Thu, Nov 5, 2026"
+     "basis": "Listings current \u2014 next dated listing Mon, Nov 9, 2026"
     },
     "reach": null
    },
@@ -2290,13 +2332,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Event Calendar | St. Lawrence County Chamber of Commerce - Event Calendar - St. Lawrence County Chamber of Commerce",
     "url": "https://business.visitstlc.com/events/calendar",
-    "at": "2026-11-05T00:00:00-05:00",
-    "display": "Thu, Nov 5, 2026"
+    "at": "2026-11-09T00:00:00-05:00",
+    "display": "Mon, Nov 9, 2026"
    },
    "metrics": {
     "reliability": {
@@ -2305,7 +2347,7 @@
     },
     "currency": {
      "score": 9,
-     "basis": "Listings current \u2014 next dated listing Thu, Nov 5, 2026"
+     "basis": "Listings current \u2014 next dated listing Mon, Nov 9, 2026"
     },
     "reach": null
    },
@@ -2332,13 +2374,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Northern New York Events, Guides & Local News | NNY Info",
     "url": "https://nnyinfo.com/",
-    "at": "2026-11-05T00:00:00-05:00",
-    "display": "Thu, Nov 5, 2026"
+    "at": "2026-11-07T00:00:00-05:00",
+    "display": "Sat, Nov 7, 2026"
    },
    "metrics": {
     "reliability": {
@@ -2347,7 +2389,7 @@
     },
     "currency": {
      "score": 10,
-     "basis": "Latest output Thu, Nov 5, 2026; catalog cadence: weekly-ish roundups"
+     "basis": "Latest output Sat, Nov 7, 2026; catalog cadence: weekly-ish roundups"
     },
     "reach": null
    },
@@ -2374,13 +2416,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Events | Macaroni KID Northern Adirondacks- Saranac Lake-Lake Placid",
     "url": "https://saranaclake.macaronikid.com/events",
-    "at": "2026-11-05T00:00:00-05:00",
-    "display": "Thu, Nov 5, 2026"
+    "at": "2026-11-09T00:00:00-05:00",
+    "display": "Mon, Nov 9, 2026"
    },
    "metrics": {
     "reliability": {
@@ -2389,7 +2431,7 @@
     },
     "currency": {
      "score": 9,
-     "basis": "Listings current \u2014 next dated listing Thu, Nov 5, 2026"
+     "basis": "Listings current \u2014 next dated listing Mon, Nov 9, 2026"
     },
     "reach": null
    },
@@ -2416,13 +2458,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
-    "title": null,
+    "title": "Potsdam, NY Events, Calendar & Tickets | Eventbrite",
     "url": "https://www.eventbrite.com/d/ny--potsdam/events/",
-    "at": "2026-11-11T00:00:00-05:00",
-    "display": "Wed, Nov 11, 2026"
+    "at": "2026-11-09T00:00:00-05:00",
+    "display": "Mon, Nov 9, 2026"
    },
    "metrics": {
     "reliability": {
@@ -2431,7 +2473,7 @@
     },
     "currency": {
      "score": 9,
-     "basis": "Listings current \u2014 next dated listing Wed, Nov 11, 2026"
+     "basis": "Listings current \u2014 next dated listing Mon, Nov 9, 2026"
     },
     "reach": null
    },
@@ -2458,13 +2500,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
-    "title": "PPL Story Time",
-    "url": "https://potsdamlibrary.org/event/ppl-story-time-6/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ppl-story-time-6",
-    "at": "2026-11-05T10:30:00+00:00",
-    "display": "Thu, Nov 5, 2026"
+    "title": "Dungeons & Dragons @ PPL",
+    "url": "https://potsdamlibrary.org/event/dungeons-dragons-ppl-31/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=dungeons-dragons-ppl-31",
+    "at": "2026-11-09T17:00:00+00:00",
+    "display": "Mon, Nov 9, 2026"
    },
    "metrics": {
     "reliability": {
@@ -2473,7 +2515,7 @@
     },
     "currency": {
      "score": 9,
-     "basis": "Listings current \u2014 next dated listing Thu, Nov 5, 2026"
+     "basis": "Listings current \u2014 next dated listing Mon, Nov 9, 2026"
     },
     "reach": null
    },
@@ -2500,7 +2542,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "(no title)",
@@ -2542,13 +2584,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Canton Free Library \u2013 Canton Free Library",
     "url": "https://cantonfreelibrary.org/",
-    "at": "2026-10-30T13:00:00-05:00",
-    "display": "Fri, Oct 30, 2026"
+    "at": "2026-11-06T14:00:00-05:00",
+    "display": "Fri, Nov 6, 2026"
    },
    "metrics": {
     "reliability": {
@@ -2556,14 +2598,14 @@
      "basis": "Established local organization publishing its own programming; catalog flagged the feed path unverified \u2014 this check reached the source's own site"
     },
     "currency": {
-     "score": 4,
-     "basis": "No upcoming listings read; most recent listing date Fri, Oct 30, 2026"
+     "score": 9,
+     "basis": "Listings current \u2014 next dated listing Wed, Nov 11, 2026"
     },
     "reach": null
    },
-   "health": "attention",
-   "health_basis": "Running behind its expected cadence",
-   "overall": 55,
+   "health": "healthy",
+   "health_basis": "Posting inside its expected cadence",
+   "overall": 80,
    "watch": false,
    "channel": "Web"
   },
@@ -2584,13 +2626,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Massena Public Library",
     "url": "https://massenapubliclibrary.org/",
-    "at": "2026-11-04T00:00:00-05:00",
-    "display": "Wed, Nov 4, 2026"
+    "at": "2026-11-07T00:00:00-05:00",
+    "display": "Sat, Nov 7, 2026"
    },
    "metrics": {
     "reliability": {
@@ -2599,7 +2641,7 @@
     },
     "currency": {
      "score": 4,
-     "basis": "No upcoming listings read; most recent listing date Wed, Nov 4, 2026"
+     "basis": "No upcoming listings read; most recent listing date Sat, Nov 7, 2026"
     },
     "reach": null
    },
@@ -2626,7 +2668,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Catalog: covered indirectly via NCPR + Chamber calendars",
@@ -2668,13 +2710,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
-    "title": "Make A Mess Art for Preschoolers",
-    "url": "https://northcountrychildrensmuseum.org/event/make-a-mess-art-for-preschoolers/2026-11-05/",
-    "at": "2026-11-05T15:15:00+00:00",
-    "display": "Thu, Nov 5, 2026"
+    "title": "Toddler Music",
+    "url": "https://northcountrychildrensmuseum.org/event/toddler-music-58/2026-11-10/",
+    "at": "2026-11-10T16:15:00+00:00",
+    "display": "Tue, Nov 10, 2026"
    },
    "metrics": {
     "reliability": {
@@ -2683,7 +2725,7 @@
     },
     "currency": {
      "score": 9,
-     "basis": "Listings current \u2014 next dated listing Thu, Nov 5, 2026"
+     "basis": "Listings current \u2014 next dated listing Mon, Nov 9, 2026"
     },
     "reach": null
    },
@@ -2708,30 +2750,30 @@
    "note": "The county's flagship art museum \u2014 nearest of its kind. Catalog: exact events URL UNVERIFIED; check probes the museum site.",
    "check": {
     "type": "live",
-    "status": "ok",
-    "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "status": "blocked",
+    "http": 403,
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
-    "title": "Homepage - Remington Museum of Art",
+    "title": "Attention Required! | Cloudflare",
     "url": "https://fredericremington.org/",
-    "at": "2026-10-06T00:00:00-05:00",
-    "display": "Tue, Oct 6, 2026"
+    "at": null,
+    "display": null
    },
    "metrics": {
     "reliability": {
      "score": 7,
-     "basis": "Established local organization publishing its own programming; catalog flagged the feed path unverified \u2014 this check reached the source's own site"
+     "basis": "Established local organization publishing its own programming; the check fetch was bot-blocked, so the score rests on publisher class alone; catalog flagged the feed path unverified \u2014 this check reached the source's own site"
     },
     "currency": {
-     "score": 9,
-     "basis": "Latest output Tue, Oct 6, 2026; catalog cadence: monthly programs + exhibitions"
+     "score": null,
+     "basis": "No dated output could be read from the page in this check"
     },
     "reach": null
    },
-   "health": "healthy",
-   "health_basis": "Posting inside its expected cadence",
-   "overall": 80,
+   "health": "attention",
+   "health_basis": "Fetch was bot-blocked \u2014 output could not be verified this pass",
+   "overall": 70,
    "watch": false,
    "channel": "Web"
   },
@@ -2752,7 +2794,7 @@
     "type": "live",
     "status": "ok",
     "http": 404,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "SITE NOT FOUND",
@@ -2794,13 +2836,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "In the News \u2013 St. Lawrence County Center for History and Culture",
     "url": "https://slcha.org/about/in-the-news/",
-    "at": "2026-10-25T00:00:00-05:00",
-    "display": "Sun, Oct 25, 2026"
+    "at": "2026-10-30T00:00:00-05:00",
+    "display": "Fri, Oct 30, 2026"
    },
    "metrics": {
     "reliability": {
@@ -2809,7 +2851,7 @@
     },
     "currency": {
      "score": 10,
-     "basis": "Latest output Sun, Oct 25, 2026; catalog cadence: monthly programs"
+     "basis": "Latest output Fri, Oct 30, 2026; catalog cadence: monthly programs"
     },
     "reach": null
    },
@@ -2836,7 +2878,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "News | ONNY",
@@ -2878,7 +2920,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Catalog: season runs September-April; exact feed to confirm",
@@ -2920,13 +2962,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "HOME | TAUNY",
     "url": "https://tauny.org/",
-    "at": "2026-11-01T09:14:55-05:00",
-    "display": "Sun, Nov 1, 2026"
+    "at": "2026-11-05T14:58:18-05:00",
+    "display": "Thu, Nov 5, 2026"
    },
    "metrics": {
     "reliability": {
@@ -2935,7 +2977,7 @@
     },
     "currency": {
      "score": 10,
-     "basis": "Latest output Sun, Nov 1, 2026; catalog cadence: weekly-ish programs"
+     "basis": "Latest output Thu, Nov 5, 2026; catalog cadence: weekly-ish programs"
     },
     "reach": null
    },
@@ -2962,7 +3004,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Catalog: programs visible in local calendars; own feed unconfirmed",
@@ -3004,7 +3046,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Maple Sugaring March 29",
@@ -3046,13 +3088,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Events Archive - Nicandri Nature Center",
     "url": "https://www.massenanaturecenter.com/events/",
-    "at": "2026-11-05T00:00:00-05:00",
-    "display": "Thu, Nov 5, 2026"
+    "at": "2026-11-09T00:00:00-05:00",
+    "display": "Mon, Nov 9, 2026"
    },
    "metrics": {
     "reliability": {
@@ -3061,7 +3103,7 @@
     },
     "currency": {
      "score": 9,
-     "basis": "Listings current \u2014 next dated listing Thu, Nov 5, 2026"
+     "basis": "Listings current \u2014 next dated listing Mon, Nov 9, 2026"
     },
     "reach": null
    },
@@ -3088,10 +3130,10 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
-    "title": null,
+    "title": "Events Up North | Nature Up North",
     "url": "https://www.natureupnorth.org/events-up-north",
     "at": "2026-11-07T00:00:00-05:00",
     "display": "Sat, Nov 7, 2026"
@@ -3103,7 +3145,7 @@
     },
     "currency": {
      "score": 9,
-     "basis": "Listings current \u2014 next dated listing Sat, Nov 7, 2026"
+     "basis": "Listings current \u2014 next dated listing Wed, Nov 18, 2026"
     },
     "reach": null
    },
@@ -3130,7 +3172,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Family-Friendly Snowshoeing at Indian Creek Nature Center",
@@ -3172,7 +3214,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Home",
@@ -3186,14 +3228,14 @@
      "basis": "Established local organization publishing its own programming"
     },
     "currency": {
-     "score": 10,
+     "score": 9,
      "basis": "Latest output Mon, Nov 2, 2026; catalog cadence: weekly-ish, year-round"
     },
     "reach": null
    },
    "health": "healthy",
    "health_basis": "Posting inside its expected cadence",
-   "overall": 85,
+   "overall": 80,
    "watch": false,
    "channel": "Web"
   },
@@ -3214,7 +3256,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "GardenShare \u2013 Healthy Food. Healthy Farms. Everybody Eats.",
@@ -3256,7 +3298,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Catalog: covered indirectly via NCPR/Chamber/YES FM calendars",
@@ -3298,7 +3340,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Legislators News | St. Lawrence County",
@@ -3312,14 +3354,14 @@
      "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
-     "score": 8,
+     "score": 6,
      "basis": "Latest output Thu, Oct 15, 2026; catalog cadence: weekly-ish, event-driven"
     },
     "reach": null
    },
-   "health": "healthy",
-   "health_basis": "Posting inside its expected cadence",
-   "overall": 85,
+   "health": "attention",
+   "health_basis": "Running behind its expected cadence",
+   "overall": 75,
    "watch": false,
    "channel": "Web"
   },
@@ -3340,7 +3382,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": null,
@@ -3382,7 +3424,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Planning News | St. Lawrence County",
@@ -3396,14 +3438,14 @@
      "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
-     "score": 10,
+     "score": 9,
      "basis": "Latest output Thu, Oct 22, 2026; catalog cadence: monthly-ish"
     },
     "reach": null
    },
    "health": "healthy",
    "health_basis": "Posting inside its expected cadence",
-   "overall": 95,
+   "overall": 90,
    "watch": false,
    "channel": "Web"
   },
@@ -3423,14 +3465,14 @@
    "check": {
     "type": "live",
     "status": "ok",
-    "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "http": 301,
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
-    "title": "News Flash \u2022 Ogdensburg, NY",
-    "url": "https://www.ogdensburgny.gov/m/newsflash",
-    "at": "2026-11-03T00:00:00-05:00",
-    "display": "Tue, Nov 3, 2026"
+    "title": null,
+    "url": null,
+    "at": null,
+    "display": null
    },
    "metrics": {
     "reliability": {
@@ -3438,14 +3480,14 @@
      "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
-     "score": 10,
-     "basis": "Latest output Tue, Nov 3, 2026; catalog cadence: weekly-ish"
+     "score": null,
+     "basis": "No dated output could be read from the page in this check"
     },
     "reach": null
    },
-   "health": "healthy",
-   "health_basis": "Posting inside its expected cadence",
-   "overall": 95,
+   "health": "attention",
+   "health_basis": "Site responded; cadence is episodic or no dated output was readable",
+   "overall": 90,
    "watch": false,
    "channel": "Web"
   },
@@ -3466,13 +3508,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Massena, NY - Official Website | Official Website",
     "url": "https://massena.us/",
-    "at": "2026-11-04T00:00:00-05:00",
-    "display": "Wed, Nov 4, 2026"
+    "at": null,
+    "display": null
    },
    "metrics": {
     "reliability": {
@@ -3480,14 +3522,14 @@
      "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
-     "score": 10,
-     "basis": "Latest output Wed, Nov 4, 2026; catalog cadence: monthly boards + continuous notices"
+     "score": null,
+     "basis": "No dated output could be read from the page in this check"
     },
     "reach": null
    },
    "health": "healthy",
-   "health_basis": "Posting inside its expected cadence",
-   "overall": 95,
+   "health_basis": "Site responded; cadence is episodic or no dated output was readable",
+   "overall": 90,
    "watch": false,
    "channel": "Web"
   },
@@ -3508,7 +3550,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Canton, NY",
@@ -3550,7 +3592,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:32:26.557491-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Audit Nov 4, 2026: events calendar current through Dec 2026; agendas/minutes archive ends 2022",
@@ -3592,7 +3634,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Catalog: feed path to confirm",
@@ -3634,7 +3676,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "St. Lawrence County | Citizen Portal",
@@ -3676,7 +3718,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Catalog: district announcements land on Potsdam institutions; exact feeds unconfirmed",
@@ -3718,7 +3760,7 @@
     "type": "live",
     "status": "blocked",
     "http": 403,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Forbidden",
@@ -3758,30 +3800,30 @@
    "note": "The most prolific business poster in the county. Checked via the findglocal mirror; the source itself is a public Facebook page.",
    "check": {
     "type": "live",
-    "status": "ok",
-    "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "status": "blocked",
+    "http": 403,
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
-    "title": "St Lawrence Chamber of Commerce, 101 Main Street, Canton, NY (2026)",
+    "title": "Just a moment...",
     "url": "https://www.findglocal.com/US/Canton/117565718272460/St-Lawrence-Chamber-of-Commerce",
-    "at": "2026-10-29T00:00:00-05:00",
-    "display": "Thu, Oct 29, 2026"
+    "at": null,
+    "display": null
    },
    "metrics": {
     "reliability": {
      "score": 7,
-     "basis": "Established local organization publishing its own programming"
+     "basis": "Established local organization publishing its own programming; the check fetch was bot-blocked, so the score rests on publisher class alone"
     },
     "currency": {
-     "score": 4,
-     "basis": "Latest output Thu, Oct 29, 2026; catalog cadence: near-daily"
+     "score": null,
+     "basis": "No dated output could be read from the page in this check"
     },
     "reach": null
    },
    "health": "attention",
-   "health_basis": "Running behind its expected cadence",
-   "overall": 55,
+   "health_basis": "Fetch was bot-blocked \u2014 output could not be verified this pass",
+   "overall": 70,
    "watch": false,
    "channel": "Facebook"
   },
@@ -3802,7 +3844,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Catalog: possible merger into county chamber; unconfirmed",
@@ -3844,7 +3886,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Catalog: chamber site/Facebook to confirm",
@@ -3886,7 +3928,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Catalog: feed to confirm",
@@ -3928,7 +3970,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Catalog: Tue & Fri market posts in season (through October)",
@@ -3970,7 +4012,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Catalog: IG location page confirmed; handle unconfirmed",
@@ -4012,7 +4054,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Catalog: schedules published via GardenShare",
@@ -4054,13 +4096,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Press &amp; Events | Nature\u2019s Storehouse",
     "url": "https://natures-storehouse.com/pages/news-upcoming-events",
-    "at": "2026-11-04T00:00:00-05:00",
-    "display": "Wed, Nov 4, 2026"
+    "at": "2026-11-07T00:00:00-05:00",
+    "display": "Sat, Nov 7, 2026"
    },
    "metrics": {
     "reliability": {
@@ -4069,7 +4111,7 @@
     },
     "currency": {
      "score": 10,
-     "basis": "Latest output Wed, Nov 4, 2026; catalog cadence: monthly+ with event surges"
+     "basis": "Latest output Sat, Nov 7, 2026; catalog cadence: monthly+ with event surges"
     },
     "reach": null
    },
@@ -4096,7 +4138,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Health & News Hub | Rochester Regional Health",
@@ -4110,14 +4152,14 @@
      "basis": "Primary source \u2014 the agency/institution publishing its own records"
     },
     "currency": {
-     "score": 9,
+     "score": 8,
      "basis": "Latest output Tue, Oct 6, 2026; catalog cadence: monthly-ish + service changes"
     },
     "reach": null
    },
    "health": "healthy",
    "health_basis": "Posting inside its expected cadence",
-   "overall": 90,
+   "overall": 85,
    "watch": false,
    "channel": "Web"
   },
@@ -4138,7 +4180,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Catalog: story tracked by NCPR/WWNY/Watertown Post; direct feed to confirm",
@@ -4180,7 +4222,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Titus Mountain conditions report (PDF)",
@@ -4222,13 +4264,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Titus Mountain Snow Report & Forecast | Live Ski Conditions & Snowfall Totals",
     "url": "https://snoflo.org/ski-report/titus-mountain",
-    "at": "2026-11-04T21:27:00-05:00",
-    "display": "Wed, Nov 4, 2026"
+    "at": "2026-11-09T05:56:00-05:00",
+    "display": "Mon, Nov 9, 2026"
    },
    "metrics": {
     "reliability": {
@@ -4237,7 +4279,7 @@
     },
     "currency": {
      "score": 10,
-     "basis": "Latest output Wed, Nov 4, 2026; catalog cadence: continuous in season"
+     "basis": "Latest output Mon, Nov 9, 2026; catalog cadence: continuous in season"
     },
     "reach": null
    },
@@ -4264,7 +4306,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Catalog: Region 6 pages exist; exact feed to confirm",
@@ -4306,7 +4348,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Catalog: park pages exist; alert feed unconfirmed",
@@ -4348,7 +4390,7 @@
     "type": "live",
     "status": "blocked",
     "http": 403,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": null,
@@ -4390,13 +4432,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Great Lakes Freighter Log & Vessel Directory \u2014 FreighterLog",
     "url": "https://freighterlog.com/",
-    "at": "2026-11-05T00:00:00-05:00",
-    "display": "Thu, Nov 5, 2026"
+    "at": "2026-11-09T00:00:00-05:00",
+    "display": "Mon, Nov 9, 2026"
    },
    "metrics": {
     "reliability": {
@@ -4405,7 +4447,7 @@
     },
     "currency": {
      "score": 10,
-     "basis": "Latest output Thu, Nov 5, 2026; catalog cadence: hourly updates in season"
+     "basis": "Latest output Mon, Nov 9, 2026; catalog cadence: hourly updates in season"
     },
     "reach": null
    },
@@ -4432,7 +4474,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Catalog: season dates known; dedicated page unconfirmed",
@@ -4474,7 +4516,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Catalog: commission identity confirmed; direct pages unconfirmed",
@@ -4514,30 +4556,30 @@
    "note": "Per-reporter article streams for NCN, NNY360/Journal and WWNY journalists \u2014 a discovery layer over B1/B2/B5.",
    "check": {
     "type": "live",
-    "status": "ok",
-    "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "status": "blocked",
+    "http": 403,
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
-    "title": "Muck Rack | For journalists and public relations",
+    "title": "Just a moment...",
     "url": "https://muckrack.com/jimmy-lawton/articles",
-    "at": "2026-10-24T09:02:00-05:00",
-    "display": "Sat, Oct 24, 2026"
+    "at": null,
+    "display": null
    },
    "metrics": {
     "reliability": {
      "score": 5,
-     "basis": "Aggregator \u2014 republishes or indexes others' reporting"
+     "basis": "Aggregator \u2014 republishes or indexes others' reporting; the check fetch was bot-blocked, so the score rests on publisher class alone"
     },
     "currency": {
-     "score": 1,
-     "basis": "Latest output Sat, Oct 24, 2026; catalog cadence: daily"
+     "score": null,
+     "basis": "No dated output could be read from the page in this check"
     },
     "reach": null
    },
-   "health": "stale",
-   "health_basis": "No output inside several expected cadence windows",
-   "overall": 30,
+   "health": "attention",
+   "health_basis": "Fetch was bot-blocked \u2014 output could not be verified this pass",
+   "overall": 50,
    "watch": false,
    "channel": "Web"
   },
@@ -4558,13 +4600,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "What's Going On \u2014 Massena Data Center Watch",
     "url": "https://massenadatacenterwatch.org/whats-going-on",
-    "at": "2026-11-04T16:30:00-05:00",
-    "display": "Wed, Nov 4, 2026"
+    "at": "2026-10-02T00:00:00-05:00",
+    "display": "Fri, Oct 2, 2026"
    },
    "metrics": {
     "reliability": {
@@ -4572,14 +4614,14 @@
      "basis": "Community calendar / volunteer-run publisher"
     },
     "currency": {
-     "score": 10,
-     "basis": "Latest output Wed, Nov 4, 2026; catalog cadence: weekly-ish while the issue is live"
+     "score": 4,
+     "basis": "Latest output Fri, Oct 2, 2026; catalog cadence: weekly-ish while the issue is live"
     },
     "reach": null
    },
-   "health": "healthy",
-   "health_basis": "Posting inside its expected cadence",
-   "overall": 80,
+   "health": "attention",
+   "health_basis": "Running behind its expected cadence",
+   "overall": 50,
    "watch": false,
    "channel": "Web"
   },
@@ -4600,13 +4642,13 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Rensselaer Falls, Canton Neighborhood",
     "url": "https://rensselaerfallscantonneighborhood.org/",
-    "at": "2026-11-05T00:00:00-05:00",
-    "display": "Thu, Nov 5, 2026"
+    "at": "2026-11-09T00:00:00-05:00",
+    "display": "Mon, Nov 9, 2026"
    },
    "metrics": {
     "reliability": {
@@ -4615,7 +4657,7 @@
     },
     "currency": {
      "score": 10,
-     "basis": "Latest output Thu, Nov 5, 2026; catalog cadence: monthly"
+     "basis": "Latest output Mon, Nov 9, 2026; catalog cadence: monthly"
     },
     "reach": null
    },
@@ -4642,7 +4684,7 @@
     "type": "live",
     "status": "ok",
     "http": 200,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Clarkson University - newz9.com",
@@ -4656,14 +4698,14 @@
      "basis": "Republication mirror that originates nothing; catalog rates it low confidence"
     },
     "currency": {
-     "score": 10,
+     "score": 4,
      "basis": "Latest output Wed, Nov 4, 2026; catalog cadence: daily republication"
     },
     "reach": null
    },
-   "health": "healthy",
-   "health_basis": "Posting inside its expected cadence",
-   "overall": 65,
+   "health": "attention",
+   "health_basis": "Running behind its expected cadence",
+   "overall": 35,
    "watch": false,
    "channel": "Web"
   },
@@ -4684,7 +4726,7 @@
     "type": "manual",
     "status": "not-machine-checkable",
     "http": null,
-    "at": "2026-11-04T23:26:36.890996-05:00"
+    "at": "2026-11-09T08:02:22.427662-05:00"
    },
    "latest": {
     "title": "Catalog: county BOE pages on stlawco.gov; exact feed to confirm",
@@ -4711,18 +4753,18 @@
   }
  ],
  "summary": {
-  "checked": 78,
+  "checked": 79,
   "internal": 3,
   "manual": 7,
   "unchecked": 24,
   "health": {
-   "attention": 9,
-   "healthy": 66,
+   "attention": 16,
+   "healthy": 61,
    "unchecked": 24,
    "down": 2,
    "manual": 7,
-   "stale": 4
+   "stale": 3
   },
-  "total": 112
+  "total": 113
  }
 }
