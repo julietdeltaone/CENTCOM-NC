@@ -1,135 +1,9 @@
 {
- "generated": "2026-11-04T23:31:41-05:00",
+ "generated": "2026-11-09T07:59:38-05:00",
  "items": [
   {
-   "category": "scanner",
-   "confidence": "reported",
-   "dist": 28,
-   "enrichment": "Re-checked on the weekly source audit: no follow-up from the hospital, the fire department, or local news; closed with the source of the odor never confirmed.",
-   "first_seen": "2:31 PM",
-   "group": "today",
-   "headline": "Natural gas odor reported at Massena Hospital ER entrance",
-   "id": "scanner-20261104-massena-gas",
-   "rail": "2:22 PM",
-   "ring": "county",
-   "source": {
-    "name": "SLC Scanner News (Facebook)",
-    "url": "https://facebook.com/groups/501798774041567/permalink/2098544701033625/",
-    "via": "facebook"
-   },
-   "status": "closed",
-   "updated": "11:31 PM",
-   "updates": [
-    {
-     "at": "3:05 PM",
-     "text": "Fire crews remained on scene at the ER entrance; hospital operations continued while the exterior was checked."
-    },
-    {
-     "at": "11:31 PM",
-     "text": "Weekly audit re-check found no follow-up from the hospital, the department, or local news. Closed."
-    }
-   ],
-   "what": "Massena Fire was called for the smell of natural gas outside the emergency room entrance at Massena Hospital.",
-   "when": {
-    "display": "Today, 2:22 PM",
-    "sort": "2026-11-04T14:22:00-05:00"
-   },
-   "where": {
-    "place": "Massena Hospital, ER entrance",
-    "town": "Massena"
-   },
-   "who": "Massena Fire Department",
-   "why": "Not yet known. Crews were checking the exterior of the building; no source was confirmed in the initial dispatch.",
-   "seen_sort": "2026-11-04T14:31:00-05:00",
-   "upd_sort": "2026-11-04T23:31:41-05:00",
-   "checked": "2026-11-04T23:31:41-05:00",
-   "geo": {
-    "lat": 44.9246,
-    "lon": -74.9042
-   }
-  },
-  {
-   "category": "scanner",
-   "confidence": "reported",
-   "dist": 10,
-   "enrichment": "No injuries and no road closure were reported.",
-   "first_seen": "11:15 AM",
-   "group": "today",
-   "headline": "Car vs. deer on CR 38, Norfolk",
-   "id": "scanner-20261104-norfolk-deer",
-   "rail": "11:08 AM",
-   "ring": "near",
-   "source": {
-    "name": "SLC Scanner News (Facebook)",
-    "url": "https://facebook.com/groups/501798774041567/permalink/2098570221031073/",
-    "via": "facebook"
-   },
-   "status": "closed",
-   "updated": "11:15 AM",
-   "what": "A vehicle struck a deer at 581 CR 38 in Norfolk. No injuries were reported in the post.",
-   "when": {
-    "display": "Today, 11:08 AM",
-    "sort": "2026-11-04T11:08:00-05:00"
-   },
-   "where": {
-    "place": "581 CR 38",
-    "town": "Norfolk"
-   },
-   "who": "Driver on scene; county dispatch",
-   "why": "Deer movement peaks after dark in November; CR 38 is a known crossing stretch.",
-   "seen_sort": "2026-11-04T11:15:00-05:00",
-   "upd_sort": "2026-11-04T11:15:00-05:00",
-   "checked": "2026-11-04T23:31:41-05:00",
-   "geo": {
-    "lat": 44.88,
-    "lon": -74.99
-   }
-  },
-  {
-   "category": "scanner",
-   "confidence": "single-source",
-   "dist": 11,
-   "enrichment": "Re-checked on the weekly source audit: no blotter item, arrest report, or second source appeared; closed as a single unconfirmed dispatch post.",
-   "first_seen": "12:57 PM",
-   "group": "today",
-   "headline": "Threat reported on Tucker Rd, Pierrepont",
-   "id": "scanner-20261104-pierrepont-threat",
-   "rail": "12:49 PM",
-   "ring": "near",
-   "source": {
-    "name": "SLC Scanner News (Facebook)",
-    "url": "https://facebook.com/groups/501798774041567/permalink/2098559537698808/",
-    "via": "facebook"
-   },
-   "status": "closed",
-   "updated": "11:31 PM",
-   "updates": [
-    {
-     "at": "11:31 PM",
-     "text": "Weekly audit re-check found no blotter item or second report. Closed as a single unconfirmed dispatch post."
-    }
-   ],
-   "what": "A caller reported an individual threatening to burn a house down at 206 Tucker Rd; people were gathered out front when the call came in.",
-   "when": {
-    "display": "Today, 12:49 PM",
-    "sort": "2026-11-04T12:49:00-05:00"
-   },
-   "where": {
-    "place": "206 Tucker Rd",
-    "town": "Pierrepont"
-   },
-   "who": "Caller; responding deputies",
-   "why": "Not yet known. The dispatch post gives no background on the dispute.",
-   "seen_sort": "2026-11-04T12:57:00-05:00",
-   "upd_sort": "2026-11-04T23:31:41-05:00",
-   "checked": "2026-11-04T23:31:41-05:00",
-   "geo": {
-    "lat": 44.55,
-    "lon": -75.02
-   }
-  },
-  {
    "category": "news",
+   "checked": "2026-11-09T07:59:38-05:00",
    "confidence": "confirmed",
    "enrichment": "Reported by the county's news source of record; full margin detail arrives with the board of elections canvass.",
    "first_seen": "Tue, 9:40 PM",
@@ -138,12 +12,14 @@
    "id": "news-20261104-ny21",
    "rail": "TUE 11/3",
    "ring": "county",
+   "seen_sort": "2026-11-03T21:40:00-05:00",
    "source": {
     "name": "North Country Now",
     "url": "",
     "via": "web"
    },
    "status": "closed",
+   "upd_sort": "2026-11-03T21:40:00-05:00",
    "updated": "Tue, 9:40 PM",
    "what": "North Country Now reported the NY-21 House race called, keeping the seat Republican as statewide results came in on election night.",
    "when": {
@@ -155,28 +31,32 @@
     "town": "St. Lawrence County"
    },
    "who": "Voters across the 21st district",
-   "why": "Election Day. The call closes the county's most-watched race of the cycle.",
-   "seen_sort": "2026-11-03T21:40:00-05:00",
-   "upd_sort": "2026-11-03T21:40:00-05:00",
-   "checked": "2026-11-04T23:31:41-05:00"
+   "why": "Election Day. The call closes the county's most-watched race of the cycle."
   },
   {
    "category": "news",
+   "checked": "2026-11-09T07:59:38-05:00",
    "confidence": "reported",
    "dist": 0,
    "enrichment": "Reported by local news the same day.",
    "first_seen": "3:20 PM",
-   "group": "today",
+   "geo": {
+    "lat": 44.6706,
+    "lon": -74.9804
+   },
+   "group": "earlier",
    "headline": "Benefit concert raises $8,000 for North Country Children's Museum",
    "id": "news-20261104-childrens-museum",
-   "rail": "Today",
+   "rail": "WED 11/4",
    "ring": "potsdam",
+   "seen_sort": "2026-11-04T15:20:00-05:00",
    "source": {
     "name": "North Country Now",
     "url": "",
     "via": "web"
    },
    "status": "closed",
+   "upd_sort": "2026-11-04T15:20:00-05:00",
    "updated": "3:20 PM",
    "what": "A benefit concert raised $8,000 for the North Country Children's Museum in Potsdam.",
    "when": {
@@ -188,103 +68,41 @@
     "town": "Potsdam"
    },
    "who": "North Country Children's Museum",
-   "why": "Fundraising for the museum's programs; the total was reported by local news the same day.",
-   "seen_sort": "2026-11-04T15:20:00-05:00",
-   "upd_sort": "2026-11-04T15:20:00-05:00",
-   "checked": "2026-11-04T23:31:41-05:00",
-   "geo": {
-    "lat": 44.6706,
-    "lon": -74.9804
-   }
-  },
-  {
-   "category": "event",
-   "confidence": "confirmed",
-   "dist": 0,
-   "enrichment": "Puck drop 7:00 PM. Expect heavier traffic on NY-11 and around the Clarkson campus from about 6 PM.",
-   "first_seen": "This week",
-   "group": "coming",
-   "headline": "Clarkson men's hockey vs. Union at Cheel",
-   "id": "event-20261106-clarkson-hockey",
-   "rail": "FRI 11/6",
-   "ring": "potsdam",
-   "source": {
-    "name": "Clarkson athletics schedule",
-    "url": "",
-    "via": "web"
-   },
-   "status": "new",
-   "updated": "This week",
-   "what": "Clarkson hosts Union in an ECAC matchup at Cheel Arena on Friday night.",
-   "when": {
-    "display": "Fri, Nov 6, 7:00 PM",
-    "sort": "2026-11-06T19:00:00-05:00"
-   },
-   "where": {
-    "place": "Cheel Arena, Clarkson University",
-    "town": "Potsdam"
-   },
-   "who": "Clarkson Golden Knights vs. Union",
-   "why": "Conference home game; Friday-night home games are the biggest regular draw on the local calendar.",
-   "seen_sort": "2026-11-02T09:00:00-05:00",
-   "upd_sort": "2026-11-02T09:00:00-05:00",
-   "checked": "2026-11-04T23:31:41-05:00",
-   "geo": {
-    "lat": 44.6635,
-    "lon": -74.9989
-   }
-  },
-  {
-   "category": "event",
-   "confidence": "reported",
-   "dist": 22,
-   "first_seen": "This week",
-   "group": "coming",
-   "headline": "GriefShare session in Lisbon",
-   "id": "event-20261105-griefshare",
-   "rail": "THU 11/5",
-   "ring": "county",
-   "source": {
-    "name": "North Country Now community calendar",
-    "url": "",
-    "via": "web"
-   },
-   "status": "new",
-   "updated": "This week",
-   "what": "A GriefShare support session meets in Lisbon on Thursday.",
-   "when": {
-    "display": "Thu, Nov 5",
-    "sort": "2026-11-05T18:00:00-05:00"
-   },
-   "where": {
-    "place": "Lisbon",
-    "town": "Lisbon"
-   },
-   "who": "GriefShare (community group)",
-   "why": "A recurring grief-support series that rotates through local churches.",
-   "seen_sort": "2026-11-02T09:00:00-05:00",
-   "upd_sort": "2026-11-02T09:00:00-05:00",
-   "checked": "2026-11-04T23:31:41-05:00"
+   "why": "Fundraising for the museum's programs; the total was reported by local news the same day."
   },
   {
    "category": "campus",
+   "checked": "2026-11-09T07:59:38-05:00",
    "confidence": "confirmed",
    "dist": 0,
-   "enrichment": "A vice-president-level vacancy. The follow-up to watch is a named successor or an interim appointment.",
+   "enrichment": "A vice-president-level vacancy. Clarkson's organization chart now shows an interim CIO in place; the follow-up to watch is a permanent appointment.",
    "first_seen": "Mon, Nov 2",
+   "geo": {
+    "lat": 44.6633,
+    "lon": -74.9997
+   },
    "group": "earlier",
    "headline": "Clarkson's VP for Information Technology & Libraries seat is vacant",
    "id": "campus-20261102-clarkson-vp",
    "rail": "MON 11/2",
    "ring": "potsdam",
+   "seen_sort": "2026-11-02T10:00:00-05:00",
    "source": {
     "name": "Clarkson University",
     "url": "",
     "via": "web"
    },
    "status": "developing",
-   "updated": "Mon, Nov 2",
-   "what": "Clarkson's Vice President for Information Technology & Libraries seat is vacant following Joshua Fiske's removal. No successor or interim has been named.",
+   "upd_sort": "2026-11-09T07:59:38-05:00",
+   "updated": "Mon, Nov 9",
+   "updates": [
+    {
+     "at": "Mon, Nov 9",
+     "text": "Weekly audit re-check: Clarkson's organization chart now lists an Interim CIO of the Office of Information Technology. No permanent successor named; re-check by Nov 16."
+    }
+   ],
+   "verify_by": "2026-11-16T10:00:00-05:00",
+   "what": "Clarkson's Vice President for Information Technology & Libraries seat is vacant following Joshua Fiske's removal. Clarkson's current organization chart now lists an Interim CIO for the Office of Information Technology; no permanent successor has been named.",
    "when": {
     "display": "Surfaced Mon, Nov 2",
     "sort": "2026-11-02T10:00:00-05:00"
@@ -294,33 +112,32 @@
     "town": "Potsdam"
    },
    "who": "Clarkson University leadership",
-   "why": "A vice-presidential departure touches every system on campus — IT, library, and the services staff use daily. The open seat is the story until an interim is named.",
-   "seen_sort": "2026-11-02T10:00:00-05:00",
-   "upd_sort": "2026-11-02T10:00:00-05:00",
-   "verify_by": "2026-11-09T10:00:00-05:00",
-   "checked": "2026-11-04T23:31:41-05:00",
-   "geo": {
-    "lat": 44.6633,
-    "lon": -74.9997
-   }
+   "why": "A vice-presidential departure touches every system on campus \u2014 IT, library, and the services staff use daily. The open seat is the story until an interim is named."
   },
   {
    "category": "campus",
+   "checked": "2026-11-09T07:59:38-05:00",
    "confidence": "reported",
    "dist": 0,
    "enrichment": "Construction milestone at the campus's athletics and recreation hub.",
    "first_seen": "Mon, Nov 2",
+   "geo": {
+    "lat": 44.6628,
+    "lon": -74.9722
+   },
    "group": "earlier",
    "headline": "Maxcy Hall renovations nearing completion at SUNY Potsdam",
    "id": "campus-20261102-maxcy",
    "rail": "MON 11/2",
    "ring": "potsdam",
+   "seen_sort": "2026-11-02T09:00:00-05:00",
    "source": {
     "name": "SUNY Potsdam",
     "url": "",
     "via": "web"
    },
    "status": "closed",
+   "upd_sort": "2026-11-02T09:00:00-05:00",
    "updated": "Mon, Nov 2",
    "what": "Renovations at Maxcy Hall, SUNY Potsdam's athletics and recreation hub, are nearing completion.",
    "when": {
@@ -332,32 +149,32 @@
     "town": "Potsdam"
    },
    "who": "SUNY Potsdam",
-   "why": "Maxcy is the campus's main gym and pool complex; its reopening restores a facility the public uses as well as students.",
-   "seen_sort": "2026-11-02T09:00:00-05:00",
-   "upd_sort": "2026-11-02T09:00:00-05:00",
-   "checked": "2026-11-04T23:31:41-05:00",
-   "geo": {
-    "lat": 44.6628,
-    "lon": -74.9722
-   }
+   "why": "Maxcy is the campus's main gym and pool complex; its reopening restores a facility the public uses as well as students."
   },
   {
    "category": "campus",
+   "checked": "2026-11-09T07:59:38-05:00",
    "confidence": "reported",
    "dist": 0,
    "enrichment": "Reported by the university; the garden is open to the public.",
    "first_seen": "Oct 29",
+   "geo": {
+    "lat": 44.6623,
+    "lon": -74.974
+   },
    "group": "earlier",
    "headline": "WISER Botanical Garden opens at SUNY Potsdam",
    "id": "campus-20261029-wiser",
    "rail": "OCT 29",
    "ring": "potsdam",
+   "seen_sort": "2026-10-29T10:00:00-04:00",
    "source": {
     "name": "SUNY Potsdam",
     "url": "",
     "via": "web"
    },
    "status": "closed",
+   "upd_sort": "2026-10-29T10:00:00-04:00",
    "updated": "Oct 29",
    "what": "The WISER Botanical Garden has opened at SUNY Potsdam, a new teaching and public garden space on campus.",
    "when": {
@@ -369,35 +186,41 @@
     "town": "Potsdam"
    },
    "who": "SUNY Potsdam",
-   "why": "A new public-facing campus space — part teaching garden, part community amenity.",
-   "seen_sort": "2026-10-29T10:00:00-04:00",
-   "upd_sort": "2026-10-29T10:00:00-04:00",
-   "checked": "2026-11-04T23:31:41-05:00",
-   "geo": {
-    "lat": 44.6623,
-    "lon": -74.974
-   }
+   "why": "A new public-facing campus space \u2014 part teaching garden, part community amenity."
   },
   {
    "boost": true,
    "category": "business",
+   "checked": "2026-11-09T07:59:38-05:00",
    "confidence": "reported",
    "dist": 48,
-   "enrichment": "The closest skiing to Potsdam. Outside listings now project a Dec 5 opening; open-terrain count is still to come in the hill’s own reports.",
+   "enrichment": "The closest skiing to Potsdam. Outside listings project a Dec 5 opening; the hill's own trail report was last updated Nov 4, with open-terrain counts still to come once the season starts.",
    "first_seen": "Mon, Nov 3",
+   "geo": {
+    "lat": 44.8631,
+    "lon": -74.2356
+   },
    "group": "earlier",
    "headline": "Titus Mountain begins posting trail reports ahead of opening",
    "id": "business-20261103-titus-trails",
    "rail": "MON 11/3",
    "ring": "beyond",
+   "seen_sort": "2026-11-03T09:00:00-05:00",
    "source": {
     "name": "Titus Mountain trail report",
     "url": "",
     "via": "web"
    },
-   "status": "developing",
-   "updated": "Wed, Nov 4",
-   "what": "Titus Mountain has started publishing daily trail and lift reports ahead of its season opening — the first of the area's ski hills to do so this year.",
+   "status": "closed",
+   "upd_sort": "2026-11-09T07:59:38-05:00",
+   "updated": "Mon, Nov 9",
+   "updates": [
+    {
+     "at": "Mon, Nov 9",
+     "text": "Weekly audit re-check: outside listings (OnTheSnow, SnowStash, SkiCentral) still show a projected Dec 5 opening and the last trail report is still the Nov 4 one; nothing newer from the hill. Closed \u2014 the next hard signal is the opening itself."
+    }
+   ],
+   "what": "Titus Mountain has started publishing daily trail and lift reports ahead of its season opening \u2014 the first of the area's ski hills to do so this year.",
    "when": {
     "display": "Reports began Mon, Nov 3",
     "sort": "2026-11-03T09:00:00-05:00"
@@ -407,15 +230,7 @@
     "town": "Malone"
    },
    "who": "Titus Mountain Family Ski Center",
-   "why": "Trail reports are the season's first hard signal for winter tourism in the northern county; lodging, rentals, and weekend traffic follow within weeks.",
-   "seen_sort": "2026-11-03T09:00:00-05:00",
-   "upd_sort": "2026-11-04T23:31:41-05:00",
-   "verify_by": "2026-11-06T09:00:00-05:00",
-   "checked": "2026-11-04T23:31:41-05:00",
-   "geo": {
-    "lat": 44.8631,
-    "lon": -74.2356
-   }
+   "why": "Trail reports are the season's first hard signal for winter tourism in the northern county; lodging, rentals, and weekend traffic follow within weeks."
   }
  ]
 }
