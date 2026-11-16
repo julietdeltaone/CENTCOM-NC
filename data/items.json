@@ -1,78 +1,9 @@
 {
- "generated": "2026-11-09T07:59:38-05:00",
+ "generated": "2026-11-16T08:00:00-05:00",
  "items": [
   {
-   "category": "news",
-   "checked": "2026-11-09T07:59:38-05:00",
-   "confidence": "confirmed",
-   "enrichment": "Reported by the county's news source of record; full margin detail arrives with the board of elections canvass.",
-   "first_seen": "Tue, 9:40 PM",
-   "group": "earlier",
-   "headline": "NY-21 congressional race called for Constantino",
-   "id": "news-20261104-ny21",
-   "rail": "TUE 11/3",
-   "ring": "county",
-   "seen_sort": "2026-11-03T21:40:00-05:00",
-   "source": {
-    "name": "North Country Now",
-    "url": "",
-    "via": "web"
-   },
-   "status": "closed",
-   "upd_sort": "2026-11-03T21:40:00-05:00",
-   "updated": "Tue, 9:40 PM",
-   "what": "North Country Now reported the NY-21 House race called, keeping the seat Republican as statewide results came in on election night.",
-   "when": {
-    "display": "Tue, Nov 3, evening",
-    "sort": "2026-11-03T21:40:00-05:00"
-   },
-   "where": {
-    "place": "NY-21 district",
-    "town": "St. Lawrence County"
-   },
-   "who": "Voters across the 21st district",
-   "why": "Election Day. The call closes the county's most-watched race of the cycle."
-  },
-  {
-   "category": "news",
-   "checked": "2026-11-09T07:59:38-05:00",
-   "confidence": "reported",
-   "dist": 0,
-   "enrichment": "Reported by local news the same day.",
-   "first_seen": "3:20 PM",
-   "geo": {
-    "lat": 44.6706,
-    "lon": -74.9804
-   },
-   "group": "earlier",
-   "headline": "Benefit concert raises $8,000 for North Country Children's Museum",
-   "id": "news-20261104-childrens-museum",
-   "rail": "WED 11/4",
-   "ring": "potsdam",
-   "seen_sort": "2026-11-04T15:20:00-05:00",
-   "source": {
-    "name": "North Country Now",
-    "url": "",
-    "via": "web"
-   },
-   "status": "closed",
-   "upd_sort": "2026-11-04T15:20:00-05:00",
-   "updated": "3:20 PM",
-   "what": "A benefit concert raised $8,000 for the North Country Children's Museum in Potsdam.",
-   "when": {
-    "display": "Wed, Nov 4",
-    "sort": "2026-11-04T15:00:00-05:00"
-   },
-   "where": {
-    "place": "North Country Children's Museum",
-    "town": "Potsdam"
-   },
-   "who": "North Country Children's Museum",
-   "why": "Fundraising for the museum's programs; the total was reported by local news the same day."
-  },
-  {
    "category": "campus",
-   "checked": "2026-11-09T07:59:38-05:00",
+   "checked": "2026-11-16T08:00:00-05:00",
    "confidence": "confirmed",
    "dist": 0,
    "enrichment": "A vice-president-level vacancy. Clarkson's organization chart now shows an interim CIO in place; the follow-up to watch is a permanent appointment.",
@@ -93,15 +24,19 @@
     "via": "web"
    },
    "status": "developing",
-   "upd_sort": "2026-11-09T07:59:38-05:00",
-   "updated": "Mon, Nov 9",
+   "upd_sort": "2026-11-16T08:00:00-05:00",
+   "updated": "Mon, Nov 16",
    "updates": [
     {
      "at": "Mon, Nov 9",
      "text": "Weekly audit re-check: Clarkson's organization chart now lists an Interim CIO of the Office of Information Technology. No permanent successor named; re-check by Nov 16."
+    },
+    {
+     "at": "Mon, Nov 16",
+     "text": "Weekly audit re-check: Clarkson's organization chart still lists an Interim CIO of the Office of Information Technology; no permanent successor named. Re-check by Nov 23."
     }
    ],
-   "verify_by": "2026-11-16T10:00:00-05:00",
+   "verify_by": "2026-11-23T10:00:00-05:00",
    "what": "Clarkson's Vice President for Information Technology & Libraries seat is vacant following Joshua Fiske's removal. Clarkson's current organization chart now lists an Interim CIO for the Office of Information Technology; no permanent successor has been named.",
    "when": {
     "display": "Surfaced Mon, Nov 2",
@@ -116,7 +51,7 @@
   },
   {
    "category": "campus",
-   "checked": "2026-11-09T07:59:38-05:00",
+   "checked": "2026-11-16T08:00:00-05:00",
    "confidence": "reported",
    "dist": 0,
    "enrichment": "Construction milestone at the campus's athletics and recreation hub.",
@@ -153,7 +88,7 @@
   },
   {
    "category": "campus",
-   "checked": "2026-11-09T07:59:38-05:00",
+   "checked": "2026-11-16T08:00:00-05:00",
    "confidence": "reported",
    "dist": 0,
    "enrichment": "Reported by the university; the garden is open to the public.",
@@ -191,7 +126,7 @@
   {
    "boost": true,
    "category": "business",
-   "checked": "2026-11-09T07:59:38-05:00",
+   "checked": "2026-11-16T08:00:00-05:00",
    "confidence": "reported",
    "dist": 48,
    "enrichment": "The closest skiing to Potsdam. Outside listings project a Dec 5 opening; the hill's own trail report was last updated Nov 4, with open-terrain counts still to come once the season starts.",
